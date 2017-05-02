@@ -64,16 +64,6 @@ var Game;
     Game.Snippets = Snippets;
 })(Game || (Game = {}));
 window.addEventListener("load", function () { return new Game.Snippets(); });
-var Game;
-(function (Game) {
-    var Test = (function () {
-        function Test() {
-            console.log("test ding");
-        }
-        return Test;
-    }());
-    Game.Test = Test;
-})(Game || (Game = {}));
 var Draggable;
 (function (Draggable) {
     var DragEvent = (function () {
