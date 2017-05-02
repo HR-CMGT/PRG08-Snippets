@@ -1,20 +1,9 @@
 {
     "version": "0.1.0",
-    "command": "gulp",
+    "command": "tsc",
     "isShellCommand": true,
-    "args": [
-        "--no-color"
-    ],
-    "tasks": [
-        {
-            "taskName": "build",
-            "args": [],
-            "isBuildCommand": true,
-            "problemMatcher": [
-                "$lessCompile",
-                "$tsc",
-                "$jshint"
-            ]
-        }
-    ]
+    "args": ["-w", "-p", "."],
+    "showOutput": "always",
+    "isBackground": true,
+    "problemMatcher": "$tsc-watch"
 }

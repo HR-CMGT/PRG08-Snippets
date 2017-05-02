@@ -1,1 +1,103 @@
-!function e(o,n,t){function r(c,a){if(!n[c]){if(!o[c]){var s="function"==typeof require&&require;if(!a&&s)return s(c,!0);if(i)return i(c,!0);var d=new Error("Cannot find module '"+c+"'");throw d.code="MODULE_NOT_FOUND",d}var l=n[c]={exports:{}};o[c][0].call(l.exports,function(e){var n=o[c][1][e];return r(n||e)},l,l.exports,e,o,n,t)}return n[c].exports}for(var i="function"==typeof require&&require,c=0;c<t.length;c++)r(t[c]);return r}({1:[function(e,o,n){var t;!function(e){var o=function(){function e(){this.vectorExample()}return e.prototype.vectorExample=function(){var e=new Vector.Vector2(20,35),o=new Vector.Vector2(100,120);e=e.add(o),console.log("Added v1 and v2: "+e.x+","+e.y);var n=e.difference(o);console.log("Difference between: "+e.x+","+e.y+" and "+o.x+","+o.y+" is "+n.x+","+n.y);var t=new Vector.Vector2(100,100);console.log("Lengte van "+t.x+","+t.y+" is "+t.magnitude());var r=t.normalize();console.log("Vector: "+t.x+","+t.y+" normalized is "+r.x+","+r.y);var i=new Vector.Rectangle(new Vector.Vector2(20,20),100,100),c=new Vector.Vector2(25,25),a=i.isInside(c);console.log("Is vector "+c.x+","+c.y+" inside "+i.position.x+","+i.position.y+","+i.width+","+i.height+" = "+a);var s=new Vector.Rectangle(new Vector.Vector2(30,30),200,150);i.isOverlap(s);console.log("Does rectangle "+s.position.x+","+s.position.y+","+s.width+","+s.height+" overlap "+i.position.x+","+i.position.y+","+i.width+","+i.height+" = "+a)},e.prototype.addMessage=function(e){var o=document.createElement("div");o.innerHTML=e,document.body.appendChild(o)},e}();e.Snippets=o}(t||(t={})),window.addEventListener("load",function(){return new t.Snippets})},{}]},{},[1]);
+var Vector;
+(function (Vector) {
+    var Vector2 = (function () {
+        function Vector2(x, y) {
+            this.x = x;
+            this.y = y;
+        }
+        Vector2.prototype.add = function (v) {
+            return new Vector2(this.x + v.x, this.y + v.y);
+        };
+        Vector2.prototype.difference = function (v) {
+            return new Vector2(this.x - v.x, this.y - v.y);
+        };
+        Vector2.prototype.scale = function (n) {
+            return new Vector2(this.x * n, this.y * n);
+        };
+        Vector2.prototype.magnitude = function () {
+            return Math.sqrt(this.x * this.x + this.y * this.y);
+        };
+        Vector2.prototype.normalize = function () {
+            var mag = this.magnitude();
+            return new Vector2(this.x / mag, this.y / mag);
+        };
+        Vector2.reflectX = function (point, x) {
+            return new Vector2(2 * x - point.x, point.y);
+        };
+        Vector2.reflectY = function (point, y) {
+            return new Vector2(point.x, 2 * y - point.y);
+        };
+        return Vector2;
+    }());
+    Vector.Vector2 = Vector2;
+})(Vector || (Vector = {}));
+var Vector;
+(function (Vector) {
+    var Rectangle = (function () {
+        function Rectangle(p, w, h) {
+            this.position = p;
+            this.width = w;
+            this.height = h;
+        }
+        Rectangle.prototype.isInside = function (point) {
+            var difference = this.position.difference(point);
+            return Math.abs(difference.x) < this.width / 2 && Math.abs(difference.y) < this.height / 2;
+        };
+        Rectangle.prototype.isOverlap = function (o2) {
+            var difference = this.position.difference(o2.position);
+            return Math.abs(difference.x) < this.width / 2 + o2.width / 2 && Math.abs(difference.y) < this.height / 2 + o2.height / 2;
+        };
+        return Rectangle;
+    }());
+    Vector.Rectangle = Rectangle;
+})(Vector || (Vector = {}));
+var Game;
+(function (Game) {
+    var v = Vector;
+    var Snippets = (function () {
+        function Snippets() {
+            var vect = new v.Example();
+        }
+        return Snippets;
+    }());
+    Game.Snippets = Snippets;
+})(Game || (Game = {}));
+window.addEventListener("load", function () { return new Game.Snippets(); });
+var Game;
+(function (Game) {
+    var Test = (function () {
+        function Test() {
+            console.log("test ding");
+        }
+        return Test;
+    }());
+    Game.Test = Test;
+})(Game || (Game = {}));
+var Vector;
+(function (Vector) {
+    var Example = (function () {
+        function Example() {
+            console.log("vector example");
+            var v1 = new Vector.Vector2(20, 35);
+            var v2 = new Vector.Vector2(100, 120);
+            v1 = v1.add(v2);
+            console.log("Added v1 and v2: " + v1.x + "," + v1.y);
+            var v3 = v1.difference(v2);
+            console.log("Difference between: " + v1.x + "," + v1.y + " and " + v2.x + "," + v2.y + " is " + v3.x + "," + v3.y);
+            var v5 = new Vector.Vector2(100, 100);
+            console.log("Lengte van " + v5.x + "," + v5.y + " is " + v5.magnitude());
+            var v6 = v5.normalize();
+            console.log("Vector: " + v5.x + "," + v5.y + " normalized is " + v6.x + "," + v6.y);
+            var r1 = new Vector.Rectangle(new Vector.Vector2(20, 20), 100, 100);
+            var v7 = new Vector.Vector2(25, 25);
+            var hit = r1.isInside(v7);
+            console.log("Is vector " + v7.x + "," + v7.y + " inside " + r1.position.x + "," + r1.position.y + "," + r1.width + "," + r1.height + " = " + hit);
+            var r2 = new Vector.Rectangle(new Vector.Vector2(30, 30), 200, 150);
+            var hit2 = r1.isOverlap(r2);
+            console.log("Does rectangle r1 overlap r2 ? " + hit);
+        }
+        return Example;
+    }());
+    Vector.Example = Example;
+})(Vector || (Vector = {}));
+//# sourceMappingURL=main.js.map

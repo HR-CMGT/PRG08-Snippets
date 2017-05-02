@@ -1,10 +1,10 @@
 # Snippets and Reading list
-This is a repository for random code snippets, interesting reading materials, youtube channels, etc.
+Dit is een repository voor random code snippets en links naar online materialen.
+De snippets zijn verdeeld over folders met een eigen readme file.
 
 ## Inhoud
 - Namespaces
-- Gulp
-- Vector Math
+- [Vector Math](dev/vector/)
 - Reading List
 
 ### Namespaces
@@ -14,7 +14,7 @@ Namespaces gebruik je om je code af te schermen van de global scope en om je cod
 namespace Utils {
     export class Calculator {
         constructor(){
-            console.log("I am a car");
+            console.log("I am a calculator");
         }
     }
 }
@@ -30,16 +30,6 @@ import u = Game.Tools.Utils;
 let calc:Calculator = new u.Calculator();
 ```
 
-### Gulp
-Als je meerdere taken wilt uitvoeren naast de tsc compiler, dan kan je werken met `gulp`. Check de [readme file](dev/gulp/) voor voorbeelden.
-
-### Vector Math
-Een Vector is een object met een x en y waarde en een aantal methods voor het berekenen van coordinaten / richting van een gameobject.
-Check de [readme file](dev/vector/) voor code voorbeelden.
-
-
-
-
 ## Reading List and cool stuff
 
 - [Essential Javascript topics for 2017](https://medium.com/javascript-scene/top-javascript-frameworks-topics-to-learn-in-2017-700a397b711)
@@ -49,3 +39,5 @@ Check de [readme file](dev/vector/) voor code voorbeelden.
 - [Imperative vs. Declarative, Functional vs. Object-oriented and more Javascript Terminology](https://medium.freecodecamp.com/programming-mental-models-47ccc65eb334)
 - [Experimenting with Speech Synthesis](https://www.smashingmagazine.com/2017/02/experimenting-with-speechsynthesis/)
 - [GitHub Student Pack - free private repositories](https://education.github.com/pack)
+- [Gulp](http://gulpjs.com)
+- [VS Code Gulp](https://www.typescriptlang.org/docs/handbook/gulp.html)

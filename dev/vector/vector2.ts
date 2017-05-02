@@ -1,4 +1,5 @@
 namespace Vector {
+
     export class Vector2 {
         
         public x : number;

@@ -1,4 +1,4 @@
-# Gulp
+# Draggable
 Als je meerdere taken wilt uitvoeren naast de tsc compiler, dan kan je werken met `gulp`. Global install: `sudo npm install gulp-cli -g`. 
 
 Als je dit project hebt gecloned kan je met `npm install` alle benodigde modules installeren. Als je zelf een nieuw project begint kan je deze [instructies](https://www.npmjs.com/package/gulp-tsc) volgen.
