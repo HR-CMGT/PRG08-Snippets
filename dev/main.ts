@@ -7,10 +7,10 @@ namespace Game {
                 
         constructor() {
             
-            this.testVector();
+            this.vectorExample();
         }
         
-        private testVector() : void {
+        private vectorExample() : void {
                         
             // vector2 heeft x, y en static methods
             let v1 = new Vector.Vector2(20,35);

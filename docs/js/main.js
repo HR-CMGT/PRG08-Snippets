@@ -55,9 +55,9 @@ var Game;
 (function (Game) {
     var Snippets = (function () {
         function Snippets() {
-            this.testVector();
+            this.vectorExample();
         }
-        Snippets.prototype.testVector = function () {
+        Snippets.prototype.vectorExample = function () {
             var v1 = new Vector.Vector2(20, 35);
             var v2 = new Vector.Vector2(100, 120);
             v1 = v1.add(v2);
