@@ -2,6 +2,9 @@
 This is a repository for random code snippets, interesting reading materials, youtube channels, etc.
 
 ## Code Snippets
+- Namespaces
+- Gulp
+- Vector Math
 
 ### Namespaces
 Namespaces gebruik je om je code af te schermen van de global scope en om je code te organiseren:
@@ -27,11 +30,13 @@ let calc:Calculator = new u.Calculator();
 ```
 
 ### Gulp
-Als je meerdere taken wilt uitvoeren naast de tsc compiler, dan kan je werken met `npm` of `gulp`. Deze repository gebruikt een gulpfile die `uglify` doet op de javascript file die door `tsc` is gegenereerd.
+Als je meerdere taken wilt uitvoeren naast de tsc compiler, dan kan je werken met `npm` of `gulp`. Als je nog geen gulp hebt, dan kan je dit eenmalig globaal installeren met `npm install gulp-cli -g`. Daarna installeer je gulp in je projectmap met `npm install gulp -D`. In Visual Studio Code kan je dan je `tasks.json` weg gooien. Als je vervolgens CMD+SHIFT+B doet, kan je kiezen voor het aanmaken van een gulpfile. Deze repository gebruikt een [gulpfile](gulpfile.js) die `uglify` doet op de javascript file die door `tsc` is gegenereerd.
+
+Let op dat je `node_modules` in [.gitignore](.gitignore) plaatst, anders worden je node modules ook in je git repository geplaatst.
 
 ### Vector Math
 Een Vector is een object met een x en y waarde en een aantal methods voor het berekenen van coordinaten / richting van een gameobject.
-Check de [readme file](dev/vector/README.md) voor code voorbeelden.
+Check de [readme file](dev/vector/) voor code voorbeelden.
 
 
 
