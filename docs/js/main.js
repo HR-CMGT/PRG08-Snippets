@@ -57,6 +57,7 @@ var Game;
     var Snippets = (function () {
         function Snippets() {
             var vect = new v.Example();
+            var dr = new Draggable.Example();
         }
         return Snippets;
     }());
@@ -73,6 +74,115 @@ var Game;
     }());
     Game.Test = Test;
 })(Game || (Game = {}));
+var Draggable;
+(function (Draggable) {
+    var DragEvent = (function () {
+        function DragEvent(e) {
+            this.clientX = 0;
+            this.clientY = 0;
+            this.altKey = false;
+            if (e.type != "touchmove" && e.type != "mousemove")
+                console.log("EVENT " + e.type);
+            switch (e.type) {
+                case "mousedown":
+                case "mouseup":
+                case "mousemove":
+                    var m = e;
+                    this.clientX = m.clientX;
+                    this.clientY = m.clientY;
+                    this.altKey = m.altKey;
+                    break;
+                case "touchcancel":
+                    console.log("TOUCH CANCEL");
+                case "touchstart":
+                case "touchmove":
+                    var allTouches = e;
+                    var t = allTouches.targetTouches[0];
+                    this.clientX = t.clientX;
+                    this.clientY = t.clientY;
+                    break;
+                case "touchend":
+                    var all = e;
+                    console.log("Touch end. Aantal touches: " + all.targetTouches.length);
+                    break;
+                default:
+                    console.log("Unknown: " + e.type);
+            }
+        }
+        return DragEvent;
+    }());
+    Draggable.DragEvent = DragEvent;
+})(Draggable || (Draggable = {}));
+var Draggable;
+(function (Draggable) {
+    var DraggableObject = (function () {
+        function DraggableObject(x, y, HTMLtagName, offx, offy) {
+            var _this = this;
+            this.scale = 1;
+            this.offSetX = 0;
+            this.offSetY = 0;
+            this.down = "mousedown";
+            this.up = "mouseup";
+            this.move = "mousemove";
+            this.eventType = "mouseEvent";
+            this.htmlElement = document.createElement(HTMLtagName);
+            document.body.appendChild(this.htmlElement);
+            this.checkTouchSupport();
+            this.x = x;
+            this.y = y;
+            this.offSetX = offx;
+            this.offSetY = offy;
+            this.draw();
+            this.moveBind = function (e) { return _this.updatePosition(e); };
+            this.htmlElement.addEventListener(this.down, function (e) { return _this.initDrag(e); });
+            this.htmlElement.addEventListener(this.up, function (e) { return _this.stopDrag(e); });
+        }
+        DraggableObject.prototype.initDrag = function (e) {
+            e.preventDefault();
+            var event = new Draggable.DragEvent(e);
+            this.htmlElement.parentElement.appendChild(this.htmlElement);
+            this.offSetX = event.clientX - this.x;
+            this.offSetY = event.clientY - this.y;
+            window.addEventListener(this.move, this.moveBind);
+        };
+        DraggableObject.prototype.updatePosition = function (e) {
+            e.preventDefault();
+            var event = new Draggable.DragEvent(e);
+            this.x = event.clientX - this.offSetX;
+            this.y = event.clientY - this.offSetY;
+            this.draw();
+        };
+        DraggableObject.prototype.stopDrag = function (e) {
+            window.removeEventListener(this.move, this.moveBind);
+            e.preventDefault();
+            console.log("STOP DRAG:  remove listener: " + this.move);
+        };
+        DraggableObject.prototype.draw = function () {
+            this.htmlElement.style.transform = "translate(" + this.x + "px, " + this.y + "px) scale(" + this.scale + ")";
+        };
+        DraggableObject.prototype.checkTouchSupport = function () {
+            if ('ontouchstart' in window) {
+                this.down = "touchstart";
+                this.up = "touchend";
+                this.move = "touchmove";
+                this.eventType = "touchEvent";
+            }
+        };
+        return DraggableObject;
+    }());
+    Draggable.DraggableObject = DraggableObject;
+})(Draggable || (Draggable = {}));
+var Draggable;
+(function (Draggable) {
+    var Example = (function () {
+        function Example() {
+            console.log("draggable example");
+            var go = new Draggable.DraggableObject(120, 120, "brick", 0, 0);
+        }
+        return Example;
+    }());
+    Draggable.Example = Example;
+})(Draggable || (Draggable = {}));
 var Vector;
 (function (Vector) {
     var Example = (function () {

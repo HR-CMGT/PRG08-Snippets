@@ -9,6 +9,8 @@ namespace Game {
 
         constructor(){
             let vect:v.Example = new v.Example();
+
+            let dr:Draggable.Example = new Draggable.Example();
         }
                 
        

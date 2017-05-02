@@ -10,3 +10,18 @@ div {
     border-radius: 10px;
     padding:12px; margin:5px;
 }
+
+brick {
+    background-image: url(../images/brick.png);
+    width: 54px; height: 54px;
+    position: absolute;
+    display: block;
+    margin:0px; padding:0px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select:none;
+    transform-origin: 0% 0%;
+    
+}
