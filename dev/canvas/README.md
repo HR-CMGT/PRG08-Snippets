@@ -39,7 +39,7 @@ private update():void {
 
 Handgetekende of pre-rendered animaties kan je tonen met een spritesheet. Dit is vergelijkbaar met een .gif animatie, maar met hogere kwaliteit (een .gif heeft maar 256 kleuren). Je afbeelding bestaat uit een reeks frames:
 
-![Sakura](../../docs/images/sakuraspritesheet.png "Sakura")
+![Sakura](../../docs/images/sakuraspritesheet.png "Sakura" =400x)
 
 In je code moet je bijhouden hoeveel frames er zijn, hoe groot ze zijn, en welke op dit moment getoond moet worden.
 
