@@ -67,18 +67,29 @@ window.addEventListener("load", function () { return new Game.Snippets(); });
 var Canvas;
 (function (Canvas) {
     var AnimatedSprite = (function () {
-        function AnimatedSprite(x, y, frame_count, atlas, sequence_name) {
-            this.x = 0;
-            this.y = 0;
-            this.frameCount = 0;
-            this.sequenceName = "";
-            this.currentFrame = 0;
-            this.x = x;
-            this.y = y;
-            this.frameCount = frame_count;
-            this.atlas = atlas;
-            this.sequenceName = sequence_name;
+        function AnimatedSprite(c) {
+            this.framewidth = 200;
+            this.frameheight = 212;
+            this.counter = 0;
+            this.context = c;
+            this.image = new Image();
+            this.image.onload = function () {
+            };
+            this.image.src = './images/sakuraspritesheet.png';
         }
+        AnimatedSprite.prototype.update = function () {
+            this.counter += 0.3;
+            var currentframe = Math.floor(this.counter);
+            if (currentframe > 15)
+                this.counter = currentframe = 0;
+            var column = currentframe % 4;
+            var row = Math.floor(currentframe / 4);
+            var posx = 200;
+            var posy = 0;
+            var framex = 200 * column;
+            var framey = 212 * row;
+            this.context.drawImage(this.image, framex, framey, 200, 212, posx, posy, 200, 212);
+        };
         return AnimatedSprite;
     }());
     Canvas.AnimatedSprite = AnimatedSprite;
@@ -89,8 +100,8 @@ var Canvas;
         function Block(c) {
             this.x = Math.random() * 100;
             this.y = Math.random() * 100;
-            this.width = 40;
-            this.height = 40;
+            this.width = 30;
+            this.height = 30;
             this.ctx = c;
             this.xspeed = Math.random() * 2;
             this.yspeed = Math.random() * 2;
@@ -98,7 +109,7 @@ var Canvas;
         Block.prototype.update = function () {
             this.x += this.xspeed;
             this.y += this.yspeed;
-            if (this.x + this.width > 400 || this.x < 0)
+            if (this.x + this.width > 200 || this.x < 0)
                 this.xspeed *= -1;
             if (this.y + this.height > 200 || this.y < 0)
                 this.yspeed *= -1;
@@ -117,6 +128,7 @@ var Canvas;
             console.log("canvas example");
             this.canvas = document.getElementById('canvas');
             this.ctx = this.canvas.getContext("2d");
+            this.spritesheet = new Canvas.AnimatedSprite(this.ctx);
             this.blocks = new Array();
             for (var i = 0; i < 30; i++) {
                 this.blocks.push(new Canvas.Block(this.ctx));
@@ -130,6 +142,7 @@ var Canvas;
                 var b = _a[_i];
                 b.update();
             }
+            this.spritesheet.update();
             requestAnimationFrame(function () { return _this.update(); });
         };
         return Example;

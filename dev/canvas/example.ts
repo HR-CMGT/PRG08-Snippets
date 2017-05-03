@@ -5,6 +5,7 @@ namespace Canvas {
         private canvas : HTMLCanvasElement;
         private ctx : CanvasRenderingContext2D;
         private blocks : Array<Block>;
+        private spritesheet : AnimatedSprite;
 
         constructor(){
             console.log("canvas example");
@@ -13,6 +14,10 @@ namespace Canvas {
             this.canvas = <HTMLCanvasElement> document.getElementById('canvas');
             this.ctx = this.canvas.getContext("2d");
 
+            // create animated spritesheet
+            this.spritesheet = new AnimatedSprite(this.ctx);
+
+            // create blocks
             this.blocks = new Array<Block>();
             for(let i = 0;i<30;i++) {
                 this.blocks.push(new Block(this.ctx));
@@ -27,6 +32,8 @@ namespace Canvas {
             for(let b of this.blocks){
                 b.update();
             }
+
+            this.spritesheet.update();
 
             requestAnimationFrame(() => this.update());
         }
