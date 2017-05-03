@@ -1,7 +1,16 @@
 # Vector Math
-Een [Vector2](./vector2.ts) is een object met een x en y waarde en ingebouwde methods om vectoren met elkaar te vergelijken:
+Een [Vector2](./vector2.ts) is een object met een x en y waarde:
+
+### Voorbeeld
+```
+let position:Vector2 = new Vector2(200,300);
+
+// game loop
+div.style.transform = "translate(" + position.x + "px, " + position.y + "px)";
+```
 
 ## Vectoren vergelijken
+Een vector heeft een aantal ingebouwde 'convenience methods'.
 ```
 let v1 = new Vector2(20,35);
 let v2 = new Vector2(100,120)

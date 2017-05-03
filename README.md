@@ -1,35 +1,12 @@
 # Snippets and Reading list
 
-- Namespaces
+- [Namespaces](dev/namespace.md)
 - [Vector Math](dev/vector/)
 - [Draggable items](dev/draggable/)
 - [Canvas en Spritesheets](dev/canvas/)
 - Reading List
 
 [Bekijk de demo](https://hr-cmgt.github.io/PRG08-Snippets/)
-
-### Namespaces
-Namespaces gebruik je om je code af te schermen van de global scope en om je code te organiseren:
-```
-// utils.ts
-namespace Utils {
-    export class Calculator {
-        constructor(){
-            console.log("I am a calculator");
-        }
-    }
-}
-```
-Vanuit een andere namespace kan je de code benaderen met:
-```
-// game.ts
-let calc:Calculator = new Utils.Calculator();
-```
-Je kan met `import` een shortcut maken:
-```
-import u = Game.Tools.Utils;
-let calc:Calculator = new u.Calculator();
-```
 
 ## Reading List
 
