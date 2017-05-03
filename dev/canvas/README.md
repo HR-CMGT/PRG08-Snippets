@@ -37,11 +37,39 @@ private update():void {
 
 ## Spritesheets
 
-Handgetekende of pre-rendered animaties kan je tonen met een spritesheet. Dit is vergelijkbaar met een .gif animatie, maar met hogere kwaliteit (een .gif heeft maar 256 kleuren). Je afbeelding bestaat uit een reeks frames:
+Handgetekende of pre-rendered animaties kan je tonen met een spritesheet. Dit is vergelijkbaar met een .gif animatie, maar met hogere kwaliteit (een .gif heeft maar 256 kleuren). Je afbeelding bestaat uit een reeks frames. Je begint met het inladen van de PNG in het geheugen:
+```
+this.image = new Image();
+this.image.src = './images/sakuraspritesheet.png';
+```
 
-![Sakura](../../docs/images/sakuraspritesheet.png "Sakura")
+![Sakura](../../docs/images/sakuraspritesheet.png =200x "Sakura")
 
-In je code moet je bijhouden hoeveel frames er zijn, hoe groot ze zijn, en welke op dit moment getoond moet worden.
+In je code moet je bijhouden welk frame je wil tekenen. Met een framecounter kan je vervolgens uitrekenen welke rij en kolom uit je PNG afbeelding als sprite getekend moet worden.
+```
+currentframe++;
+if(currentframe > maxframes) currentframe = 0;
+
+// rij en kolom afleiden uit frame
+let column : number = currentframe % 4;
+let row : number = Math.floor(currentframe/4);
+```
+
+Vervolgens kan je het juiste frame in de canvas tekenen:
+```
+// positie van de sprite in het canvas
+let posx:number = 200;
+let posy:number = 0;
+
+// pixel positie van je frame binnen de spritesheet png
+let framex:number = 200 * column;
+let framey:number = 212 * row;
+let framew:number = 200;
+let frameh:number = 212;
+
+// tekenen in canvas
+context.drawImage(this.image, framex, framey, 200, 212, posx, posy, 200, 212);
+```
 
 ![Sakura](../../docs/images/sakuragif.gif "Sakura")
 
