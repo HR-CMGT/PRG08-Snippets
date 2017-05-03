@@ -6,6 +6,8 @@
 - [Canvas en Spritesheets](dev/canvas/)
 - Reading List
 
+[Bekijk de demo](https://hr-cmgt.github.io/PRG08-Snippets/)
+
 ### Namespaces
 Namespaces gebruik je om je code af te schermen van de global scope en om je code te organiseren:
 ```
