@@ -1,12 +1,9 @@
 # Snippets and Reading list
-Dit is een repository voor random code snippets en links naar online materialen.
-De snippets zijn verdeeld over folders met een eigen readme file.
 
-## Inhoud
 - Namespaces
 - [Vector Math](dev/vector/)
 - [Draggable items](dev/draggable/)
-- [Canvas](dev/canvas/)
+- [Canvas en Spritesheets](dev/canvas/)
 - Reading List
 
 ### Namespaces
