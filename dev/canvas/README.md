@@ -16,7 +16,7 @@ context.fillRect(0,0,100,100);
 
 ## Animatie
 
-Voor animatie heb je een game loop nodig. Elk frame update je de coördinaten van je game elementen, en daarna teken je de hele canvas opnieuw. Bekijk [de broncode](./example.ts) om te zien hoe je meerdere canvas game elementen in een array kan plaatsen.
+Voor animatie heb je een game loop nodig. Elk frame update je de coördinaten van je game elementen, en daarna teken je de hele canvas opnieuw. Bekijk [de broncode](./example.ts) en de [demo](https://hr-cmgt.github.io/PRG08-Snippets/) om te zien hoe je meerdere canvas game elementen in een array kan plaatsen.
 
 ```
 this.x = 0;
