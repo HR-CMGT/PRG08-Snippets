@@ -1,24 +1,50 @@
-## Vector Math
-Een Vector2 is een object met een x en y waarde en een aantal methods voor het berekenen van coordinaten / richting van een gameobject.
+# Vector Math
+Een [Vector2](./vector2.ts) is een object met een x en y waarde en ingebouwde methods om vectoren met elkaar te vergelijken:
+
+## Vectoren vergelijken
 ```
 let v1 = new Vector2(20,35);
 let v2 = new Vector2(100,120)
 
-// add two vectors
+// optellen
 v1 = v1.add(v2);
 
-// calculate the difference
+// verschil tussen twee vectoren
 let diff = v1.difference(v2);
 
-// calculate the magnitude (the distance between 0,0 and the vector).
+// de lengte van deze vector
 let v3 = new Vector2(100,100);
-console.log(v3.magnitude()); // result 141.42135
-
-// normalize the vector (calculate the direction of the vector)
-console.log(v3.normalize());  // result 0.707106
+let distance = v3.magnitude();    // resultaat 141.42135
 ```
 
-## Rectangle collision
+### Voorbeeld
+```
+let position = new Vector2(200,300);
+let speed = new Vector2(4,3);
+
+// game loop
+position = position.add(speed);
+```
+
+## Richting bepalen
+Als een object kan draaien en in een bepaalde richting kan bewegen, dan kan je vectoren gebruiken in plaats van rotation en degrees/radians. Ook als je object niet roteert maar wel een x en y snelheid heeft, dan kan het beter zijn om met vectoren te werken. In dit voorbeeld zie je drie objecten met een x en een y snelheid. Je ziet dat het object met een x én y snelheid van 1 meer afstand aflegt. In een spel zoals Pong zou het logischer zijn als de bal altijd evenveel afstand aflegt, ongeacht de richting waarin de bal beweegt.
+
+![Vector](../../docs/images/vector1.png "Vector")
+
+### Normalize
+Normalize vertaalt een x,y snelheid naar een afstand die je aflegt met die snelheid.
+```
+let position = new Vector2(300,200);
+let speed = new Vector2(1,1);
+let normalizedSpeed = speed.normalize();      // result 0.70710
+
+// game loop
+position = position.add(normalizedSpeed);
+```
+
+![Vector](../../docs/images/vector2.png "Vector")
+
+# Rectangle collision
 Een Rectangle is een object met een x,y positie (een Vector2) en een breedte en hoogte.
 ```
 // Is vector 25,25 inside rectangle 20,20,100,100 ?

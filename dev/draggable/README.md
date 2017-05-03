@@ -27,7 +27,7 @@ this.htmlElement.addEventListener("mouseup"  , (e) => this.stopDrag(e));
     this.offSetX = e.clientX - this.x;
     this.offSetY = e.clientY - this.y;  
     
-    window.addEventListener(this.move, this.moveBind);
+    window.addEventListener("mousemove", this.moveBind);
 }
 ```
 
@@ -51,7 +51,7 @@ private updatePosition(e: Event): void {
 
 ```   
 private stopDrag(e: Event) : void {
-    window.removeEventListener(this.move, this.moveBind);
+    window.removeEventListener("mousemove", this.moveBind);
     e.preventDefault();
 }
 ```
