@@ -43,14 +43,14 @@ this.image = new Image();
 this.image.src = './images/sakuraspritesheet.png';
 ```
 
-![Sakura](../../docs/images/sakuraspritesheet.png =200x "Sakura")
+![Sakura](../../docs/images/sakuraspritesheet.png "Sakura")
 
-In je code moet je bijhouden welk frame je wil tekenen. Met een framecounter kan je vervolgens uitrekenen welke rij en kolom uit je PNG afbeelding als sprite getekend moet worden.
+In je Game Loop moet je bijhouden welk frame je wil tekenen. Met een framecounter kan je uitrekenen welke rij en kolom uit je PNG afbeelding als sprite getekend moet worden. In dit voorbeeld zijn er 16 frames verdeeld over 4 kolommen en 4 rijen.
 ```
 currentframe++;
-if(currentframe > maxframes) currentframe = 0;
+if(currentframe > 15) currentframe = 0;
 
-// rij en kolom afleiden uit frame
+// rij en kolom afleiden uit frame. 
 let column : number = currentframe % 4;
 let row : number = Math.floor(currentframe/4);
 ```
@@ -64,8 +64,6 @@ let posy:number = 0;
 // pixel positie van je frame binnen de spritesheet png
 let framex:number = 200 * column;
 let framey:number = 212 * row;
-let framew:number = 200;
-let frameh:number = 212;
 
 // tekenen in canvas
 context.drawImage(this.image, framex, framey, 200, 212, posx, posy, 200, 212);
