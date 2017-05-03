@@ -44,16 +44,25 @@ position = position.add(normalizedSpeed);
 
 ![Vector](../../docs/images/vector2.png "Vector")
 
-# Rectangle collision
+# Rectangle 
 Een Rectangle is een object met een x,y positie (een Vector2) en een breedte en hoogte.
 ```
-// Is vector 25,25 inside rectangle 20,20,100,100 ?
+let rect:Rectangle = new Rectangle(new Vector2(20,20), 100, 100);
+```
+
+## Rectangle collision
+Een Rectangle heeft methods om te zien of er een collision is
+```
+//
+// Kijk of een punt (een vector) binnen de rectangle is
+//
 let r1:Rectangle = new Rectangle(new Vector2(20,20), 100, 100);
 let v7:Vector.Vector2 = new Vector2(25,25);
-            
 let hit:boolean = r1.isInside(v7);
 
-// Does rectangle 30,30,200,150 overlap rectangle 20,20,100,100 ?
+//
+// Kijk of twee rectangles overlappen
+//
 let r2:Rectangle = new Rectangle(new Vector2(30,30), 200, 150);
 let hit2 = r1.isOverlap(r2);
 ```
