@@ -3,13 +3,12 @@
 
 namespace Game {
 
-    import v = Vector;
-
     export class Snippets {
 
         constructor(){
-            let vect:v.Example = new v.Example();
-            let dr:Draggable.Example = new Draggable.Example();
+            let vect:Vector.Example = new Vector.Example();
+            let drag:Draggable.Example = new Draggable.Example();
+            let canv:Canvas.Example = new Canvas.Example();
         }
        
     } 

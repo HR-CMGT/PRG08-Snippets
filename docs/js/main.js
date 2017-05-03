@@ -53,17 +53,89 @@ var Vector;
 })(Vector || (Vector = {}));
 var Game;
 (function (Game) {
-    var v = Vector;
     var Snippets = (function () {
         function Snippets() {
-            var vect = new v.Example();
-            var dr = new Draggable.Example();
+            var vect = new Vector.Example();
+            var drag = new Draggable.Example();
+            var canv = new Canvas.Example();
         }
         return Snippets;
     }());
     Game.Snippets = Snippets;
 })(Game || (Game = {}));
 window.addEventListener("load", function () { return new Game.Snippets(); });
+var Canvas;
+(function (Canvas) {
+    var AnimatedSprite = (function () {
+        function AnimatedSprite(x, y, frame_count, atlas, sequence_name) {
+            this.x = 0;
+            this.y = 0;
+            this.frameCount = 0;
+            this.sequenceName = "";
+            this.currentFrame = 0;
+            this.x = x;
+            this.y = y;
+            this.frameCount = frame_count;
+            this.atlas = atlas;
+            this.sequenceName = sequence_name;
+        }
+        return AnimatedSprite;
+    }());
+    Canvas.AnimatedSprite = AnimatedSprite;
+})(Canvas || (Canvas = {}));
+var Canvas;
+(function (Canvas) {
+    var Block = (function () {
+        function Block(c) {
+            this.x = Math.random() * 100;
+            this.y = Math.random() * 100;
+            this.width = 40;
+            this.height = 40;
+            this.ctx = c;
+            this.xspeed = Math.random() * 2;
+            this.yspeed = Math.random() * 2;
+        }
+        Block.prototype.update = function () {
+            this.x += this.xspeed;
+            this.y += this.yspeed;
+            if (this.x + this.width > 400 || this.x < 0)
+                this.xspeed *= -1;
+            if (this.y + this.height > 200 || this.y < 0)
+                this.yspeed *= -1;
+            this.ctx.fillStyle = 'green';
+            this.ctx.fillRect(this.x, this.y, this.width, this.height);
+        };
+        return Block;
+    }());
+    Canvas.Block = Block;
+})(Canvas || (Canvas = {}));
+var Canvas;
+(function (Canvas) {
+    var Example = (function () {
+        function Example() {
+            var _this = this;
+            console.log("canvas example");
+            this.canvas = document.getElementById('canvas');
+            this.ctx = this.canvas.getContext("2d");
+            this.blocks = new Array();
+            for (var i = 0; i < 30; i++) {
+                this.blocks.push(new Canvas.Block(this.ctx));
+            }
+            requestAnimationFrame(function () { return _this.update(); });
+        }
+        Example.prototype.update = function () {
+            var _this = this;
+            this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+            for (var _i = 0, _a = this.blocks; _i < _a.length; _i++) {
+                var b = _a[_i];
+                b.update();
+            }
+            requestAnimationFrame(function () { return _this.update(); });
+        };
+        return Example;
+    }());
+    Canvas.Example = Example;
+})(Canvas || (Canvas = {}));
 var Draggable;
 (function (Draggable) {
     var DragEvent = (function () {
@@ -167,7 +239,8 @@ var Draggable;
     var Example = (function () {
         function Example() {
             console.log("draggable example");
-            var go = new Draggable.DraggableObject(120, 120, "brick", 0, 0);
+            var test1 = new Draggable.DraggableObject(220, 220, "brick", 0, 0);
+            var test2 = new Draggable.DraggableObject(380, 210, "brick", 0, 0);
         }
         return Example;
     }());

@@ -4,6 +4,10 @@ body {
     overflow:hidden;
 }
 
+h3 {
+    margin-top:0px;
+}
+
 div {
     background-color:white;
     color:black;
@@ -14,7 +18,8 @@ div {
 brick {
     background-image: url(../images/brick.png);
     width: 54px; height: 54px;
-    position: absolute;
+    position: absolute; left:0px; top:0px;
+    transform:translate(0px, 0px);
     display: block;
     margin:0px; padding:0px;
     box-sizing: border-box;

@@ -6,6 +6,7 @@ De snippets zijn verdeeld over folders met een eigen readme file.
 - Namespaces
 - [Vector Math](dev/vector/)
 - [Draggable items](dev/draggable/)
+- [Canvas](dev/canvas/)
 - Reading List
 
 ### Namespaces
@@ -42,3 +43,4 @@ let calc:Calculator = new u.Calculator();
 - [GitHub Student Pack - free private repositories](https://education.github.com/pack)
 - [Gulp](http://gulpjs.com) in [VS Code](https://www.typescriptlang.org/docs/handbook/gulp.html)
 - [Namespaces](https://www.typescriptlang.org/docs/handbook/namespaces.html)
+- [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
