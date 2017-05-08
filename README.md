@@ -20,3 +20,4 @@
 - [Gulp](http://gulpjs.com) in [VS Code](https://www.typescriptlang.org/docs/handbook/gulp.html)
 - [Namespaces](https://www.typescriptlang.org/docs/handbook/namespaces.html)
 - [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
+- [Typescript Code Conventions](https://github.com/basarat/typescript-book/blob/master/docs/styleguide/styleguide.md)
