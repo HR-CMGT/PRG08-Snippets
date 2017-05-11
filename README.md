@@ -1,13 +1,15 @@
-# Snippets and Reading list
+- Code snippets
+- Reading list
+- Libraries
+
+## Code snippets
 
 - [Namespaces](dev/namespace.md)
 - [Vector Math](dev/vector/)
 - [Draggable items](dev/draggable/)
 - [Canvas en Spritesheets](dev/canvas/)
-- Reading List
-- Libraries
 
-[Bekijk de demo](https://hr-cmgt.github.io/PRG08-Snippets/)
+[demo](https://hr-cmgt.github.io/PRG08-Snippets/)
 
 ## Reading List
 
