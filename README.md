@@ -13,6 +13,7 @@
 
 ## Reading List
 
+- [Javascript Game Techniques](https://developer.mozilla.org/en-US/docs/Games)
 - [Essential Javascript topics for 2017](https://medium.com/javascript-scene/top-javascript-frameworks-topics-to-learn-in-2017-700a397b711)
 - [dev.to Web Development Posts](https://dev.to)
 - [The Coding Train - Youtube code exercises](https://www.youtube.com/user/shiffman)
