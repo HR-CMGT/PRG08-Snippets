@@ -5,6 +5,7 @@
 - [Draggable items](dev/draggable/)
 - [Canvas en Spritesheets](dev/canvas/)
 - Reading List
+- Libraries
 
 [Bekijk de demo](https://hr-cmgt.github.io/PRG08-Snippets/)
 
@@ -21,3 +22,11 @@
 - [Namespaces](https://www.typescriptlang.org/docs/handbook/namespaces.html)
 - [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
 - [Typescript Code Conventions](https://github.com/basarat/typescript-book/blob/master/docs/styleguide/styleguide.md)
+
+## Libraries
+
+- [Isomer - isometric game library](http://jdan.github.io/isomer/)
+- [Matter - 2D physics library](http://brm.io/matter-js/)
+- [GreenSock - 2D animation library](http://brm.io/matter-js/)
+- [Pixi.js - canvas rendering library](http://www.pixijs.com)
+- [ThreeJS - 3D rendering engine](https://threejs.org)
