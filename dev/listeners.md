@@ -46,6 +46,7 @@ class Test {
         clearInterval(this.intervalId);
     }
 }
+```
 
 ## Game character movement
 
