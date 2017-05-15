@@ -1,21 +1,14 @@
-# Listeners
+## Listeners
 
 Gebruik de 'fat arrow' notatie om callbacks aan een listener toe te voegen:
 ```
 class Test {
     constructor(){
-        
-        // click
         element.addEventListener(“click”, (e:MouseEvent) => this.doSomething(e));
-
-        // interval 
-        setInterval(() => this.doSomething(), 300 );
-
-        // keyboard
         window.addEventListener("keydown", (e:KeyboardEvent) => this.doSomething(e));
     }
 
-    public doSomething():void {
+    public doSomething(e):void {
         //
     }
 }
@@ -38,6 +31,21 @@ class Test {
     }
 }
 ```
+
+## Interval
+
+Om een interval te verwijderen moet je de id van de interval opslaan.
+```
+class Test {
+    private intervalId;
+    constructor(){
+        this.intervalId = setInterval(() => this.doSomething(), 300 );
+    }
+
+    public doSomething():void {
+        clearInterval(this.intervalId);
+    }
+}
 
 ## Game character movement
 
