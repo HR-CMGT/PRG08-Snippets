@@ -8,7 +8,7 @@ class Game {
     objects:Array<GameObject>;
 
     constructor() {
-        this.objects = new Array<GameObject>;
+        this.objects = new Array<GameObject>();
         requestAnimationFrame(() => this.gameLoop());
     }
 
