@@ -6,6 +6,7 @@
 
 ## Code snippets
 
+- [Game Loop en GameObjects](dev/game.md)
 - [Listeners en controls](dev/listeners.md)
 - [Collision detection](dev/collision.md)
 - [Namespaces](dev/namespace.md)
