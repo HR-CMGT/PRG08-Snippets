@@ -7,12 +7,14 @@
 ## Code snippets
 
 - [Game Loop en GameObjects](dev/game.md)
+- [Een GameObject verwijderen](dev/remove.md)
 - [Listeners en controls](dev/listeners.md)
 - [Collision detection](dev/collision.md)
 - [Namespaces](dev/namespace.md)
 - [Vector Math](dev/vector/)
 - [Draggable items](dev/draggable/)
 - [Canvas en Spritesheets](dev/canvas/)
+- [Types toevoegen voor Libraries](dev/types/)
 
 [demo](https://hr-cmgt.github.io/PRG08-Snippets/)
 
