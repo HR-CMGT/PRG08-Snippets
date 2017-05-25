@@ -28,12 +28,16 @@
 - [The Coding Train - Youtube code exercises](https://www.youtube.com/user/shiffman)
 - [Fun Fun Function Youtube channel](https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q/)
 - [Imperative vs. Declarative, Functional vs. Object-oriented and more Javascript Terminology](https://medium.freecodecamp.com/programming-mental-models-47ccc65eb334)
-- [Experimenting with Speech Synthesis](https://www.smashingmagazine.com/2017/02/experimenting-with-speechsynthesis/)
+- [Speech Synthesis](https://www.smashingmagazine.com/2017/02/experimenting-with-speechsynthesis/)
 - [GitHub Student Pack - free private repositories](https://education.github.com/pack)
 - [Gulp](http://gulpjs.com) in [VS Code](https://www.typescriptlang.org/docs/handbook/gulp.html)
 - [Namespaces](https://www.typescriptlang.org/docs/handbook/namespaces.html)
 - [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
 - [Typescript Code Conventions](https://github.com/basarat/typescript-book/blob/master/docs/styleguide/styleguide.md)
+- [GamePad in the browser](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)
+- [Build online multiplayer with Socket.io](http://youtu.be/JljMBn69fZM)
+- [Nativescript - building native apps in Typescript](https://www.nativescript.org)
+- [Nativescript in Visual Studio Code](https://www.nativescript.org/nativescript-for-visual-studio-code)
 
 ## Libraries
 
