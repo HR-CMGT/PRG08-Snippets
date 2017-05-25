@@ -17,8 +17,9 @@
 - [Types toevoegen voor Libraries](dev/types/)
 - [Matter JS Physics](dev/matter/)
 
-[demo](https://hr-cmgt.github.io/PRG08-Snippets/)
-[physics demo](https://hr-cmgt.github.io/PRG08-Snippets/matter.html)
+[demo](https://hr-cmgt.github.io/Typescript/)
+
+[physics demo](https://hr-cmgt.github.io/Typescript/matter.html)
 
 ## Reading List
 
