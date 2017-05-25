@@ -1,9 +1,5 @@
 # Typescript
 
-- Code snippets
-- Reading list
-- Libraries
-
 ## Code snippets
 
 - [Game Loop en GameObjects](dev/game.md)
