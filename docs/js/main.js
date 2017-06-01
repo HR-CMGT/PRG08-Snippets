@@ -51,19 +51,15 @@ var Vector;
     }());
     Vector.Rectangle = Rectangle;
 })(Vector || (Vector = {}));
-var Game;
-(function (Game) {
-    var Snippets = (function () {
-        function Snippets() {
-            var vect = new Vector.Example();
-            var drag = new Draggable.Example();
-            var canv = new Canvas.Example();
-        }
-        return Snippets;
-    }());
-    Game.Snippets = Snippets;
-})(Game || (Game = {}));
-window.addEventListener("load", function () { return new Game.Snippets(); });
+var Snippets = (function () {
+    function Snippets() {
+        var vect = new Vector.Example();
+        var drag = new Draggable.Example();
+        var canv = new Canvas.Example();
+    }
+    return Snippets;
+}());
+window.addEventListener("load", function () { return new Snippets(); });
 var Canvas;
 (function (Canvas) {
     var AnimatedSprite = (function () {
@@ -259,6 +255,58 @@ var Draggable;
     }());
     Draggable.Example = Example;
 })(Draggable || (Draggable = {}));
+var GreenSock = (function () {
+    function GreenSock() {
+        var road = document.createElement("road");
+        document.body.appendChild(road);
+        var k1 = new Kart(0, 0, "mario");
+        var k2 = new Kart(0, 100, "luigi");
+        var k3 = new Kart(0, 200, "peach");
+        var k4 = new Kart(0, 300, "toad");
+    }
+    return GreenSock;
+}());
+var Kart = (function () {
+    function Kart(x, y, texture) {
+        this.div = document.createElement("kart");
+        this.div.style.backgroundImage = "url('images/" + texture + ".png')";
+        document.body.appendChild(this.div);
+        TweenLite.set(this.div, { x: x, y: y });
+        this.drive();
+    }
+    Kart.prototype.drive = function () {
+        var speed = Math.random() * 3 + 1;
+        var target = window.innerWidth - 100;
+        TweenLite.to(this.div, speed, { ease: Cubic.easeInOut, x: target });
+    };
+    return Kart;
+}());
+var Game = (function () {
+    function Game() {
+        this.setupMatter();
+        this.addObjects();
+    }
+    Game.prototype.setupMatter = function () {
+        this.engine = Matter.Engine.create();
+        var render = Matter.Render.create({
+            element: document.body,
+            engine: this.engine
+        });
+        Matter.Engine.run(this.engine);
+        Matter.Render.run(render);
+    };
+    Game.prototype.addObjects = function () {
+        var boxA = Matter.Bodies.rectangle(400, 200, 80, 80);
+        var boxB = Matter.Bodies.rectangle(450, 50, 80, 80);
+        var circ = Matter.Bodies.circle(220, 120, 20);
+        var ground = Matter.Bodies.rectangle(400, 610, 810, 60, { isStatic: true });
+        Matter.World.add(this.engine.world, [boxA, boxB, circ, ground]);
+    };
+    return Game;
+}());
+window.addEventListener("load", function () {
+    new Game();
+});
 var Vector;
 (function (Vector) {
     var Example = (function () {
