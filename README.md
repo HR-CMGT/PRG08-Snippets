@@ -19,16 +19,15 @@
 
 ## Documentation
 
-- [Open Game Art](https://opengameart.org)
 - [Mobile device orientation in Javascript](https://developer.mozilla.org/en-US/docs/Web/API/Detecting_device_orientation)
 - [Javascript Game Techniques](https://developer.mozilla.org/en-US/docs/Games)
-- [Speech Synthesis](https://www.smashingmagazine.com/2017/02/experimenting-with-speechsynthesis/)
 - [Namespaces](https://www.typescriptlang.org/docs/handbook/namespaces.html)
 - [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
 - [GamePad in the browser](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)
 
 ## Blogs
 
+- [Open Game Art](https://opengameart.org)
 - [Essential Javascript topics for 2017](https://medium.com/javascript-scene/top-javascript-frameworks-topics-to-learn-in-2017-700a397b711)
 - [dev.to Web Development Posts](https://dev.to)
 - [The Coding Train - Youtube code exercises](https://www.youtube.com/user/shiffman)
