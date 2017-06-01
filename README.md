@@ -1,9 +1,5 @@
 # Typescript
 
-- Code snippets
-- Reading list
-- Libraries
-
 ## Code snippets
 
 - [Game Loop en GameObjects](dev/game.md)
@@ -17,13 +13,22 @@
 - [Types toevoegen voor Libraries](dev/types/)
 - [Matter JS Physics](dev/matter/)
 
-[demo](https://hr-cmgt.github.io/PRG08-Snippets/)
-[physics demo](https://hr-cmgt.github.io/PRG08-Snippets/matter.html)
+[demo](https://hr-cmgt.github.io/Typescript/)
 
-## Reading List
+[physics demo](https://hr-cmgt.github.io/Typescript/matter.html)
+
+## Documentation
 
 - [Open Game Art](https://opengameart.org)
+- [Mobile device orientation in Javascript](https://developer.mozilla.org/en-US/docs/Web/API/Detecting_device_orientation)
 - [Javascript Game Techniques](https://developer.mozilla.org/en-US/docs/Games)
+- [Speech Synthesis](https://www.smashingmagazine.com/2017/02/experimenting-with-speechsynthesis/)
+- [Namespaces](https://www.typescriptlang.org/docs/handbook/namespaces.html)
+- [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
+- [GamePad in the browser](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)
+
+## Blogs
+
 - [Essential Javascript topics for 2017](https://medium.com/javascript-scene/top-javascript-frameworks-topics-to-learn-in-2017-700a397b711)
 - [dev.to Web Development Posts](https://dev.to)
 - [The Coding Train - Youtube code exercises](https://www.youtube.com/user/shiffman)
@@ -34,9 +39,10 @@
 - [Voice API](https://github.com/mdn/web-speech-api/tree/master/speech-color-changer)
 - [GitHub Student Pack - free private repositories](https://education.github.com/pack)
 - [Gulp](http://gulpjs.com) in [VS Code](https://www.typescriptlang.org/docs/handbook/gulp.html)
-- [Namespaces](https://www.typescriptlang.org/docs/handbook/namespaces.html)
-- [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
 - [Typescript Code Conventions](https://github.com/basarat/typescript-book/blob/master/docs/styleguide/styleguide.md)
+- [Build online multiplayer with Socket.io](http://youtu.be/JljMBn69fZM)
+- [Nativescript - building native apps in Typescript](https://www.nativescript.org)
+- [Nativescript in Visual Studio Code](https://www.nativescript.org/nativescript-for-visual-studio-code)
 
 ## Libraries
 
