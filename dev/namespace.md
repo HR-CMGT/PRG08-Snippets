@@ -80,16 +80,28 @@ export class App {
 
 **SystemJS inladen**
 
-In de browser moet je de system-production.js file laden, en daarin kan je aangeven dat SystemJS je app moet starten. Je hoeft nu geen window.eventListener("load") meer te gebruiken om je applicatie te starten.
+In de browser moet je de system-production.js file laden, en daarin kan je aangeven dat SystemJS je app moet starten. 
+
+- Je hoeft nu geen window.eventListener("load") meer te gebruiken om je applicatie te starten.
+- Je hoeft nu geen `///reference` meer te gebruiken. De compiler kan altijd elke module vinden.
+
 ```
-<script src="js/system-production.js"></script>
+<script src="js/system.js"></script>
 <script>
-    SystemJS.import('js/main.js');
+    // get the anonymous scope
+    System.import('js/main.js')
+    .then(function() {
+        // now we can get to the app and make a new instance
+        System.import('app').then(function(m){
+            let app = new m.App();
+        })
+    });
 </script>
 ```
 
-**Modules in javascript**
-De typescript compiler kan modules automatisch bundelen naar een enkel .js bestand. Maar als je met javascript werkt, heb je hier een aparte bundler voor nodig, zoals Webpack of Browserify.
+**Verschil met Javascript**
+
+De **typescript** compiler kan modules automatisch bundelen naar een enkel .js bestand. Maar als je met **javascript** werkt, heb je hier een aparte bundler voor nodig, zoals Webpack of Browserify.
 
 ## Links
 
