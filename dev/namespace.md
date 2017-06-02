@@ -105,6 +105,6 @@ De **typescript** compiler kan modules automatisch bundelen naar een enkel .js b
 
 ## Links
 
-[Typescript namespaces](https://www.typescriptlang.org/docs/handbook/namespaces.html)
-[Typescript modules](https://www.typescriptlang.org/docs/handbook/modules.html)
-[SystemJS](https://github.com/systemjs/systemjs)
+- [Typescript namespaces](https://www.typescriptlang.org/docs/handbook/namespaces.html)
+- [Typescript modules](https://www.typescriptlang.org/docs/handbook/modules.html)
+- [SystemJS](https://github.com/systemjs/systemjs)
