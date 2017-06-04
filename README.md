@@ -42,8 +42,9 @@
 
 ## Libraries
 
-- [Isomer - isometric game library](http://jdan.github.io/isomer/)
-- [Matter - 2D physics library](http://brm.io/matter-js/)
+- [Victor - werken met x,y coördinaten als Vector](http://victorjs.org)
 - [GreenSock - 2D animation library](https://greensock.com/)
 - [Pixi.js - canvas rendering library](http://www.pixijs.com)
+- [Matter - 2D physics library](http://brm.io/matter-js/)
 - [ThreeJS - 3D rendering engine](https://threejs.org)
+- [Isomer - isometric game library](http://jdan.github.io/isomer/)

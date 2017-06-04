@@ -45,7 +45,11 @@ namespace Game {
 ```
 
 ## Modules
-Het concept van modules is afkomstig uit [node.js](https://nodejs.org/api/modules.html). Modules zijn bedacht om makkelijk met [externe code](https://www.npmjs.com) te kunnen werken zonder risico op naming conflicts. In tegenstelling tot namespaces staan modules niet in de global scope. Modules worden de [standaard in Javascript](http://exploringjs.com/es6/ch_modules.html). De typescript compiler genereert modules als je de `export` en `import` modules gebruikt. Je hebt in de client nog een library nodig die de modules inlaadt! In dit voorbeeld wordt `SystemJS` gebruikt om modules te laden en de app te starten.
+Het concept van modules is afkomstig uit [node.js](https://nodejs.org/api/modules.html). Modules zijn bedacht om makkelijk met [externe code](https://www.npmjs.com) te kunnen werken zonder risico op naming conflicts. 
+
+In tegenstelling tot namespaces staan modules niet in de global scope. Modules worden de [standaard in Javascript](http://exploringjs.com/es6/ch_modules.html). 
+
+De typescript compiler genereert modules als je de `export` en `import` modules gebruikt. Je hebt in de client nog een library nodig die de modules inlaadt! Modules geven je de mogelijkheid van 'lazy loading', waarbij een module pas wordt ingeladen als je app die nodig heeft. In dit voorbeeld wordt `SystemJS` gebruikt om modules te laden en de app te starten.
 
 Gebruik van modules aanzetten in tsconfig.json
 ```
