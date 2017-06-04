@@ -42,6 +42,7 @@
 
 ## Libraries
 
+- [Hammer - Herken swipe gestures](http://hammerjs.github.io)
 - [Victor - werken met x,y coördinaten als Vector](http://victorjs.org)
 - [GreenSock - 2D animation library](https://greensock.com/)
 - [Pixi.js - canvas rendering library](http://www.pixijs.com)
