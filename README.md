@@ -12,6 +12,7 @@
 - [Draggable items](dev/draggable/)
 - [Canvas en Spritesheets](dev/canvas/)
 - [Types toevoegen voor Libraries](dev/types.md)
+- [Pixi Basics](dev/pixi.md)
 - [Matter JS Physics](dev/matter/)
 
 [demo](https://hr-cmgt.github.io/Typescript/)
@@ -44,7 +45,7 @@
 
 - [Hammer - Herken swipe gestures](http://hammerjs.github.io)
 - [Victor - werken met x,y coördinaten als Vector](http://victorjs.org)
-- [GreenSock - 2D animation library](https://greensock.com/)
+- [GreenSock - 2D animatie zonder gameloop](https://greensock.com/)
 - [Pixi.js - canvas rendering library](http://www.pixijs.com)
 - [Matter - 2D physics library](http://brm.io/matter-js/)
 - [ThreeJS - 3D rendering engine](https://threejs.org)
