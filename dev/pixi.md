@@ -4,6 +4,8 @@
 - Tekenen met PIXI
 - Game Loop
 
+[Demo page](https://kokodoko.github.io/Pixi/)
+
 ## Setup
 
 ### Download library
