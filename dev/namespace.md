@@ -90,16 +90,12 @@ In de browser moet je de system-production.js file laden, en daarin kan je aange
 - Je hoeft nu geen `///reference` meer te gebruiken. De compiler kan altijd elke module vinden.
 
 ```
-<script src="js/system.js"></script>
+<script src="js/system.js"></script>        // module loader
+<script src="js/main.js"></script>          // bundled modules
 <script>
-    // get the anonymous scope
-    System.import('js/main.js')
-    .then(function() {
-        // now we can get to the app and make a new instance
-        System.import('app').then(function(m){
-            let app = new m.App();
-        })
-    });
+   System.import('game').then(function(module){
+      let g = new module.Game();
+   })
 </script>
 ```
 
