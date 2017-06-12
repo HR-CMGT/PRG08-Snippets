@@ -43,6 +43,7 @@
 
 ## Libraries
 
+- [SVG.js - Werken met SVG vector graphics](http://svgjs.com)
 - [Hammer - Herken swipe gestures](http://hammerjs.github.io)
 - [Victor - werken met x,y coördinaten als Vector](http://victorjs.org)
 - [GreenSock - 2D animatie zonder gameloop](https://greensock.com/)
