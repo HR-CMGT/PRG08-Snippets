@@ -12,7 +12,7 @@ Je krijgt nu code completion en documentation in je werkomgeving.
 
 ## DefinitelyTyped
 
-[DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped) is een GitHub repo waar veelgebruikte libraries in worden bijgehouden. Je kan npm gebruiken om libraries uit DefinitelyTyped te installeren:
+[DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped) is een GitHub repo waar veelgebruikte definition files in worden bijgehouden. Je kan npm gebruiken om de definition files uit te installeren:
 ```
 npm install @types/lodash
 ```
