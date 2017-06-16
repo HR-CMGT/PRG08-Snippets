@@ -11,9 +11,11 @@ Je ziet als het goed is :
 Initialized empty Git repository in /Users/Name/Myproject/.git/
 ```
 
-Je kan nu lokaal werken met git. Je kan je laatste wijzigingen ongedaan maken door in het 'git' venster van VS Code op 'changes' te klikken.
-Als je laatste wijzigingen correct zijn maak je een commit door op het vinkje te klikken. Je wijziging wordt nu lokaal bijgehouden in je commit history. 
-Je hoeft niet niet te syncen/pushen met een online repository als je alleen lokaal werkt. 
+Je kan nu lokaal werken met git. 
+- Je kan je uncommitted changes ongedaan maken door in het 'git' venster van VS Code op 'changes' te klikken.
+- Als je laatste wijzigingen correct zijn maak je een commit door op het vinkje te klikken. 
+- Je wijziging wordt nu lokaal bijgehouden in je commit history. 
+- Je hoeft niet niet te syncen/pushen met een online repository als je alleen lokaal werkt. 
 
 ## Branches
 
@@ -22,15 +24,17 @@ Je kan lokaal branches aanmaken om nieuwe features toe te voegen zonder dat je w
 - Maak een nieuwe branch met `git branch new_feature` 
 - Maak dit je working branch met `git checkout new_feature`
 
+Als blijkt dat je nieuwe feature totaal niet werkt kan je de branch weggooien
+
+- Ga terug naar de master branch met `git checkout master`
+- Verwijder de nieuwe branch met `git branch -d new_feature`
+
 Als je nieuwe feature helemaal werkt kan je je branches samenvoegen:
 
 - Ga terug naar de master branch met `git checkout master`
 - Merge beide branches met `git merge new_feature`
 
-Als blijkt dat je nieuwe feature totaal niet werkt kan je de branch weggooien
 
-- Ga terug naar de master branch met `git checkout master`
-- Verwijder de nieuwe branch met `git branch -d new_feature`
 
 ## Online repository linken
 
