@@ -1,6 +1,6 @@
 ## Een startproject clonen
 
-- Je kan in week 0 van PRG 4 een leeg startproject vinden met alle instellingen voor VS Code.
+- Je kan in [week 0 van PRG 4](https://github.com/HR-CMGT/PRG04-Week0) een leeg startproject vinden met alle instellingen voor VS Code.
 
 ## Zelf een startproject maken 
 
