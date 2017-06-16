@@ -2,6 +2,7 @@
 
 ## Code snippets
 
+- [Een leeg startproject maken](dev/project.md)
 - [Game Loop en GameObjects](dev/game.md)
 - [Een GameObject verwijderen](dev/remove.md)
 - [Listeners en controls](dev/listeners.md)
@@ -14,6 +15,7 @@
 - [Types toevoegen voor Libraries](dev/types.md)
 - [Pixi Basics](dev/pixi.md)
 - [Matter JS Physics](dev/matter/)
+- [Git gebruiken zonder Github](dev/git.md)
 
 [demo](https://hr-cmgt.github.io/Typescript/)
 

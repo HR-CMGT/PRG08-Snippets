@@ -3,6 +3,7 @@
         "sourceMap":  true,
         "removeComments": true,
         "noImplicitAny": true,
+        "noUnusedLocals": true,
         "noImplicitReturns": true,
         "target":"es5",
         "out": "docs/js/main.js"
