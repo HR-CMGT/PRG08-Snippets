@@ -44,3 +44,7 @@ git remote add origin <repository-address>
 ## Bestaande Git map verwijderen
 
 Als je een repository hebt gecloned via `git clone` (bijvoorbeeld een oefening van HR-CMGT) dan is er al een .git folder met een history en remote instellingen. Als je dit niet wilt gebruiken kan je de .git map in de terminal verwijderen met `sudo rm -r .git`. Daarna begin je een verse repository met `git init`.
+
+## Links
+
+- [git tutorial](https://try.github.io/levels/1/challenges/1)
