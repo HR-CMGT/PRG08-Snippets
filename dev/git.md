@@ -34,11 +34,13 @@ Als je nieuwe feature helemaal werkt kan je je branches samenvoegen:
 - Ga terug naar de master branch met `git checkout master`
 - Merge beide branches met `git merge new_feature`
 
-
-
 ## Online repository linken
 
 Je kan ook achteraf nog een online repository (bv. github) linken aan je project, waarna je met `git push` je code op de remote repository kan plaatsen.
 ```
 git remote add origin <repository-address>
 ``` 
+
+## Bestaande Git map verwijderen
+
+Als je een repository hebt gecloned via `git clone` (bijvoorbeeld een oefening van HR-CMGT) dan is er al een .git folder met een history en remote instellingen. Als je dit niet wilt gebruiken kan je de .git map in de terminal verwijderen met `sudo rm -r .git`. Daarna begin je een verse repository met `git init`.
