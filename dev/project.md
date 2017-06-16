@@ -52,6 +52,11 @@ Je kan ook onderstaande `tasks.json` file copy>pasten en in de map `.vscode` pla
 }
 ```
 
+## Editor settings
+
+Het is handig om de keyboard shortcut CMD+S / CTRL+S te wijzigen naar `SAVE ALL` via **preferences > keyboard shortcuts**.
+In VS Code kan je autosave aan zetten met **preferences > settings >** `files.autoSave": "on"`. Nu wordt na elke wijziging je code gecompileerd zonder dat je hoeft op te slaan. 
+
 ## Links
 
 - [Opties voor tsconfig.json](https://www.typescriptlang.org/docs/handbook/compiler-options.html)

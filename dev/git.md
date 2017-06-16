@@ -17,7 +17,7 @@ Je kan nu lokaal werken met git.
 - Je wijziging wordt nu lokaal bijgehouden in je commit history. 
 - Je hoeft niet niet te syncen/pushen met een online repository als je alleen lokaal werkt. 
 
-![git tutorial](/docs/images/git.png)
+![git tutorial](/docs/images/git2.png)
 
 ## gitignore
 
