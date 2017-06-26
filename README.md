@@ -16,6 +16,7 @@
 - [Pixi Basics](dev/pixi.md)
 - [Matter JS Physics](dev/matter/)
 - [Git gebruiken voor lokaal versiebeheer](dev/git.md)
+- [Debugging in VS Code](dev/debug.md)
 
 [demo](https://hr-cmgt.github.io/Typescript/)
 
