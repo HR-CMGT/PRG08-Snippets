@@ -91,9 +91,9 @@ window.onload = function() {
 
 Browsers ondersteunen nog geen modules. Om je modules toch werkend te krijgen moet je je modules bundelen met een **module bundler** óf je moet je modules at runtime inladen met een **module loader**. 
 
-Met webpack kunnen we zowel modules bundelen als typescript compileren, we hebben dan niet meer de tasks.json file nodig.
-
 ## Webpack
+
+Met webpack kunnen we modules bundelen en typescript compileren in 1 stap:
 
 - Installeer webpack lokaal met `npm install --save-dev webpack`. 
 - Installeer de typescript loader `npm install --save-dev ts-loader`. 
@@ -126,7 +126,8 @@ module.exports = {
 
 Typ `webpack --watch` in de terminal.
 
-De instellingen voor de webpack typescript compiler kan je nog steeds aangeven in tsconfig.json.
+- Je kan `webpack --watch` in `tasks.json` zetten om dit te koppelen aan de build shortcut `cmd+shift+b`
+- De instellingen voor de typescript compiler kan je nog steeds aangeven in tsconfig.json.
 
 **tsconfig.json**
 
