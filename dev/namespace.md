@@ -87,11 +87,11 @@ window.onload = function() {
 };
 ```
 
-## Modules gebruiken in de browser
+# Modules in de browser
 
-Browsers ondersteunen nog geen modules. Om je modules toch werkend te krijgen moet je je modules bundelen (en omzetten naar es5) met een **module bundler** óf je moet je modules at runtime inladen met een **module loader**. In beide gevallen moeten we eerst typescript omzetten naar javascript modules:
+Browsers ondersteunen nog geen modules. Om je modules toch werkend te krijgen moet je je modules bundelen met een **module bundler** óf je moet je modules at runtime inladen met een **module loader**. 
 
-### Typescript omzetten naar losse .js files
+In beide gevallen moeten we eerst aangeven dat we met modules werken in de typescript settings:
 
 **tsconfig.json**
 
@@ -107,24 +107,42 @@ Gebruik van commonjs modules aanzetten. Let op dat er geen outfile bij staat. El
 }
 ```
 
-### Javascript files bundelen
-
-#### Browserify
-
-Installeer browserify met `sudo npm install browserify -g` en test of het bundelen werkt door in de terminal te typen: `browserify dev/main.js -o docs/js/main.js`
-
-Vervolgens voeg je de compile en build commando's toe aan de `scripts` tag in `package.json`. Package.json maak je aan met `npm init`.
-
-```
-"scripts": {
-    "prebuild": "tsc",
-    "build": "browserify dev/main.js -o docs/js/main.js"
-}
-```
-
-Voer het build proces uit met `npm run build`. 
+### Modules bundelen
 
 #### Webpack
+
+- Installeer webpack lokaal met `npm install --save-dev webpack`. 
+- Installeer de typescript loader `npm install --save-dev ts-loader`. 
+- Maak een `webpack.config.js` file aan met de typescript + bundle instellingen.
+
+**webpack.config.js**
+
+```
+module.exports = {
+    entry: "./dev/main.ts",
+    devtool: 'inline-source-map',
+    module: {
+        rules: [
+            {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/,
+            }
+        ]
+    },
+    resolve: {
+        extensions: [".tsx", ".ts", ".js"]
+    },
+    output: {
+        filename: 'docs/js/main.js'
+    }
+};
+```
+**typescript compileren en modules bundelen in watch mode**
+
+Typ `webpack --watch` in de terminal.
+
+Het kan zijn dat webpack typescript niet kan vinden, typ dan `npm link typescript` in de terminal.
 
 
 
@@ -132,7 +150,7 @@ Voer het build proces uit met `npm run build`.
 
 Het is ook mogelijk om je modules pas in te laden als je app in de client opgestart wordt. In plaats van een **module bundler** gebruik je dan een **module loader**.
 
-Met `SystemJS` kan je je modules inladen zodra je app opgestart wordt in de client. In dit voorbeeld laden we alle modules in voordat de app start. Het is ook mogelijk om asynchroon losse modules in te laden op het moment dat je app de module nodig heeft.
+In dit voorbeeld laden we alle modules in voordat de app start. Het is ook mogelijk om asynchroon losse modules in te laden op het moment dat je app de module nodig heeft.
 
 **tsconfig.json**
 
@@ -169,5 +187,5 @@ De browser laadt system.js en je app. Vervolgens kan je in een script tag je app
 - [Typescript namespaces](https://www.typescriptlang.org/docs/handbook/namespaces.html)
 - [Typescript modules](https://www.typescriptlang.org/docs/handbook/modules.html)
 - [Webpack](https://webpack.js.org)
-- [Browserify](http://browserify.org)
+- [Webpack en Typescript](https://webpack.js.org/guides/typescript/)
 - [SystemJS](https://github.com/systemjs/systemjs)
