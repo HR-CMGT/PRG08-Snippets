@@ -126,6 +126,8 @@ module.exports = {
 
 Typ `webpack --watch` in de terminal.
 
+De instellingen voor de webpack typescript compiler kan je nog steeds aangeven in tsconfig.json.
+
 **tsconfig.json**
 
 ```
@@ -133,8 +135,7 @@ Typ `webpack --watch` in de terminal.
     "compilerOptions": {
         "sourceMap":  true,
         "removeComments": true,
-        "target":"es5",
-        "module": "commonjs"
+        "target":"es5"
     }
 }
 ```
