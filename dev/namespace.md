@@ -91,25 +91,9 @@ window.onload = function() {
 
 Browsers ondersteunen nog geen modules. Om je modules toch werkend te krijgen moet je je modules bundelen met een **module bundler** óf je moet je modules at runtime inladen met een **module loader**. 
 
-In beide gevallen moeten we eerst aangeven dat we met modules werken in de typescript settings:
+Met webpack kunnen we zowel modules bundelen als typescript compileren, we hebben dan niet meer de tasks.json file nodig.
 
-**tsconfig.json**
-
-Gebruik van commonjs modules aanzetten. Let op dat er geen outfile bij staat. Elke .ts file wordt een .js file in dezelfde folder.
-```
-{
-    "compilerOptions": {
-        "sourceMap":  true,
-        "removeComments": true,
-        "target":"es5",
-        "module": "commonjs"
-    }
-}
-```
-
-### Modules bundelen
-
-#### Webpack
+## Webpack
 
 - Installeer webpack lokaal met `npm install --save-dev webpack`. 
 - Installeer de typescript loader `npm install --save-dev ts-loader`. 
@@ -142,9 +126,18 @@ module.exports = {
 
 Typ `webpack --watch` in de terminal.
 
-Het kan zijn dat webpack typescript niet kan vinden, typ dan `npm link typescript` in de terminal.
+**tsconfig.json**
 
-
+```
+{
+    "compilerOptions": {
+        "sourceMap":  true,
+        "removeComments": true,
+        "target":"es5",
+        "module": "commonjs"
+    }
+}
+```
 
 # Runtime module loader
 
