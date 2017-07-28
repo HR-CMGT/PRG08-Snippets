@@ -7,8 +7,7 @@
 - Maak een DEV en een DOCS folder.
 - In DOCS plaats je je HTML + CSS + JS bestanden.
 - In DEV plaats je je .ts files
-- Maak een `tsconfig.json` file met onderstaande settings.
-- Maak een `tasks.json` volgens onderstaande instructies.
+- Maak een `tsconfig.json` file met onderstaande settings
 
 ## tsconfig.json
 
