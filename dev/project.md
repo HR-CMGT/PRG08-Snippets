@@ -19,47 +19,31 @@ Dit bestand bepaalt hoe je typescript wordt gecompileerd naar Javascript, en hoe
     "compilerOptions": {
         "sourceMap":  true,
         "removeComments": true,
-        "noImplicitAny": true,
-        "noImplicitReturns": true,
-        "noUnusedLocals": true,
-        "target":"es5",
-        "out": "docs/js/main.js"
+        "target":"es6",
+        "strict": true,
+        "watch": true,
+        "outFile": "docs/js/main.js"
     },
     "exclude": [
         "node_modules",
         "docs"
     ]
 }
-```
-
-## Build task maken in VS Code
-
-- Open het task menu met `CMD+P` (mac) of `CTRL+P` (windows)
-- Typ `> configure` en kies voor `configure task runner`
-- Kies `Typescript with Watch Mode`.
-
-Je kan ook onderstaande `tasks.json` file copy>pasten en in de map `.vscode` plaatsen:
 
 ```
-{
-    "version": "0.1.0",
-    "command": "tsc",
-    "isShellCommand": true,
-    "args": ["-w", "-p", "."],
-    "showOutput": "always",
-    "isBackground": true,
-    "problemMatcher": "$tsc-watch"
-}
-```
+
+## Compileren
+
+- Je kan in de terminal `tsc -p` typen om de compiler te starten. De compiler start in **watch mode** (`watch:true` in `tsconfig.json`). Je kan in VS Code ook op CMD+SHIFT+B drukken om dit commando uit te voeren. 
 
 ## Editor settings
 
-Het is handig om de keyboard shortcut CMD+S / CTRL+S te wijzigen naar `SAVE ALL` via **preferences > keyboard shortcuts**.
-In VS Code kan je autosave aan zetten met **preferences > settings >** `files.autoSave": "on"`. Nu wordt na elke wijziging je code gecompileerd zonder dat je hoeft op te slaan. 
+- Auto Save on window change: **preferences > settings >** `"files.autoSave": "onWindowChange"` 
+- Verander `CMD + S` naar `Save All`. Open **preferences > keyboard shortcuts**.
 
 ## Lokaal werken met git
 
-Je kan [lokaal werken met git](git.md) om versies en branches in je project te kunnen bijhouden.
+Je kan [lokaal werken met git](git.md) om versies en branches in je project te kunnen bijhouden: typ `git init` in de terminal om een repository te starten. Je kan nu je wijzigingen bijhouden via commits en werken in branches.
 
 ## Links
 
