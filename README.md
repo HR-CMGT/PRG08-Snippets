@@ -53,3 +53,4 @@
 - [G is for Git](https://dev.to/sroy8091/g-for-git)
 - [Nativescript - building native apps in Typescript](https://www.nativescript.org)
 - [Nativescript in Visual Studio Code](https://www.nativescript.org/nativescript-for-visual-studio-code)
+- [Fira Code - the programming font](https://github.com/tonsky/FiraCode)
