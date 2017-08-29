@@ -1,5 +1,11 @@
 # Typescript
 
+## Installing
+
+- [Typescript](https://www.typescriptlang.org)
+- [Visual Studio Code](https://code.visualstudio.com)
+- [Fira Code: the coding font](https://github.com/tonsky/FiraCode/wiki)
+
 ## Code snippets
 
 - [Een leeg startproject maken](dev/project.md)
