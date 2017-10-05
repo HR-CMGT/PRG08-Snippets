@@ -4,7 +4,6 @@
 
 - [Typescript](https://www.typescriptlang.org)
 - [Visual Studio Code](https://code.visualstudio.com)
-- [Fira Code: the coding font](https://github.com/tonsky/FiraCode/wiki)
 
 ## Code snippets
 
@@ -39,16 +38,17 @@
 - [Matter - 2D physics library](http://brm.io/matter-js/)
 - [ThreeJS - 3D rendering engine](https://threejs.org)
 - [Isomer - isometric game library](http://jdan.github.io/isomer/)
+- [Rythm.js - Respond to music with code](https://t.co/5Rz2i4yAcx)
 
 ## Reading
 
+- [Typescript features blog by Marius Schulz](https://blog.mariusschulz.com)
+- [Working with async / await versus Promises](https://hackernoon.com/6-reasons-why-javascripts-async-await-blows-promises-away-tutorial-c7ec10518dd9)
+- [Using Custom Elements to build a DOM game](https://dev.to/eerk/inventing-your-own-html-elements-to-build-a-dom-game)
 - [Mobile device orientation in Javascript](https://developer.mozilla.org/en-US/docs/Web/API/Detecting_device_orientation)
 - [Javascript Game Techniques](https://developer.mozilla.org/en-US/docs/Games)
 - [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
 - [GamePad in the browser](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)
-- [Open Game Art](https://opengameart.org)
-- [The Coding Train - Youtube code exercises](https://www.youtube.com/user/shiffman)
-- [Fun Fun Function Youtube channel](https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q/)
 - [Imperative vs. Declarative, Functional vs. Object-oriented and more Javascript Terminology](https://medium.freecodecamp.com/programming-mental-models-47ccc65eb334)
 - [Experimenting with Speech Synthesis](https://www.smashingmagazine.com/2017/02/experimenting-with-speechsynthesis/)
 - [Listening to voice commands](http://mdn.github.io/web-speech-api/speech-color-changer/)
@@ -59,4 +59,14 @@
 - [G is for Git](https://dev.to/sroy8091/g-for-git)
 - [Nativescript - building native apps in Typescript](https://www.nativescript.org)
 - [Nativescript in Visual Studio Code](https://www.nativescript.org/nativescript-for-visual-studio-code)
+
+## Youtube
+
+- [The Coding Train](https://www.youtube.com/user/shiffman)
+- [Fun Fun Function](https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q/)
+
+## Tools
+
 - [Fira Code - the programming font](https://github.com/tonsky/FiraCode)
+- [Chrome Web Maker](https://chrome.google.com/webstore/detail/web-maker/lkfkkhfhhdkiemehlpkgjeojomhpccnh?hl=en)
+- [Open Game Art](https://opengameart.org)
