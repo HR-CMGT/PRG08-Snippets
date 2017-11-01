@@ -5,6 +5,29 @@
 - [Typescript](https://www.typescriptlang.org)
 - [Visual Studio Code](https://code.visualstudio.com)
 
+## Curriculum
+
+### PRG04 Jaar 1
+- [Week 0 voorbereiding](https://github.com/HR-CMGT/PRG04-Week0)
+- Week 1 [Javascript basics](https://github.com/HR-CMGT/PRG04-Week1-oefening1) en [Pixel Aquarium](https://github.com/HR-CMGT/PRG04-Week1-oefening2)
+- [Week 2 Classes en Instances]()
+- [Week 3 Collision detection, keyboard input, game loop]()
+- [Week 4 Chicken on a raft]()
+- [Week 5 voorbereiding]()
+- [Week 6 Flappy crossroads 1]()
+- [Week 7 Flappy crossroads 2]()
+
+### PRG08 Jaar 2
+- [Week 0 voorbereiding]()
+- [Week 1 Javascript basics: loop, array, function]()
+- [Week 2 voorbereiding]()
+- [Week 3 voorbereiding]()
+- [Week 4 voorbereiding]()
+- [Week 5 voorbereiding]()
+- [Week 6 voorbereiding]()
+- [Week 7 voorbereiding]()
+- [Week 8 voorbereiding]()
+
 ## Code snippets
 
 - [Een leeg startproject maken](dev/project.md)
@@ -22,10 +45,8 @@
 - [Matter JS Physics](dev/matter/)
 - [Git gebruiken voor lokaal versiebeheer](dev/git.md)
 - [Debugging in VS Code](dev/debug.md)
-
-[demo](https://hr-cmgt.github.io/Typescript/)
-
-[physics demo](https://hr-cmgt.github.io/Typescript/matter.html)
+- [demo](https://hr-cmgt.github.io/Typescript/)
+- [physics demo](https://hr-cmgt.github.io/Typescript/matter.html)
 
 ## API's
 
