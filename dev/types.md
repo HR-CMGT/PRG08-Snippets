@@ -38,8 +38,8 @@ declare type Person {
 
 *Gebruiken in IDE*
 ```
-personLoaded(p:Person){
-   let name = p.name   // typing p. gives autocompletion
+personLoaded(p:Person){            // let the IDE know that our json data is a person
+   let name = p.name               // typing p. gives autocompletion
 }
 ```
 ## Voorbeeld Matter.js
