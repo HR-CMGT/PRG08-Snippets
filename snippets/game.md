@@ -13,7 +13,7 @@ class Game {
     }
 
     gameLoop(){
-        car.update()
+        this.car.update()
         requestAnimationFrame(() => this.gameLoop())
     }
 }
@@ -52,7 +52,6 @@ class Game {
 Door Inheritance te gebruiken kan je verschillende soorten objecten in de array zetten, in plaats van alleen cars:
 
 ```
-```
 class Game {
 
     objects:GameObject[]
@@ -68,7 +67,7 @@ class Game {
         }
     }
 }
-```
+
 class GameObject {
     private x = 10
     update(){
