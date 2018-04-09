@@ -5,18 +5,18 @@ In de Game class starten we de game loop. Deze roept 60x per seconde de update f
 ```
 class Game {
 
-    objects:Array<GameObject>;
+    objects:GameObject[]
 
     constructor() {
-        this.objects = new Array<GameObject>();
-        requestAnimationFrame(() => this.gameLoop());
+        this.objects = GameObject[]
+        this.gameLoop()
     }
 
     gameLoop(){
         for(let o of this.objects){
-            o.update();
+            o.update()
         }
-        requestAnimationFrame(() => this.gameLoop());
+        requestAnimationFrame(() => this.gameLoop())
     }
 }
 ```
@@ -26,28 +26,28 @@ De game objecten gebruiken inheritance zodat ze altijd de basis eigenschappen va
 ```
 class GameObject {
 
-    public div:HTMLElement;
-    public x:number;
-    public y:number;
-    public width:number;
-    public height:number;
+    public div:HTMLElement
+    public x:number
+    public y:number
+    public width:number
+    public height:number
             
     constructor(tag:string, parent:HTMLElement) {
-        this.div = document.createElement(tag);
-        parent.appendChild(this.div);
+        this.div = document.createElement(tag)
+        parent.appendChild(this.div)
     }
 
     public update(){
-        this.div.style.transform ="translate("+this.x+"px, "+this.y+"px)";
+        this.div.style.transform = `translate(${this.x}px, ${this.y}px)`
     }
 }
 
 class Car extends GameObject {
-    private speed:number;
+    private speed:number
     constructor(){
-        super("car", document.body);
-        this.x = 100;
-        this.y = 200;
+        super("car", document.body)
+        this.x = 100
+        this.y = 200
     }
 }
 ```

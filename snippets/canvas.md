@@ -4,34 +4,34 @@ Een Canvas is vergelijkbaar met een enkele afbeelding, waarvan je de pixels gaat
 
 Je hebt een referentie naar de **rendering context** nodig om te kunnen tekenen. Die referentie haal je op via het canvas element:
 ```
-let canvas : HTMLCanvasElement = <HTMLCanvasElement> document.getElementById('canvas');
-let context : CanvasRenderingContext2D = canvas.getContext("2d");
+let canvas : HTMLCanvasElement = <HTMLCanvasElement> document.getElementById('canvas')
+let context : CanvasRenderingContext2D = canvas.getContext("2d")
 ```
 Als je de context hebt kan je in de canvas gaan tekenen:
 ```
-context.clearRect();
-context.fillStyle = 'green';
-context.fillRect(0,0,100,100);  
+context.clearRect()
+context.fillStyle = 'green'
+context.fillRect(0,0,100,100)  
 ```
 
 ## Animatie
 
-Voor animatie heb je een game loop nodig. Elk frame update je de coördinaten van je game elementen, en daarna teken je de hele canvas opnieuw. Bekijk [de broncode](./example.ts) en de [demo](https://hr-cmgt.github.io/PRG08-Snippets/) om te zien hoe je meerdere canvas game elementen in een array kan plaatsen.
+Voor animatie heb je een game loop nodig. Elk frame update je de coördinaten van je game elementen, en daarna teken je de hele canvas opnieuw. 
 
 ```
-this.x = 0;
-this.y = 0;
-requestAnimationFrame(() => this.update());
+this.x = 0
+this.y = 0
+requestAnimationFrame(() => this.update())
 
 private update():void {
-    context.clearRect();
+    context.clearRect()
     
-    this.x++;
-    this.y++;
+    this.x++
+    this.y++
 
-    context.fillRect(this.x, this.y, 100 ,100);  
+    context.fillRect(this.x, this.y, 100 ,100)  
 
-    requestAnimationFrame(() => this.update());
+    requestAnimationFrame(() => this.update())
 }
 ```
 
@@ -39,38 +39,33 @@ private update():void {
 
 Handgetekende of pre-rendered animaties kan je tonen met een spritesheet. Dit is vergelijkbaar met een .gif animatie, maar met hogere kwaliteit (een .gif heeft maar 256 kleuren). Je afbeelding bestaat uit een reeks frames. Je begint met het inladen van de PNG in het geheugen:
 ```
-this.image = new Image();
-this.image.src = './images/sakuraspritesheet.png';
+this.image = new Image()
+this.image.src = './images/sakuraspritesheet.png'
 ```
-
-![Sakura](../../docs/images/sakuraspritesheet.png "Sakura")
 
 In je Game Loop moet je bijhouden welk frame je wil tekenen. Met een framecounter kan je uitrekenen welke rij en kolom uit je PNG afbeelding als sprite getekend moet worden. In dit voorbeeld zijn er 16 frames verdeeld over 4 kolommen en 4 rijen.
 ```
-currentframe++;
-if(currentframe > 15) currentframe = 0;
+currentframe++
+if(currentframe > 15) currentframe = 0
 
 // rij en kolom afleiden uit frame. 
-let column : number = currentframe % 4;
-let row : number = Math.floor(currentframe/4);
+let column : number = currentframe % 4
+let row : number = Math.floor(currentframe/4)
 ```
 
 Vervolgens kan je het juiste frame in de canvas tekenen:
 ```
 // positie van de sprite in het canvas
-let posx:number = 200;
-let posy:number = 0;
+let posx:number = 200
+let posy:number = 0
 
 // pixel positie van je frame binnen de spritesheet png
-let framex:number = 200 * column;
-let framey:number = 212 * row;
+let framex:number = 200 * column
+let framey:number = 212 * row
 
 // tekenen in canvas
-context.drawImage(this.image, framex, framey, 200, 212, posx, posy, 200, 212);
+context.drawImage(this.image, framex, framey, 200, 212, posx, posy, 200, 212)
 ```
-
-![Sakura](../../docs/images/sakuragif.gif "Sakura")
-
 
 ## Links
 

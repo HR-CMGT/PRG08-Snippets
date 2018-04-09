@@ -1,97 +1,54 @@
 # Typescript
 
-## Installing
+Dit document bevat informatie voor de vakken CMTTHE01-4 en PRG01-8. 
+
+## Werkomgeving
 
 - [Typescript](https://www.typescriptlang.org)
 - [Visual Studio Code](https://code.visualstudio.com)
+- [Typescript startproject voor CMTTHE01-4 en PRG01-8](https://github.com/HR-CMGT/Typescript-startproject)
 
-## Curriculum
+# Curriculum
 
-### PRG04 Jaar 1
-- [Week 0 voorbereiding](https://github.com/HR-CMGT/PRG04-Week0)
-- Week 1 [Javascript basics](https://github.com/HR-CMGT/PRG04-Week1-oefening1) en [Pixel Aquarium](https://github.com/HR-CMGT/PRG04-Week1-oefening2)
+Op N@Tschool vind je de modulewijzer en een quickstart guide.
+
+### CMTTHE01-4 Jaar 1
+- [Week 1 Objects]()
 - [Week 2 Classes en Instances]()
-- [Week 3 Collision detection, keyboard input, game loop]()
-- [Week 4 Chicken on a raft]()
-- [Week 5 voorbereiding]()
-- [Week 6 Flappy crossroads 1]()
-- [Week 7 Flappy crossroads 2]()
+- [Week 3 Encapsulation, Game Loop, Collision detection]()
+- [Week 4 Composition]()
+- [Week 5 Inheritance]()
+- [Week 6 Herhaling]()
+- [Week 7 Herhaling]()
+- [Week 8 Oefententamen]()
 
-### PRG08 Jaar 2
-- [Week 0 voorbereiding]()
-- [Week 1 Javascript basics: loop, array, function]()
-- [Week 2 voorbereiding]()
-- [Week 3 voorbereiding]()
-- [Week 4 voorbereiding]()
-- [Week 5 voorbereiding]()
-- [Week 6 voorbereiding]()
-- [Week 7 voorbereiding]()
-- [Week 8 voorbereiding]()
+### PRG01-8 Jaar 2
+- [Week 1 Herhaling OOP jaar 1]()
+- [Week 2 Singleton]()
+- [Week 3 Strategy]()
+- [Week 4 Polymorphism]()
+- [Week 5 Observer]()
+- [Week 6 Herhaling]()
+- [Week 7 Herhaling]()
+- [Week 8 Herhaling]()
 
-## Code snippets
+## Game programming in Typescript
 
-- [Een leeg startproject maken](dev/project.md)
-- [Game Loop en GameObjects](dev/game.md)
-- [Een GameObject verwijderen](dev/remove.md)
-- [Listeners en controls](dev/listeners.md)
-- [Collision detection](dev/collision.md)
-- [Namespaces en Modules](dev/namespace.md)
-- [Scrolling background](dev/scrolling.md)
-- [Vector Math](dev/vector/)
-- [Draggable items](dev/draggable/)
-- [Canvas en Spritesheets](dev/canvas/)
-- [Types toevoegen voor Libraries](dev/types.md)
-- [Pixi Basics](dev/pixi.md)
-- [Matter JS Physics](dev/matter/)
-- [Git gebruiken voor lokaal versiebeheer](dev/git.md)
-- [Debugging in VS Code](dev/debug.md)
-- [demo](https://hr-cmgt.github.io/Typescript/)
-- [physics demo](https://hr-cmgt.github.io/Typescript/matter.html)
+- [Game Loop met GameObjects](snippets/game.md)
+- [Een GameObject verwijderen](snippets/remove.md)
+- [Listeners en movement controls](snippets/listeners.md)
+- [Collision detection](snippets/collision.md)
+- [Namespaces en Modules](snippets/namespace.md)
+- [Scrolling background](snippets/scrolling.md)
+- [Vector en collision](snippets/vector.md)
+- [Drag and drop](snippets/drag.md)
+- [Canvas en Spritesheets](snippets/canvas.md)
+- [Pixi Basics](snippets/pixi.md)
+- [Matter JS Physics](snippets/matter.md)
+- [Debugging in VS Code](snippets/debug.md)
 
-## API's
+## Type definitions
 
-- [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
-- [GamePad in the browser](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)
-- [Speech API](http://mdn.github.io/web-speech-api/speech-color-changer/)
-- [Voice API](https://github.com/mdn/web-speech-api/tree/master/speech-color-changer)
-- [Mobile device orientation API](https://developer.mozilla.org/en-US/docs/Web/API/Detecting_device_orientation)
+Als je een Javascript library in Typescript wil gebruiken heb je Type definitions nodig. Je vindt een aantal voorbeelden in de definitions map van deze repository. Je kan type definitions ook via `npm` installeren. In dit voorbeeld installeer je type informatie van NodeJS:
 
-## Libraries
-
-- [SVG.js - Werken met SVG vector graphics](http://svgjs.com)
-- [Hammer - Herken swipe gestures](http://hammerjs.github.io)
-- [Victor - werken met x,y coördinaten als Vector](http://victorjs.org)
-- [GreenSock - 2D animatie zonder gameloop](https://greensock.com/)
-- [Pixi.js - canvas rendering library](http://www.pixijs.com)
-- [Howler.js - Werken met audio](https://howlerjs.com)
-- [Matter - 2D physics library](http://brm.io/matter-js/)
-- [ThreeJS - 3D rendering engine](https://threejs.org)
-- [Isomer - isometric game library](http://jdan.github.io/isomer/)
-- [Rythm.js - Respond to music with code](https://t.co/5Rz2i4yAcx)
-
-## Reading
-
-- [Typescript features blog by Marius Schulz](https://blog.mariusschulz.com)
-- [Working with async / await versus Promises](https://hackernoon.com/6-reasons-why-javascripts-async-await-blows-promises-away-tutorial-c7ec10518dd9)
-- [Using Custom Elements to build a DOM game](https://dev.to/eerk/inventing-your-own-html-elements-to-build-a-dom-game)
-- [Javascript Game Techniques](https://developer.mozilla.org/en-US/docs/Games)
-- [Imperative vs. Declarative, Functional vs. Object-oriented and more Javascript Terminology](https://medium.freecodecamp.com/programming-mental-models-47ccc65eb334)
-- [Experimenting with Speech Synthesis](https://www.smashingmagazine.com/2017/02/experimenting-with-speechsynthesis/)
-- [Typescript Code Conventions](https://github.com/basarat/typescript-book/blob/master/docs/styleguide/styleguide.md)
-- [G is for Git](https://dev.to/sroy8091/g-for-git)
-- [Nativescript - building native apps in Typescript](https://www.nativescript.org)
-- [Nativescript in Visual Studio Code](https://www.nativescript.org/nativescript-for-visual-studio-code)
-- [Hindley-Milner Type system](https://en.wikipedia.org/wiki/Hindley–Milner_type_system)
-
-## Youtube
-
-- [The Coding Train](https://www.youtube.com/user/shiffman)
-- [Fun Fun Function](https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q/)
-- [Build online multiplayer with Socket.io](http://youtu.be/JljMBn69fZM)
-
-## Tools
-
-- [Fira Code - the programming font](https://github.com/tonsky/FiraCode)
-- [GitHub Student Pack - free private repositories](https://education.github.com/pack)
-- [Chrome Web Maker](https://chrome.google.com/webstore/detail/web-maker/lkfkkhfhhdkiemehlpkgjeojomhpccnh?hl=en)
-- [Open Game Art](https://opengameart.org)
+`npm install @types/node`

@@ -4,10 +4,10 @@ De draggable div gebruikt drie event listeners. De mouse move listener wordt aan
 De mouse move listener wordt opgeslagen in een referentie, zodat je de listener later weer kan verwijderen.
 
 ```
-this.moveBind = (e: Event) => this.updatePosition(e);
+this.moveBind = (e: Event) => this.updatePosition(e)
 
-this.htmlElement.addEventListener("mousedown", (e) => this.initDrag(e));
-this.htmlElement.addEventListener("mouseup"  , (e) => this.stopDrag(e));  
+this.htmlElement.addEventListener("mousedown", (e) => this.initDrag(e))
+this.htmlElement.addEventListener("mouseup"  , (e) => this.stopDrag(e))  
 ```
 
 ### Start drag
@@ -18,16 +18,16 @@ this.htmlElement.addEventListener("mouseup"  , (e) => this.stopDrag(e));
 
 ```
  private initDrag(e: Event) : void {
-    e.preventDefault();
+    e.preventDefault()
     
     // HET ITEM HIER BOVENIN DE DOM ORDER ZETTEN, ANDERS KAN JE ONDER ANDERE ELEMENTEN SLEPEN - DAN WERKT DROP NIET
-    this.htmlElement.parentElement.appendChild(this.htmlElement);     
+    this.htmlElement.parentElement.appendChild(this.htmlElement)     
 
     // offset verandert na elke klik op dit object
-    this.offSetX = e.clientX - this.x;
-    this.offSetY = e.clientY - this.y;  
+    this.offSetX = e.clientX - this.x
+    this.offSetY = e.clientY - this.y  
     
-    window.addEventListener("mousemove", this.moveBind);
+    window.addEventListener("mousemove", this.moveBind)
 }
 ```
 
@@ -37,12 +37,12 @@ this.htmlElement.addEventListener("mouseup"  , (e) => this.stopDrag(e));
 ```   
 private updatePosition(e: Event): void {
             
-    e.preventDefault();
+    e.preventDefault()
 
-    this.x = e.clientX - this.offSetX;
-    this.y = e.clientY - this.offSetY;
+    this.x = e.clientX - this.offSetX
+    this.y = e.clientY - this.offSetY
 
-    this.htmlElement.style.transform = "translate(" + this.x + "px, " + this.y + "px) scale(" + this.scale + ")";
+    this.htmlElement.style.transform = "translate(" + this.x + "px, " + this.y + "px) scale(" + this.scale + ")"
 }
 ```
 
@@ -51,7 +51,7 @@ private updatePosition(e: Event): void {
 
 ```   
 private stopDrag(e: Event) : void {
-    window.removeEventListener("mousemove", this.moveBind);
-    e.preventDefault();
+    window.removeEventListener("mousemove", this.moveBind)
+    e.preventDefault()
 }
 ```
