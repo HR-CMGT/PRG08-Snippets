@@ -1,14 +1,64 @@
-# Game Loop en GameObject
+# Game Loop
 
-In de Game class starten we de game loop. Deze roept 60x per seconde de update functies van de game objecten aan. De andere game objecten hebben geen eigen loop nodig, alleen een update functie. De game objecten hou je bij in een array.
+In de Game class starten we de game loop. Deze roept 60x per seconde de update functies van de game objecten aan. Let op dat je geen requestAnimationFrame in je andere classes nodig hebt!
 
+```
+class Game {
+
+    car:Car
+
+    constructor() {
+        this.car = new Car()
+        this.gameLoop()
+    }
+
+    gameLoop(){
+        car.update()
+        requestAnimationFrame(() => this.gameLoop())
+    }
+}
+
+class Car {
+    private x = 10
+    update(){
+        this.x ++
+    }
+}
+```
+
+## Game Objecten in Array
+
+Als je van meerdere game objecten de update functie wil aanroepen kan je een array maken
+
+```
+class Game {
+
+    cars:Car[]
+
+    constructor() {
+        this.cars = [new Car(), new Car(), new Car()]
+        this.gameLoop()
+    }
+
+    gameLoop(){
+        for(let c of this.cars){
+            c.update()
+        }
+    }
+}
+```
+## Inheritance
+
+Door Inheritance te gebruiken kan je verschillende soorten objecten in de array zetten, in plaats van alleen cars:
+
+```
 ```
 class Game {
 
     objects:GameObject[]
 
     constructor() {
-        this.objects = GameObject[]
+        this.objects = [new Car(), new Boat()]
         this.gameLoop()
     }
 
@@ -16,38 +66,21 @@ class Game {
         for(let o of this.objects){
             o.update()
         }
-        requestAnimationFrame(() => this.gameLoop())
     }
 }
 ```
-
-De game objecten gebruiken inheritance zodat ze altijd de basis eigenschappen van een DOM element hebben. Via de constructor van de child geef je aan welk HTML element aangemaakt moet worden, en wat het parent HTML element is.
-
-```
 class GameObject {
-
-    public div:HTMLElement
-    public x:number
-    public y:number
-    public width:number
-    public height:number
-            
-    constructor(tag:string, parent:HTMLElement) {
-        this.div = document.createElement(tag)
-        parent.appendChild(this.div)
-    }
-
-    public update(){
-        this.div.style.transform = `translate(${this.x}px, ${this.y}px)`
+    private x = 10
+    update(){
+        this.x ++
     }
 }
 
 class Car extends GameObject {
-    private speed:number
-    constructor(){
-        super("car", document.body)
-        this.x = 100
-        this.y = 200
-    }
+
+}
+
+class Boat extends GameObject {
+
 }
 ```
