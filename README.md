@@ -18,7 +18,7 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Week 3 Encapsulation, Game Loop, Collision detection]()
 - [Week 4 Composition]()
 - [Week 5 Inheritance]()
-- [Week 6 Herhaling]()
+- [Week 6 Game programming]()
 - [Week 7 Herhaling]()
 - [Week 8 Oefententamen]()
 
@@ -28,15 +28,15 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Week 3 Strategy]()
 - [Week 4 Polymorphism]()
 - [Week 5 Observer]()
-- [Week 6 Herhaling]()
-- [Week 7 Herhaling]()
-- [Week 8 Herhaling]()
+- [Week 6 Game programming]()
+- [Week 7 Game programming]()
+- [Week 8 Afronden inleveropdracht]()
 
 ## Game programming in Typescript
 
 - [Game Loop met GameObjects](snippets/game.md)
 - [Een GameObject verwijderen](snippets/remove.md)
-- [Listeners en movement controls](snippets/listeners.md)
+- [Character movement](snippets/listeners.md)
 - [Collision detection](snippets/collision.md)
 - [Namespaces en Modules](snippets/namespace.md)
 - [Scrolling background](snippets/scrolling.md)
