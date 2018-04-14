@@ -13,8 +13,8 @@ Dit document bevat informatie voor de vakken CMTTHE01-4 en PRG01-8.
 Op N@Tschool vind je de modulewijzer en een quickstart guide.
 
 ### CMTTHE01-4 Jaar 1
-- [Week 1 Introductie](https://github.com/HR-CMGT/CMTTHE04-Week1-oefening1)
-- [Week 2 Classes en Instances]()
+- [Week 1 Objects](https://github.com/HR-CMGT/CMTTHE04-Week1-oefening1)
+- [Week 2 Classes en Instances](https://github.com/HR-CMGT/CMTTHE04-Week2-oefening1)
 - [Week 3 Encapsulation, Game Loop, Collision detection]()
 - [Week 4 Composition]()
 - [Week 5 Inheritance]()
