@@ -41,6 +41,7 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Namespaces en Modules](snippets/namespace.md)
 - [Scrolling background](snippets/scrolling.md)
 - [Vector en collision](snippets/vector.md)
+- [Using Web Components to build a game](https://github.com/KokoDoko/game-custom-elements)
 - [Drag and drop](snippets/drag.md)
 - [Canvas en Spritesheets](snippets/canvas.md)
 - [Pixi Canvas Basics](snippets/pixi.md)
