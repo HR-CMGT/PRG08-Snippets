@@ -37,6 +37,9 @@ Door je `.ts` files naar losse `.js` files te compileren, kan je ze rechtstreeks
 ## Webpack
 
 Met webpack kan je typescript modules bundelen naar een `bundle.js` file.
+```
+<script src="js/bundle.js"></script>
+```
 
 ```
 npm install webpack --save-dev
