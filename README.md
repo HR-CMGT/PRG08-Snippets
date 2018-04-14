@@ -38,7 +38,8 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Een GameObject verwijderen](snippets/remove.md)
 - [Character movement](snippets/listeners.md)
 - [Collision detection](snippets/collision.md)
-- [Namespaces en Modules](snippets/namespace.md)
+- [Namespaces](snippets/namespace.md)
+- [Modules](snippets/modules.md)
 - [Scrolling background](snippets/scrolling.md)
 - [Vector en collision](snippets/vector.md)
 - [Using Web Components to build a game](https://github.com/KokoDoko/game-custom-elements)
@@ -70,14 +71,14 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 
 ## Canvas/WebGL libraries
 
+- [Canvas 2D manager](http://www.pixijs.com)
 - [Isometric graphics engine](http://jdan.github.io/isomer/)
 - [Canvas 3D animatie](https://threejs.org)
 - [AR for ThreeJS](https://github.com/jeromeetienne/AR.js)
 - [Canvas 2D animatie](http://createjs.com)
-- [Canvas manager](http://www.pixijs.com)
 
 ## Type definitions
 
-Je vindt een aantal voorbeelden van Type Definitions in deze repository. Je kan type definitions ook via `npm` installeren:
+Je vindt een aantal voorbeelden van Type Definitions in deze repository. Je kan type definitions via `npm` installeren:
 
 `npm install @types/node`
