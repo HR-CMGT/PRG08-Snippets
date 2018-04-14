@@ -13,7 +13,7 @@ Dit document bevat informatie voor de vakken CMTTHE01-4 en PRG01-8.
 Op N@Tschool vind je de modulewijzer en een quickstart guide.
 
 ### CMTTHE01-4 Jaar 1
-- [Week 1 Objects]()
+- [Week 1 Introductie](https://github.com/HR-CMGT/CMTTHE04-Week1-oefening1)
 - [Week 2 Classes en Instances]()
 - [Week 3 Encapsulation, Game Loop, Collision detection]()
 - [Week 4 Composition]()
@@ -43,12 +43,40 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Vector en collision](snippets/vector.md)
 - [Drag and drop](snippets/drag.md)
 - [Canvas en Spritesheets](snippets/canvas.md)
-- [Pixi Basics](snippets/pixi.md)
-- [Matter JS Physics](snippets/matter.md)
+- [Pixi Canvas Basics](snippets/pixi.md)
+- [Matter Physics Basics](snippets/matter.md)
 - [Debugging in VS Code](snippets/debug.md)
+
+## Libraries en API's
+
+- [Socket.io Multiplayer](https://socket.io)
+- [QuadTree : large scale collision detection](https://github.com/timohausmann/quadtree-js)
+- [Particle Engine](https://vincentgarreau.com/particles.js/)
+- [RPG Conversation Tree](https://github.com/google/bottery)
+- [Touch Gestures Library](https://hammerjs.github.io)
+- [Matter 2D physics](http://brm.io/matter-js/)
+- [SVG Vector drawing](http://svgjs.com)
+- [AI / Deep Learning](https://deeplearnjs.org)
+- [GamePad API](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)
+- [Greensock Tweening](https://greensock.com)
+
+## Audio
+
+- [Howler Audio](https://howlerjs.com)
+- [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)	
+- [Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)
+- [Synthesizer API](https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode)
+
+## Canvas/WebGL libraries
+
+- [Isometric graphics engine](http://jdan.github.io/isomer/)
+- [Canvas 3D animatie](https://threejs.org)
+- [AR for ThreeJS](https://github.com/jeromeetienne/AR.js)
+- [Canvas 2D animatie](http://createjs.com)
+- [Canvas manager](http://www.pixijs.com)
 
 ## Type definitions
 
-Als je een Javascript library in Typescript wil gebruiken heb je Type definitions nodig. Je vindt een aantal voorbeelden in de definitions map van deze repository. Je kan type definitions ook via `npm` installeren. In dit voorbeeld installeer je type informatie van NodeJS:
+Je vindt een aantal voorbeelden van Type Definitions in deze repository. Je kan type definitions ook via `npm` installeren:
 
 `npm install @types/node`
