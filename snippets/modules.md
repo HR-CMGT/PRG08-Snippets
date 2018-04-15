@@ -73,16 +73,48 @@ module.exports = {
 ```
 ## Parcel
 
-[Parcel](https://parceljs.org/getting_started.html) is een nieuwe bundle tool die werkt met typescript en die geen configuratie file nodig heeft. Parcel bundelt ook je CSS en HTML file, en genereert daarmee je hele docs folder.
+[Parcel](https://parceljs.org/getting_started.html) gebruikt je `package.json` als settings file. Parcel genereert je hele docs folder, inclusief HTML, images en CSS.
+Dat betekent dat al je werkbestanden in de DEV folder staan. In HTML kan je typescript laden. Parcel snapt dat dit javascript moet worden:
 
 ```
-npm install -g parcel-bundler
-parcel docs/main.ts
+<script src='./ts/index.ts'></script>
+```
+
+Via `import` kan je afbeeldingen en css meecompileren
+
+```
+import '../style/style.css'
+``` 
+
+### Installeren
+
+```
+npm install -g parcel-bundler typescript
+npm run watch
+```
+package.json
+```
+{
+  "name": "testparcel",
+  "version": "1.0.0",
+  "description": "",
+  "main":"index.html",
+  "scripts": {
+    "prebuild": "rm -rf dist/*",
+    "start": "parcel src/index.html",               
+    "watch": "parcel watch src/index.html --public-url ./",
+    "build": "parcel build src/index.html --public-url ./"
+  },
+  "devDependencies": {
+    "typescript": "^2.6.2"
+  }
+}
 ```
 
 ## Links
 
 - [Typescript modules](https://www.typescriptlang.org/docs/handbook/modules.html)
 - [Parcel](https://parceljs.org/getting_started.html)
+- [Parcel tutorial](https://alligator.io/tooling/parcel/)
 - [Webpack](https://webpack.js.org)
 - [Webpack en Typescript](https://webpack.js.org/guides/typescript/)
