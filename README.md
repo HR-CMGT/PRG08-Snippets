@@ -36,14 +36,15 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 
 - [Game Loop met GameObjects](snippets/game.md)
 - [Een GameObject verwijderen](snippets/remove.md)
-- [Character movement](snippets/listeners.md)
+- [Character movement](snippets/movement.md)
 - [Collision detection](snippets/collision.md)
-- [Namespaces](snippets/namespace.md)
-- [Modules](snippets/modules.md)
 - [Scrolling background](snippets/scrolling.md)
-- [Vector en collision](snippets/vector.md)
+- [Vector](snippets/vector.md)
+- [Events](snippets/events.md)
 - [Using Web Components to build a game](https://github.com/KokoDoko/game-custom-elements)
 - [Drag and drop](snippets/drag.md)
+- [Namespaces](snippets/namespace.md)
+- [Modules](snippets/modules.md)
 - [Canvas en Spritesheets](snippets/canvas.md)
 - [Pixi Canvas Basics](snippets/pixi.md)
 - [Matter Physics Basics](snippets/matter.md)
@@ -61,6 +62,7 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [AI / Deep Learning](https://deeplearnjs.org)
 - [GamePad API](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)
 - [Greensock Tweening](https://greensock.com)
+- [Multithreading in Javascript](https://keithwhor.github.io/multithread.js/)
 
 ## Audio
 

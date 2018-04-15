@@ -80,7 +80,6 @@ npm install -g parcel-bundler
 parcel docs/main.ts
 ```
 
-
 ## Links
 
 - [Typescript modules](https://www.typescriptlang.org/docs/handbook/modules.html)
