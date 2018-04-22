@@ -63,6 +63,7 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [GamePad API](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)
 - [Greensock Tweening](https://greensock.com)
 - [Multithreading in Javascript](https://keithwhor.github.io/multithread.js/)
+- [Dependency Injection](https://www.npmjs.com/package/container-ioc)
 
 ## Audio
 
