@@ -1,14 +1,10 @@
 ## Een GameObject verwijderen
 
-Game.ts heeft gameobjects. Een gameobject heeft een update functie die door game wordt aangeroepen. Om een gameobject uit de game te verwijderen moet je letten op:
+Om een gameobject uit de game te verwijderen moet je letten op:
 
 - Het Game Object mag geen code meer uitvoeren
 - Het Game Object heeft geen HTML elementen meer in de DOM
-- De verwijzing naar GameObject moet verwijderd worden uit Game.ts
-
-### Game design
-
-Omdat het werken met listeners en intervals snel performance kan kosten, en lastig is om correct te verwijderen, is het vaak beter om een parent object te hebben waarin je alle intervals en listeners plaatst. 
+- De verwijzing naar het Game Object moet verwijderd worden uit Game.ts
 
 ### DOM element verwijderen
 
@@ -16,7 +12,7 @@ Omdat het werken met listeners en intervals snel performance kan kosten, en last
 this.div.remove()
 ```
 
-### instance verwijderen
+### instance verwijderen uit game.ts
 
 **Variabele**
 ```
@@ -33,7 +29,12 @@ let i = array.indexOf(b)
 balls.splice(i, 1)
 ```
 
-## Listeners verwijderen
+
+## Listeners en intervals verwijderen
+
+Omdat het werken met listeners en intervals snel onoverzichtelijk kan worden is het vaak beter om een parent object te hebben waarin je intervals en listeners plaatst. 
+
+### Listeners verwijderen
 
 Om een listener te verwijderen moet je een referentie opslaan.
 ```
@@ -51,7 +52,7 @@ class Test {
 }
 ```
 
-## Interval verwijderen
+### Interval verwijderen
 
 Om een interval te verwijderen moet je de id van de interval opslaan.
 ```
