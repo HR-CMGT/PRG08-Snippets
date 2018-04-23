@@ -21,6 +21,7 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Week 6 Game programming]()
 - [Week 7 Herhaling]()
 - [Week 8 Oefententamen]()
+- [Voorbeeld inleverdocument inleveropdracht](inleverdocument4.md)
 
 ### PRG01-8 Jaar 2
 - [Week 1 Herhaling OOP jaar 1]()
@@ -31,6 +32,7 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Week 6 Game programming]()
 - [Week 7 Game programming]()
 - [Week 8 Afronden inleveropdracht]()
+- [Voorbeeld inleverdocument inleveropdracht](inleverdocument8.md)
 
 ## Game programming in Typescript
 
