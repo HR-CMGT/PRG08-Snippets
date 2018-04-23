@@ -9,7 +9,7 @@ window.addEventListener("keydown", (e:KeyboardEvent) => this.move(e))
 
 ## Character movement
 
-Als je met keyboard events een karakter wil besturen, gebruik je de keydown en keyup events om de snelheid van het karakter aan te passen. 
+Gebruik je de **keydown** en **keyup** events van **window** om de snelheid van het karakter aan te passen. 
 
 Keydown geeft het karakter een snelheid in de richting van de toets. Keyup zet die snelheid op 0. [In plaats van het toetsenbord kan je een game controller gebruiken](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)
 

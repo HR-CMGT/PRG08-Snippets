@@ -24,8 +24,8 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Voorbeeld inleverdocument inleveropdracht](inleverdocument4.md)
 
 ### PRG01-8 Jaar 2
-- [Week 1 Herhaling OOP jaar 1]()
-- [Week 2 Singleton]()
+- [Week 1 Herhaling OOP](https://github.com/HR-CMGT/PRG08-Week1-oefening1)
+- [Week 2 Singleton](https://github.com/HR-CMGT/PRG08-Week2-oefening1)
 - [Week 3 Strategy]()
 - [Week 4 Polymorphism]()
 - [Week 5 Observer]()
