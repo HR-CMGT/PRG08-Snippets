@@ -6,36 +6,71 @@ Game.ts heeft gameobjects. Een gameobject heeft een update functie die door game
 - Het Game Object heeft geen HTML elementen meer in de DOM
 - De verwijzing naar GameObject moet verwijderd worden uit Game.ts
 
-### Code in game object stoppen
+### Game design
 
-```
-window.removeEventListener("keydown", this.callback)
-clearInterval(this.intervalId)
-```
+Omdat het werken met listeners en intervals snel performance kan kosten, en lastig is om correct te verwijderen, is het vaak beter om een parent object te hebben waarin je alle intervals en listeners plaatst. 
 
-### HTML elementen verwijderen
+### DOM element verwijderen
 
 ```
 this.div.remove()
 ```
 
-### De instance verwijderen
+### instance verwijderen
 
 **Variabele**
 ```
 this.ball = new Ball()
 this.ball = undefined
 ```
+Omdat je nu een undefined variabele hebt, is het mooier om je instances in een array bij te houden:
 
 **Array**
 ```
-let i:number = array.indexOf(obj)
-if(i != -1) {
-	array.splice(i, 1)
+let balls = [new Ball(), new Ball()]
+let b = balls[0]
+let i = array.indexOf(b)
+balls.splice(i, 1)
+```
+
+## Listeners verwijderen
+
+Om een listener te verwijderen moet je een referentie opslaan.
+```
+class Test {
+    private callback:EventListener
+
+    constructor(){
+        this.callback = (e:KeyboardEvent) => this.keyWasPressed(e)
+        window.addEventListener("keydown", this.callback)
+    }
+
+    private keyWasPressed(e:KeyboardEvent):void {
+        window.removeEventListener("keydown", this.callback)
+    }
+}
+```
+
+## Interval verwijderen
+
+Om een interval te verwijderen moet je de id van de interval opslaan.
+```
+class Test {
+    private intervalId
+    constructor(){
+        this.intervalId = setInterval(() => this.doSomething(), 300 )
+    }
+
+    public doSomething():void {
+        clearInterval(this.intervalId)
+    }
 }
 ```
 
 ### Compleet voorbeeld
+
+De ball class heeft een `removeMe()` method waarmee de ball zijn eigen listeners en intervals uit zet.
+Daarna kan je het DOM element verwijderen en de verwijzing naar de ball uit game.ts verwijderen.
 
 ```
 class Ball {
@@ -57,16 +92,14 @@ class Game {
 	balls: Ball[]
 	constructor() { 
 		this.balls = [new Ball(), new Ball(), new Ball()]
-		this.removeBall(this.balls[0])
 	}
 
-	public removeBall(b: Ball) {
-        b.removeMe()
+	public update() {
+        let b = this.balls[0]
 
-		let i : number = this.balls.indexOf(b)
-		if(i != -1) {
-			this.balls.splice(i, 1)
-		}
+        b.removeMe()
+		let i = this.balls.indexOf(b)
+		this.balls.splice(i, 1)
 	}
 }
 ```
