@@ -67,6 +67,12 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Multithreading in Javascript](https://keithwhor.github.io/multithread.js/)
 - [Dependency Injection](https://www.npmjs.com/package/container-ioc)
 
+## Graphics
+
+- [Open Game Art](https://opengameart.org/)
+- [Spriters Resource](https://www.spriters-resource.com/)
+- [Retro Game Zone](https://retrogamezone.co.uk/)
+
 ## Audio
 
 - [Howler Audio](https://howlerjs.com)
