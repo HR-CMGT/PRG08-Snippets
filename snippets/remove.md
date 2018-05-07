@@ -12,22 +12,16 @@ Om een gameobject uit de game te verwijderen moet je letten op:
 this.div.remove()
 ```
 
-### instance verwijderen uit game.ts
+### verwijzing verwijderen uit game.ts
 
-**Variabele**
 ```
-this.ball = new Ball()
-this.ball = undefined
-```
-Omdat je nu een undefined variabele hebt, is het mooier om je instances in een array bij te houden:
-
-**Array**
-```
-let balls = [new Ball(), new Ball()]
+let balls = [new Ball(), new Ball(), new Ball()]
 let b = balls[0]
+
 let i = array.indexOf(b)
 balls.splice(i, 1)
 ```
+
 **Uit array verwijderen tijdens gameloop**
 
 Als je een gameobject uit een array verwijdert, dan verandert de structuur van je array. Dit kan een probleem zijn als je nog door die array heen aan het loopen bent.
@@ -37,16 +31,11 @@ Je kan dit probleem oplossen door *van achter naar voren* door je game objecten 
 ```
 for(let i = objects.length; i>0; i--){
     // verwijder het object tijdens de loop
-    objects.splice(i)
+    objects.splice(i,1)
 }
 ```
 
-
-## Listeners en intervals verwijderen
-
-Omdat het werken met listeners en intervals snel onoverzichtelijk kan worden is het vaak beter om een parent object te hebben waarin je intervals en listeners plaatst. 
-
-### Listeners verwijderen
+## Listeners verwijderen
 
 Om een listener te verwijderen moet je een referentie opslaan.
 ```
@@ -64,7 +53,7 @@ class Test {
 }
 ```
 
-### Interval verwijderen
+## Interval verwijderen
 
 Om een interval te verwijderen moet je de id van de interval opslaan.
 ```
@@ -80,7 +69,7 @@ class Test {
 }
 ```
 
-### Compleet voorbeeld
+## Compleet voorbeeld
 
 De ball class heeft een `removeMe()` method waarmee de ball zijn eigen listeners en intervals uit zet.
 Daarna kan je het DOM element verwijderen en de verwijzing naar de ball uit game.ts verwijderen.
