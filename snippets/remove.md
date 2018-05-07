@@ -30,7 +30,7 @@ balls.splice(i, 1)
 ```
 **Uit array verwijderen tijdens gameloop**
 
-Als je een gameobject uit een array verwijdert, *terwijl* je door die array heen loopt, dan verandert de structuur van je array. Dit kan een probleem zijn als je nog door die array heen aan het loopen bent.
+Als je een gameobject uit een array verwijdert, dan verandert de structuur van je array. Dit kan een probleem zijn als je nog door die array heen aan het loopen bent.
 
 Je kan dit probleem oplossen door *van achter naar voren* door je game objecten heen te loopen. 
 
