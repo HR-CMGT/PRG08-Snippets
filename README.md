@@ -26,7 +26,7 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 ### PRG01-8 Jaar 2
 - [Week 1 Herhaling OOP](https://github.com/HR-CMGT/PRG08-Week1-oefening1)
 - [Week 2 Singleton](https://github.com/HR-CMGT/PRG08-Week2-oefening1)
-- [Week 3 Strategy]()
+- [Week 3 Strategy](https://github.com/HR-CMGT/PRG08-Week3-oefening1)
 - [Week 4 Polymorphism]()
 - [Week 5 Observer]()
 - [Week 6 Game programming]()
