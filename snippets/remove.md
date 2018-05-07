@@ -28,6 +28,18 @@ let b = balls[0]
 let i = array.indexOf(b)
 balls.splice(i, 1)
 ```
+**Uit array verwijderen tijdens gameloop**
+
+Als je een gameobject uit een array verwijdert, *terwijl* je door die array heen loopt, dan verandert de structuur van je array. Dit kan een probleem zijn als je nog door die array heen aan het loopen bent.
+
+Je kan dit probleem oplossen door *van achter naar voren* door je game objecten heen te loopen. 
+
+```
+for(let i = objects.length; i>0; i--){
+    // verwijder het object tijdens de loop
+    objects.splice(i)
+}
+```
 
 
 ## Listeners en intervals verwijderen
@@ -92,15 +104,18 @@ class Ball {
 class Game {
 	balls: Ball[]
 	constructor() { 
-		this.balls = [new Ball(), new Ball(), new Ball()]
-	}
+	    this.balls = [new Ball(), new Ball(), new Ball()]
 
-	public update() {
-        let b = this.balls[0]
+            let b = this.balls[0]
 
-        b.removeMe()
-		let i = this.balls.indexOf(b)
-		this.balls.splice(i, 1)
+            // vertel de bal om zijn DOM element te verwijderen en listeners+intervals te stoppen
+            b.removeMe()
+	    
+	    // zoek de positie van de bal in de gameobject array
+	    let i = this.balls.indexOf(b)
+	    
+	    // verwijder de bal uit de gameobject array
+	    this.balls.splice(i, 1)
 	}
 }
 ```
