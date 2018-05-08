@@ -55,6 +55,7 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 ## Libraries en API's
 
 - [Socket.io Multiplayer](https://socket.io)
+- [Lance Multiplayer Server](http://lance.gg)
 - [QuadTree : large scale collision detection](https://github.com/timohausmann/quadtree-js)
 - [Particle Engine](https://vincentgarreau.com/particles.js/)
 - [RPG Conversation Tree](https://github.com/google/bottery)
