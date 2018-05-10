@@ -91,6 +91,6 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 
 ## Type definitions
 
-Je vindt een aantal voorbeelden van Type Definitions in deze repository. Je kan type definitions via `npm` installeren:
+Om javascript libraries te gebruiken in een typescript project heb je Type Definitions nodig. Dit zijn `.d.ts` files. Er staan een aantal voorbeelden in [deze repository](https://github.com/HR-CMGT/Typescript/tree/master/definitions). Je kan type definitions ook via `npm` downloaden:
 
-`npm install @types/node`
+`npm install @types/libraryname`
