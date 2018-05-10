@@ -4,9 +4,9 @@ Dit document bevat informatie voor de vakken CMTTHE01-4 en PRG01-8.
 
 ## Werkomgeving
 
-- [Typescript](https://www.typescriptlang.org)
-- [Visual Studio Code](https://code.visualstudio.com)
-- [Typescript startproject voor CMTTHE01-4 en PRG01-8](https://github.com/HR-CMGT/Typescript-startproject)
+- Installeer [NodeJS](https://nodejs.org/en/) en [Typescript](https://www.typescriptlang.org)
+- Installeer [Visual Studio Code](https://code.visualstudio.com)
+- Download en test het [Typescript startproject](https://github.com/HR-CMGT/Typescript-startproject)
 
 # Curriculum
 
