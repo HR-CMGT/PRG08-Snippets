@@ -1,21 +1,41 @@
-## Collision detection
+## Positie en afmeting van een DOM element
 
-Je kan van een DOM element de [bounding box](https://developer.mozilla.org/en/docs/Web/API/Element/getBoundingClientRect) opvragen met
+Je kan van een DOM element de [bounding box](https://developer.mozilla.org/en/docs/Web/API/Element/getBoundingClientRect) opvragen met `let rectangle : ClientRect = div.getBoundingClientRect()`. In dit voorbeeld geven we de `Car` class een functie die de bounding box rectangle terug geeft:
 
 ```
-let div : HTMLElement = document.getElementById("car")
-let rectangle : ClientRect = div.getBoundingClientRect()
+class Car {
+   private div:HTMLElement
+   
+   constructor() {
+        this.div = document.createElement("car")
+        document.body.appendChild(this.div)
+    }
+
+    public getRectangle() {
+        return this.div.getBoundingClientRect()
+    }
+}
 ```
 
 ## Rectangle Collision
 
-De formule voor het vergelijken van twee rechthoeken is:
+Een rectangle heeft x, y, width en height waarden. Die waarden kan je gebruiken om te zien of twee rectangles overlappen. In dit voorbeeld checken we in de Game class of twee Cars elkaar raken:
 ```
-function checkCollision(a: ClientRect, b: ClientRect) {
-    return (a.left <= b.right &&
+class Game {
+  constructor(){
+     let c1 = new Car()
+     let c2 = new Car()
+     
+     let hit = this.checkCollision(c1.getRectangle(), c2.getRectangle())
+     console.log("cars hit is " + hit)
+  }
+  
+  checkCollision(a: ClientRect, b: ClientRect) {
+      return (a.left <= b.right &&
           b.left <= a.right &&
           a.top <= b.bottom &&
           b.top <= a.bottom)
+   }
 }
 ```
 
