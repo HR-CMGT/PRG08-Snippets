@@ -21,7 +21,8 @@ class Car {
 
 ## Rectangle Collision
 
-Een rectangle heeft x, y, width en height waarden. Die waarden kan je gebruiken om te zien of twee rectangles overlappen. In dit voorbeeld checken we in de Game class of twee Cars elkaar raken:
+In dit voorbeeld checken we in de Game class of twee Cars elkaar raken:
+
 ```
 class Game {
   constructor(){
