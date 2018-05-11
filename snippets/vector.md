@@ -4,7 +4,7 @@ Een Vector is een object met een x en y waarde:
 ### Voorbeeld
 ```
 let position:Vector2 = new Vector2(200,300)
-div.style.transform = "translate(" + position.x + "px, " + position.y + "px)"
+div.style.transform = `translate(${position.x}px, ${position.y}px)`
 ```
 
 ## Vectoren vergelijken
