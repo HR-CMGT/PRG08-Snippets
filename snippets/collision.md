@@ -1,6 +1,8 @@
 ## Positie en afmeting van een DOM element
 
-Je kan van een DOM element de [bounding box](https://developer.mozilla.org/en/docs/Web/API/Element/getBoundingClientRect) opvragen met `let rectangle : ClientRect = div.getBoundingClientRect()`. In dit voorbeeld geven we de `Car` class een functie die de bounding box rectangle terug geeft:
+Je kan van een DOM element de [positie en afmeting opvragen](https://developer.mozilla.org/en/docs/Web/API/Element/getBoundingClientRect) via een **rectangle**: `let rectangle : ClientRect = div.getBoundingClientRect()`. 
+
+In dit voorbeeld geeft de `Car` class zijn positie terug via de `getRectangle()` method:
 
 ```
 class Car {
@@ -44,33 +46,35 @@ class Game {
 Als de afstand tussen de middelpunten van twee cirkels kleiner is dan de radius van de twee cirkels, dan is er een collision.
 
 ```
-interface Circle {
-    x:number
-    y:number
-    radius:number
-}
-
+// afstand tussen twee cirkels
 let dx = circle1.x - circle2.x
 let dy = circle1.y - circle2.y
 let distance = Math.sqrt(dx * dx + dy * dy)
 
+// als afstand kleiner dan de radius van de twee cirkels
 if (distance < circle1.radius + circle2.radius) {
-    // collision detected!
+    console.log("collision!")
 }
 ```
+
+## Vector 
 
 De [vector class](vector.md) maakt het uitrekenen van afstanden tussen punten eenvoudiger.
 
 ## Zelf coördinaten bijhouden
 
-Als je niet werkt met DOM elementen, of de collision box is niet hetzelfde als de afmeting van het DOM element, dan moet je zelf de waarden bijhouden:
+Als je niet werkt met DOM elementen, of de collision box is niet hetzelfde als de afmeting van het DOM element, dan moet je zelf de waarden bijhouden. Je kan dit het beste doen met overerving:
 
 ```
-class GameObject{
+class GameObject {
     publix x:number
     public y:number
     public width:number
     public height:number
+}
+
+class Car extends GameObject {
+
 }
 ```
 
