@@ -2,9 +2,13 @@
 
 Dit is een opzet voor het inleverdocument. De exacte instructies vind je in de Modulewijzer.
 
+## Inleiding
+
+Toelichting van je spelconcept
+
 ## Speelbare game
 
-Link naar de online speelbare game.
+Link naar de online speelbare game
 
 ## Installatie
 
