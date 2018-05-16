@@ -41,6 +41,7 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Character movement](snippets/movement.md)
 - [Collision detection](snippets/collision.md)
 - [Scrolling background](snippets/scrolling.md)
+- [Spritesheet](snippets/spritesheet.md)
 - [Vector](snippets/vector.md)
 - [Events](snippets/events.md)
 - [Using Web Components to build a game](https://github.com/KokoDoko/game-custom-elements)
@@ -67,6 +68,7 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Greensock Tweening](https://greensock.com)
 - [Multithreading in Javascript](https://keithwhor.github.io/multithread.js/)
 - [Dependency Injection](https://www.npmjs.com/package/container-ioc)
+- [Data laden met Fetch](snippets/fetch.md)
 
 ## Graphics
 
