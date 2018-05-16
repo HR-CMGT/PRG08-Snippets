@@ -2,7 +2,8 @@
 
 Een [spritesheet](https://goo.gl/images/DAGCxu) is een afbeelding waarbinnen meerdere standen van je figuurtje staan.
 In dit voorbeeld bevat **sheet.png** vier afbeeldingen van elk 100 pixels breed. Sheet.png is dus 400 pixels breed.
-In de update functie springen we telkens naar het volgende frame.
+
+In de update functie verschuiven we de afbeelding telkens 100 pixels naar links. Daardoor krijg je een animatie effect, net zoals bij een animated GIF.
 
 CSS
 
