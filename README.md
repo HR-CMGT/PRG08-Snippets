@@ -42,6 +42,7 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Collision detection](snippets/collision.md)
 - [Scrolling background](snippets/scrolling.md)
 - [Spritesheet](snippets/spritesheet.md)
+- [Moving along a path](snippets/path.md)
 - [Vector](snippets/vector.md)
 - [Events](snippets/events.md)
 - [Using Web Components to build a game](https://github.com/KokoDoko/game-custom-elements)
