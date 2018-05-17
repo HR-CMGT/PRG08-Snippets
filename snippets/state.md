@@ -38,7 +38,7 @@ class GameOver implements State {
        console.log("game over!")
    }
    update(){
-       this.game.switchState(new Playing())
+       this.game.switchState(new Playing(this.game))
    }
 }
 ```
@@ -48,7 +48,7 @@ class GameOver implements State {
 class Game {
    state:State
    constructor() {
-       this.state = new Playing()
+       this.state = new Playing(this)
    }
    gameLoop(){
        state.update()
