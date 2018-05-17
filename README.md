@@ -49,10 +49,9 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Drag and drop](snippets/drag.md)
 - [Namespaces](snippets/namespace.md)
 - [Modules](snippets/modules.md)
-- [Canvas en Spritesheets](snippets/canvas.md)
-- [Pixi Canvas Basics](snippets/pixi.md)
 - [Matter Physics Basics](snippets/matter.md)
 - [Debugging in VS Code](snippets/debug.md)
+- [State Manager](snippets/state.md)
 
 ## Libraries en API's
 
@@ -84,8 +83,10 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)
 - [Synthesizer API](https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode)
 
-## Canvas/WebGL libraries
+## Canvas/WebGL
 
+- [Canvas en Spritesheets](snippets/canvas.md)
+- [Pixi Canvas Basics](snippets/pixi.md)
 - [Canvas 2D manager](http://www.pixijs.com)
 - [Isometric graphics engine](http://jdan.github.io/isomer/)
 - [Canvas 3D animatie](https://threejs.org)
