@@ -31,7 +31,21 @@ Om Fetch te gebruiken moet je deze **lib** opties toevoegen aan de compiler opti
 
 ## JSON in Typescript
 
-Typescript kan voor je checken welke inhoud je JSON data heeft. Dit doe je door een `interface` te definiëren voor je data. In dit voorbeeld maken we voor `Actor` en `Movie` een interface. Een Actor heeft een name, height en een array van movies.
+Typescript kan voor je checken welke inhoud je JSON data heeft. In deze JSON zouden we willen weten dat het over een Actor gaat, en dat die Actor een name, height en een aantal films heeft:
+
+**JSON**
+```
+{
+	"name": "Luke Skywalker",
+	"height": 172,
+	"movies": [
+		{"title": "The Force Awakens"},
+		{"title": "Return of the Jedi"}
+	]
+}
+```
+
+Dit doe je door een `interface` te definiëren voor je data. In dit voorbeeld maken we voor `Actor` en `Movie` een interface. Een Actor heeft een name, height en een array van movies.
 
 ```
 interface Actor {
@@ -45,17 +59,12 @@ interface Movie {
 }
 ```
 
-Nu kan je aangeven dat het JSON resultaat van het type Actor is:
-```
-let jsonresult:Actor = {
-	name: "Luke Skywalker",
-	height: "172",
-	movies: [
-		{title: "The Force Awakens"},
-		{title: "Return of the Jedi"}
-	]
-}
+**dataloaded**
 
-console.log(jsonresult.name)
-console.log(jsonresult.films[0].title)
+Nu kan je in `dataloaded` aangeven dat deze JSON van het type Actor is. 
+```
+dataLoaded(res:Actor) {
+    console.log(res.name)
+    console.log(res.films[0].title)
+}
 ```
