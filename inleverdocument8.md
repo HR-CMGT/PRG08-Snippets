@@ -18,13 +18,13 @@ Instructies voor het clonen, editen en runnen van de game via deze repository.
 
 Het klassendiagram van je game.
 
-## Peer review
-
-Link naar de peer review die je in week 4 hebt gedaan. De link gaat naar een issue in het project van een medestudent.
-
 ## Pull request
 
-Link naar de pull request die je in week 6 hebt gedaan. De link gaat naar een PR in een fork van het project van een medestudent.
+Link naar de pull request die je in week 4 hebt gedaan. De link gaat naar een PR in een fork van het project van een medestudent.
+
+## Peer review
+
+Link naar de peer review die je in week 6 hebt gedaan. De link gaat naar een issue in het project van een medestudent.
 
 ## Singleton
 
