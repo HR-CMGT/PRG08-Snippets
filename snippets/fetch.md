@@ -16,25 +16,46 @@ class Game {
 }
 ```
 
-Om Fetch te gebruiken moet je deze **lib** opties toevoegen aan je `tsconfig.json` file:
+Om Fetch te gebruiken moet je deze **lib** opties toevoegen aan de compiler options in je `tsconfig.json` file:
 
 ```
 {
     "compilerOptions": {
-        "strict": true,
-        "target": "es5",
-        "removeComments": true,
-        "noUnusedLocals":true,
-        "noUnusedParameters":true,
-        "sourceMap": true,
-        "outFile": "docs/js/main.js",
         "lib": [
             "es2015",
             "dom"
         ]
-    },
-    "include": [
-        "dev/**/*"
-    ]
+    }
 }
+```
+
+## JSON in Typescript
+
+Typescript kan voor je checken welke inhoud je JSON data heeft. Dit doe je door een `interface` te definiëren voor je data. In dit voorbeeld maken we voor `Actor` en `Movie` een interface. Een Actor heeft een name, height en een array van movies.
+
+```
+interface Actor {
+  name:string
+  height:number
+  movies:Movie[]
+}
+
+interface Movie {
+  title:string
+}
+```
+
+Nu kan je aangeven dat het JSON resultaat van het type Actor is:
+```
+let jsonresult:Actor = {
+	name: "Luke Skywalker",
+	height: "172",
+	movies: [
+		{title: "The Force Awakens"},
+		{title: "Return of the Jedi"}
+	]
+}
+
+console.log(jsonresult.name)
+console.log(jsonresult.films[0].title)
 ```
