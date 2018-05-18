@@ -70,6 +70,9 @@ class GameOver implements State {
 ```
 
 *noot*
-In `switchState()` in `Game.ts` maken we de hele document.body leeg, maar het is handiger om een game container element te hebben, dat je telkens leeg kan maken. Let ook op dat als je `window.addEventListener` of `setTimeout` *in* een state hebt staan, dat je die verwijdert voordat je wisselt van state. Dit kan je doen met `removeEventListener` en `clearTimeout`.
+
+In `switchState()` in `Game.ts` maken we de hele document.body leeg, maar het is handiger om een game container element te hebben, dat je telkens leeg kan maken. 
+
+Let ook op dat als je `window.addEventListener` of `setTimeout` *in* een state hebt staan, dat je die verwijdert voordat je wisselt van state. Dit kan je doen met `removeEventListener` en `clearTimeout`.
 
 
