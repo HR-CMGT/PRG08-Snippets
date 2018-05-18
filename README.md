@@ -69,6 +69,7 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Multithreading in Javascript](https://keithwhor.github.io/multithread.js/)
 - [Dependency Injection](https://www.npmjs.com/package/container-ioc)
 - [Data laden met Fetch](snippets/fetch.md)
+- [Boardgame.io - build a boardgame in Javascript](http://boardgame.io/#/)
 
 ## Graphics
 
