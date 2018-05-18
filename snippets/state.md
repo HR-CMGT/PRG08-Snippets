@@ -4,7 +4,8 @@ We kunnen classes gebruiken als container voor de state van de game. De game upd
 
 **Game**
 
-De Game class heeft een property `state` van het type `State`. 
+De Game class heeft een property `state`, daarin kunnen we de `Playing` of de `GameOver` state opslaan. Game heeft ook een fucntie waarmee we wisselen van State. Let op dat deze functie meteen de DOM leeg gooit, zodat er geen DOM elementen van de vorige state meer in de document.body aanwezig zijn.
+
 ```
 class Game {
    state:State
@@ -15,11 +16,11 @@ class Game {
        state.update()
    }
    switchState(s:State){
+       document.body.innerHTML = ""
        this.state = s
    }
 }
 ```
-
 **interface**
 
 De verschillende States implementeren een interface zodat je in Game het `State` type kan gebruiken.
@@ -30,6 +31,10 @@ interface State {
 ```
 
 **Playing**
+
+De playing class maakt de game elementen zoals een Car. De Car maakt een DOM element.
+In dit voorbeeld roepen we de `switchState()` functie van game aan, zodra `car.crashed()` true terug geeft.
+
 ```
 class Playing implements State {
    car:Car
@@ -40,13 +45,17 @@ class Playing implements State {
    }
    update(){
        this.car.update()
+       
+       if(this.car.crashed()){
+           this.game.switchState(new GameOver(this.game))
+       }
    }
 }
 ```
 
 **GameOver**
 
-In dit voorbeeld springt de GameOver state meteen weer terug naar de playing state.
+Dit is de GameOver state die door Playing aan Game wordt doorgegeven.
 ```
 class GameOver implements State {
    game:Game
@@ -55,9 +64,12 @@ class GameOver implements State {
        console.log("game over!")
    }
    update(){
-       this.game.switchState(new Playing(this.game))
+       
    }
 }
 ```
+
+*noot*
+In `switchState()` in `Game.ts` maken we de hele document.body leeg, maar het is handiger om een game container element te hebben, dat je telkens leeg kan maken. Let ook op dat als je `window.addEventListener` of `setTimeout` *in* een state hebt staan, dat je die verwijdert voordat je wisselt van state. Dit kan je doen met `removeEventListener` en `clearTimeout`.
 
 
