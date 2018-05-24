@@ -74,6 +74,7 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 ## Graphics
 
 - [Open Game Art](https://opengameart.org/)
+- [Kenny.nl](http://kenney.nl/)
 - [Spriters Resource](https://www.spriters-resource.com/)
 - [Retro Game Zone](https://retrogamezone.co.uk/)
 
