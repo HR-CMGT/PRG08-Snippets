@@ -117,7 +117,7 @@ Met een **dynamic import** wordt je module pas geladen op het moment dat de gebr
 
 **Static import**
 ```
-import * as widget from "./widget"
+import widget from "./widget"
 
 function renderWidget() {
     widget.doSomething()
