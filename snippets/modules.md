@@ -111,6 +111,27 @@ package.json
 }
 ```
 
+## Dynamic modules
+
+Met een **dynamic import** wordt je module pas geladen op het moment dat de gebruiker deze nodig heeft. Je moet dan wachten tot de module geladen is voordat je er iets mee kan doen, daarvoor gebruik je `async await`.
+
+**Static import**
+```
+import * as widget from "./widget"
+
+function renderWidget() {
+    widget.doSomething()
+}
+```
+
+**Dynamic import**
+```
+async function renderWidget() {
+    const widget = await import("./widget")
+    widget.doSomething()
+}
+```
+
 ## Links
 
 - [Typescript modules](https://www.typescriptlang.org/docs/handbook/modules.html)
@@ -118,3 +139,4 @@ package.json
 - [Parcel tutorial](https://alligator.io/tooling/parcel/)
 - [Webpack](https://webpack.js.org)
 - [Webpack en Typescript](https://webpack.js.org/guides/typescript/)
+- [Dynamic imports deel 1](https://blog.mariusschulz.com/2018/01/14/typescript-2-4-dynamic-import-expressions) en [deel 2](https://blog.mariusschulz.com/2018/01/14/code-splitting-with-import-typescript-and-webpack)
