@@ -69,7 +69,7 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Multithreading in Javascript](https://keithwhor.github.io/multithread.js/)
 - [Dependency Injection](https://www.npmjs.com/package/container-ioc)
 - [Data laden met Fetch](snippets/fetch.md)
-- [Boardgame.io - build a boardgame in Javascript](http://boardgame.io/#/)
+- [Boardgame.io](http://boardgame.io/#/) - build a boardgame in Javascript
 
 ## Graphics
 
@@ -77,6 +77,7 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Kenny.nl](http://kenney.nl/)
 - [Spriters Resource](https://www.spriters-resource.com/)
 - [Retro Game Zone](https://retrogamezone.co.uk/)
+- [Assets Forge](http://assetforge.io/) - maak 2D sprites op basis van building blocks
 
 ## Audio
 
