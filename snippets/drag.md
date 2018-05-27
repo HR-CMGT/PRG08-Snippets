@@ -3,7 +3,7 @@
 De draggable div gebruikt drie event listeners. De mouse move listener wordt aan window toegevoegd als je klikt op de div.
 De mouse move listener wordt opgeslagen in een referentie, zodat je de listener later weer kan verwijderen.
 
-```
+```typescript
 this.moveBind = (e: Event) => this.updatePosition(e)
 
 this.htmlElement.addEventListener("mousedown", (e) => this.initDrag(e))
@@ -16,7 +16,7 @@ this.htmlElement.addEventListener("mouseup"  , (e) => this.stopDrag(e))
 - Item bovenin de DOM zetten (zodat je nergens onderdoor sleept)
 - Offset onthouden, dit is de afstand van de mouse pointer tot de linkerbovenhoek van het object
 
-```
+```typescript
  private initDrag(e: Event) : void {
     e.preventDefault()
     
@@ -34,7 +34,7 @@ this.htmlElement.addEventListener("mouseup"  , (e) => this.stopDrag(e))
 ## Update position
 - Teken het object op de plek van de muis, als de muis beweegt
 
-```   
+```typescript   
 private updatePosition(e: Event): void {
             
     e.preventDefault()
@@ -49,7 +49,7 @@ private updatePosition(e: Event): void {
 ## Stop drag
 - Verwijder de mouse move listener
 
-```   
+```typescript   
 private stopDrag(e: Event) : void {
     window.removeEventListener("mousemove", this.moveBind)
     e.preventDefault()

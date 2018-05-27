@@ -2,7 +2,7 @@
 
 Namespaces in Typescript helpen je om je classes te organiseren. In dit voorbeeld plaatsen we de `Calculator` class in de `Utils` namespace.
 
-```
+```typescript
 namespace Utils {
     export class Calculator {
         constructor(){
@@ -14,7 +14,7 @@ namespace Utils {
 Als je een calculator instance wil maken, dan maakt het uit vanuit welke namespace je dit doet:
 
 **dezelfde namespace**
-```
+```typescript
 namespace Utils {
     export class Test {
         constructor(){
@@ -24,7 +24,7 @@ namespace Utils {
 }
 ```
 **andere namespace**
-```
+```typescript
 namespace Game {
     export class Test {
         constructor(){

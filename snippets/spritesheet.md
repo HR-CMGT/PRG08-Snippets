@@ -7,7 +7,7 @@ In de update functie verschuiven we de afbeelding telkens 100 pixels naar links.
 
 CSS
 
-```
+```css
 #spritesheet { 
     background-image: url('sheet.png');
     background-repeat: no-repeat;
@@ -16,7 +16,7 @@ CSS
 
 Typescript
 
-```
+```typescript
 class Player {
     frames = 4
     frame = 0

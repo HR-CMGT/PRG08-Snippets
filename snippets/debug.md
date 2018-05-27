@@ -8,7 +8,7 @@ Klik op het 'extensions' icoon in VS Code en zoek de 'Debugger for Chrome' exten
 
 Kopieer deze debug instellingen naar het bestand `launch.json` in de map `.vscode`. Vul de localhost url van je project in.
 
-```
+```json
 {
     "version": "0.2.0",
     "configurations": [

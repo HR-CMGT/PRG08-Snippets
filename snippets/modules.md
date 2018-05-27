@@ -4,14 +4,14 @@ Door classes of namespaces in de global scope te definiëren loop je het risico 
 
 **car.ts**
 
-```
+```typescript
 export default class Car {
 
 }
 ```
 
 **game.ts**
-```
+```typescript
 import Car from "./car"
 
 export default class Game {
@@ -29,7 +29,7 @@ Een bijkomend voordeel van modules is dat code die nergens wordt geïmporteerd, 
 
 Door je `.ts` files naar losse `.js` files te compileren, kan je ze rechtstreeks als module inladen in de browser
 
-```
+```html
 <script type="module" src="js/car.js"></script>
 <script type="module" src="js/game.js"></script>
 ```
@@ -37,7 +37,7 @@ Door je `.ts` files naar losse `.js` files te compileren, kan je ze rechtstreeks
 ## Webpack
 
 Met webpack kan je typescript modules bundelen naar een `bundle.js` file.
-```
+```html
 <script src="js/bundle.js"></script>
 ```
 
@@ -50,7 +50,7 @@ webpack --watch
 
 **webpack.config.js**
 
-```
+```javascript
 module.exports = {
     entry: "./dev/main.ts",
     devtool: 'inline-source-map',
@@ -76,13 +76,13 @@ module.exports = {
 [Parcel](https://parceljs.org/getting_started.html) gebruikt je `package.json` als settings file. Parcel genereert je hele docs folder, inclusief HTML, images en CSS.
 Dat betekent dat al je werkbestanden in de DEV folder staan. In HTML kan je typescript laden. Parcel snapt dat dit javascript moet worden:
 
-```
+```html
 <script src='./ts/index.ts'></script>
 ```
 
 Via `import` kan je afbeeldingen en css meecompileren
 
-```
+```js
 import '../style/style.css'
 ``` 
 
@@ -93,7 +93,7 @@ npm install -g parcel-bundler typescript
 npm run watch
 ```
 package.json
-```
+```json
 {
   "name": "testparcel",
   "version": "1.0.0",

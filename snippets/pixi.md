@@ -19,7 +19,7 @@
 ### HTML
 
 Laad de library voordat je je eigen main.js inlaadt.
-```
+```html
 <body> 
       <script src="js/pixi.min.js"></script>
       <script src='js/main.js'></script>
@@ -31,7 +31,7 @@ Laad de library voordat je je eigen main.js inlaadt.
 ### Canvas aanmaken
 
 Initialiseer PIXI met een canvas, in de main game class. We maken een aparte functie voor render, zodat we die later ook weer kunnen aanroepen.
-```
+```typescript
 class Game {
     
     private renderer:PIXI.WebGLRenderer | PIXI.CanvasRenderer;
@@ -54,7 +54,7 @@ class Game {
 
 Om te testen of PIXI werkt tekenen we een cirkel in de canvas. Vergeet niet om addCircle() aan te roepen in de constructor. Kijk in de [API documentatie](http://pixijs.download/release/docs/index.html) om te zien welke methods er beschikbaar zijn. 
 
-```
+```typescript
 class Game {
     private addCircle():void {
         let pixiCircle = new PIXI.Graphics();
@@ -70,7 +70,7 @@ class Game {
 
 We gaan alle benodigde sprites voor de game **preloaden** in game.ts via `Loader.add`. We kunnen een shortcut meegeven zodat we de image later makkelijk terug kunnen vinden: `Loader.add('car', 'images/car.png')`. De functie setupSprites wordt aangeroepen als alle images geladen zijn. Daarna bouwen we sprites van de images, en we voegen de sprites toe aan de stage.
 
-```
+```typescript
 class Game {
     private preloadSprites():void {       
         PIXI.loader.add('car', 'images/car.png').add('road', 'images/road.png');
@@ -89,7 +89,7 @@ class Game {
 
 Als het bovenstaande gelukt is kunnen we het aanmaken en updaten van objecten gaan verplaatsen naar gameobject instances. Als de preloader klaar is maken we nieuwe instances en we starten de Game Loop. De game loop update alle objecten en rendert daarna de PIXI canvas. 
 
-```
+```typescript
 class Game {
     private setupSprites():void{
         // hier je gameobjecten aanmaken
@@ -109,7 +109,7 @@ class Game {
 **Infinite scroll**
 
 Door de offset van een texture te verplaatsen kan je een infinite scroll effect bereiken. Om dat te kunnen doen maken we een TilingSprite.
-```
+```typescript
 let tilingSprite = new PIXI.extras.TilingSprite(
     PIXI.loader.resources["road"].texture, 
     640,
@@ -120,7 +120,7 @@ tilingSprite.tilePosition.x-=2;
 ```
 
 **Groepeer sprites**
-```
+```typescript
 let animals = new PIXI.Container();
 animals.addChild(cat);
 animals.addChild(hedgehog);
@@ -129,7 +129,7 @@ stage.addChild(animals);
 ```
 
 **Collision detection**
-```
+```typescript
 hitTestRectangle(spriteOne, spriteTwo)
 ```
 

@@ -2,14 +2,14 @@
 Een Vector is een object met een x en y waarde:
 
 ### Voorbeeld
-```
+```typescript
 let position:Vector2 = new Vector2(200,300)
 div.style.transform = `translate(${position.x}px, ${position.y}px)`
 ```
 
 ## Vectoren vergelijken
 Een vector heeft een aantal ingebouwde 'convenience methods'.
-```
+```typescript
 let v1 = new Vector2(20,35)
 let v2 = new Vector2(100,120)
 
@@ -25,7 +25,7 @@ let distance = v3.magnitude()    // resultaat 141.42135
 ```
 
 ### Voorbeeld
-```
+```typescript
 let position = new Vector2(200,300)
 let speed = new Vector2(4,3)
 
@@ -38,7 +38,7 @@ Als een object in een bepaalde richting kan bewegen, dan is het erg handig om ve
 
 ### Normalize
 Normalize vertaalt een x,y snelheid naar een afstand die je aflegt met die snelheid.
-```
+```typescript
 let position = new Vector2(300,200)
 let speed = new Vector2(1,1)
 let normalizedSpeed = speed.normalize()      // result 0.70710
@@ -49,13 +49,13 @@ position = position.add(normalizedSpeed)
 
 # Rectangle 
 Een Rectangle is een object met een x,y positie (een Vector2) en een breedte en hoogte.
-```
+```typescript
 let rect:Rectangle = new Rectangle(new Vector2(20,20), 100, 100)
 ```
 
 ## Rectangle collision
 Een Rectangle heeft methods om te zien of er een collision is
-```
+```typescript
 let r1:Rectangle = new Rectangle(new Vector2(20,20), 100, 100)
 let v7:Vector.Vector2 = new Vector2(25,25)
 let hit:boolean = r1.isInside(v7)
@@ -66,7 +66,7 @@ let hit2 = r1.isOverlap(r2)
 
 ## Vector class
 
-```
+```typescript
 class Vector2 {
         
     public x : number
@@ -113,7 +113,7 @@ class Vector2 {
 
 ## Rectangle class
 
-```
+```typescript
 class Rectangle {
             
     public position:Vector2
