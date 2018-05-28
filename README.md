@@ -57,11 +57,13 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 
 - [Socket.io Multiplayer](https://socket.io)
 - [Lance Multiplayer Server](http://lance.gg)
+- [SAT.JS : collision detection for complex shapes](https://github.com/jriecken/sat-js)
 - [QuadTree : large scale collision detection](https://github.com/timohausmann/quadtree-js)
 - [Particle Engine](https://vincentgarreau.com/particles.js/)
 - [RPG Conversation Tree](https://github.com/google/bottery)
 - [Touch Gestures Library](https://hammerjs.github.io)
 - [Matter 2D physics](http://brm.io/matter-js/)
+- [Planck 2D physics](http://piqnt.com/planck.js/Car)
 - [SVG Vector drawing](http://svgjs.com)
 - [AI / Deep Learning](https://deeplearnjs.org)
 - [GamePad API](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)
