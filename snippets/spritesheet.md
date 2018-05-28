@@ -1,9 +1,9 @@
 # Spritesheets
 
 Een [spritesheet](https://goo.gl/images/DAGCxu) is een afbeelding waarbinnen meerdere standen van je figuurtje staan.
-In dit voorbeeld bevat de [Link spritesheet](http://img09.deviantart.net/80ee/i/2017/040/7/c/link_sprite_sheet_by_tiozacdasgalaxias-dayh0s6.png) op de eerste rij drie afbeeldingen van link die met zijn ogen knippert.
+Deze demo bevat een spritesheet van [Link](http://img09.deviantart.net/80ee/i/2017/040/7/c/link_sprite_sheet_by_tiozacdasgalaxias-dayh0s6.png) waarin hij stil staat met knipperende ogen, en in vier richtingen loopt.
 
-In de update functie verschuiven we de achtergrondafbeelding van de div telkens 100 pixels naar links. Daardoor krijg je een animatie effect.
+De gehele afbeelding gebruiken we als background van een kleine DIV waarin slechts 1 afbeelding tegelijk zichtbaar is. Door de positie van de achtergrondafbeelding te verschuiven met `backgroundPosition` kunnen we steeds een andere link laten zien.
 
 [Voorbeeld op CodePen](https://codepen.io/eerk/pen/ERYoZp?editors=0111)
 
