@@ -28,7 +28,7 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Week 2 Singleton](https://github.com/HR-CMGT/PRG08-Week2-oefening1)
 - [Week 3 Strategy](https://github.com/HR-CMGT/PRG08-Week3-oefening1)
 - [Week 4 Polymorphism](https://github.com/HR-CMGT/PRG08-Week4-oefening1)
-- [Week 5 Observer]()
+- [Week 5 Observer Pattern](https://github.com/HR-CMGT/PRG08-Week5-oefening0) en [oefening](https://github.com/HR-CMGT/PRG08-Week5-oefening1)
 - [Week 6 Game programming]()
 - [Week 7 Game programming]()
 - [Week 8 Afronden inleveropdracht]()
