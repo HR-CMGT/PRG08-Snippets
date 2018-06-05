@@ -18,7 +18,7 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Week 3 Encapsulation, Game Loop, Collision detection](https://github.com/HR-CMGT/CMTTHE04-Week3-oefening1)
 - [Week 4 Composition](https://github.com/HR-CMGT/CMTTHE04-Week4-oefening1)
 - [Week 5 Inheritance](https://github.com/HR-CMGT/CMTTHE04-Week5-oefening1)
-- Week 6 Herhaling [Oefening basic](https://github.com/HR-CMGT/CMTTHE04-Week4-lesvoorbeeld) en [Oefening advanced](https://github.com/HR-CMGT/CMTTHE04-Game-Bas)
+- [Week 6 Objecten verwijderen](https://github.com/HR-CMGT/CMTTHE04-Week6-oefening0), [Oefening composition](https://github.com/HR-CMGT/CMTTHE04-Week4-lesvoorbeeld) en [Oefening advanced](https://github.com/HR-CMGT/CMTTHE04-Game-Bas)
 - [Week 7 Herhaling]()
 - [Week 8 Oefententamen]()
 - [Voorbeeld inleverdocument inleveropdracht](inleverdocument4.md)
