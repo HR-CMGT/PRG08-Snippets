@@ -1,6 +1,10 @@
 # Modules
 
-Door classes of namespaces in de global scope te definiëren loop je het risico dat je code overschreven of aangeroepen wordt terwijl dat niet de bedoeling is. Door modules te gebruiken maak je een scope die niet van buitenaf te benaderen is:
+Door classes of namespaces in de global scope te definiëren loop je het risico dat je code overschreven of aangeroepen wordt terwijl dat niet de bedoeling is. Door modules te gebruiken maak je een scope die niet van buitenaf te benaderen is.
+
+Externe code van `npmjs.com` installeren ook modules: `npm install...`. Deze modules komen terecht in de `node_modules` folder.
+
+Via webpack of een andere module loader kan je je modules inladen in de browser.
 
 **car.ts**
 
@@ -23,11 +27,21 @@ export default class Game {
 
 Een bijkomend voordeel van modules is dat code die nergens wordt geïmporteerd, ook niet meegecompileerd wordt. 
 
+### Naam van de class
+
+Bij `import` bepaal je de naam van een default class, dus bij `export` kan je die weglaten, maar dat is wel minder leesbaar.
+
+```
+export default class {
+}
+import Car from './filename'
+```
+
 # Modules laden
 
 ## Native modules
 
-Door je `.ts` files naar losse `.js` files te compileren, kan je ze rechtstreeks als module inladen in de browser
+In de nieuwste browsers kan je modules los inladen als .js file. Je moet dan nog wel je `.ts` files naar losse `.js` files omzetten.
 
 ```
 <script type="module" src="js/car.js"></script>
@@ -40,6 +54,8 @@ Met webpack kan je typescript modules bundelen naar een `bundle.js` file.
 ```
 <script src="js/bundle.js"></script>
 ```
+In `package.json` komen de externe modules terecht die je
+In 
 
 ```
 npm install webpack --save-dev
@@ -71,6 +87,9 @@ module.exports = {
     }
 };
 ```
+
+In [deze oefening](https://github.com/HR-CMGT/PRG08-Week7-oefening1) kan je zelf een test bouwen met modules en webpack
+
 ## Parcel
 
 [Parcel](https://parceljs.org/getting_started.html) gebruikt je `package.json` als settings file. Parcel genereert je hele docs folder, inclusief HTML, images en CSS.
@@ -134,6 +153,7 @@ async function renderWidget() {
 
 ## Links
 
+- [Oefening](https://github.com/HR-CMGT/PRG08-Week7-oefening1)
 - [Typescript modules](https://www.typescriptlang.org/docs/handbook/modules.html)
 - [Parcel](https://parceljs.org/getting_started.html)
 - [Parcel tutorial](https://alligator.io/tooling/parcel/)
