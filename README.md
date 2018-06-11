@@ -19,7 +19,7 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Week 4 Composition](https://github.com/HR-CMGT/CMTTHE04-Week4-oefening1)
 - [Week 5 Inheritance](https://github.com/HR-CMGT/CMTTHE04-Week5-oefening1)
 - [Week 6 Objecten verwijderen](https://github.com/HR-CMGT/CMTTHE04-Week6-oefening0), [Oefening composition](https://github.com/HR-CMGT/CMTTHE04-Week4-lesvoorbeeld) en [Oefening advanced](https://github.com/HR-CMGT/CMTTHE04-Game-Bas)
-- [Week 7 Herhaling]()
+- [Week 7 Herhaling](https://github.com/HR-CMGT/CMTTHE04-Week7-oefening1)
 - [Week 8 Oefententamen]()
 - [Voorbeeld inleverdocument inleveropdracht](inleverdocument4.md)
 
@@ -83,7 +83,8 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 
 ## Audio
 
-- [Howler Audio](https://howlerjs.com)
+- [Voorbeeld audio tag en Howler](snippets/audio.md)
+- [Howler Documentation](https://howlerjs.com)
 - [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)	
 - [Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)
 - [Synthesizer API](https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode)
