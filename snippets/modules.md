@@ -87,8 +87,8 @@ module.exports = {
     }
 };
 ```
-
-In [deze oefening](https://github.com/HR-CMGT/PRG08-Week7-oefening1) kan je zelf een test bouwen met modules en webpack
+ - [Korte oefening met webpack en modules](https://github.com/HR-CMGT/PRG08-Week7-Webpack)
+ - [Uitgebreide oefening](https://github.com/HR-CMGT/PRG08-Week7-oefening1)
 
 ## Parcel
 
