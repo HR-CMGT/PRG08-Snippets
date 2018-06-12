@@ -26,14 +26,16 @@ balls.splice(i, 1)
 
 Als je een gameobject uit een array verwijdert, dan verandert de structuur van je array. Dit kan een probleem zijn als je nog door die array heen aan het loopen bent.
 
-Je kan dit probleem oplossen door *van achter naar voren* door je game objecten heen te loopen. 
+Je kan dit probleem oplossen door *van achter naar voren* door je game objecten heen te loopen, en/of de loop te stoppen met `break` als je een item verwijderd hebt.
 
 
 ```
-removeItem(item:Item) {
+update() {
     for(let i = this.objects.length; i>=0; i--){
+    
+        let item = this.objects[i]
       
-        if(this.objects[i] == item) {
+        if(item.playerWasKilled) {     // voorbeeld: dit item moet verwijderd worden
 
             // verwijder het object tijdens de loop
             objects.splice(i,1)
@@ -53,11 +55,15 @@ class Test {
     private callback:EventListener
 
     constructor(){
-        this.callback = (e:KeyboardEvent) => this.keyWasPressed(e)
+        this.callback = (e:Event) => this.keyWasPressed(e)
         window.addEventListener("keydown", this.callback)
     }
 
-    private keyWasPressed(e:KeyboardEvent):void {
+    private keyWasPressed(e:Event):void {
+	console.log("you pressed a key")
+    }
+    
+    private removeTest():void {
         window.removeEventListener("keydown", this.callback)
     }
 }
