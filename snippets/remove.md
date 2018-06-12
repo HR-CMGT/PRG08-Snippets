@@ -28,10 +28,20 @@ Als je een gameobject uit een array verwijdert, dan verandert de structuur van j
 
 Je kan dit probleem oplossen door *van achter naar voren* door je game objecten heen te loopen. 
 
+
 ```
-for(let i = objects.length; i>0; i--){
-    // verwijder het object tijdens de loop
-    objects.splice(i,1)
+removeItem(item:Item) {
+    for(let i = this.objects.length; i>=0; i--){
+      
+        if(this.objects[i] == item) {
+
+            // verwijder het object tijdens de loop
+            objects.splice(i,1)
+    
+            // stop de loop
+            break;
+	}
+    }	
 }
 ```
 
@@ -79,9 +89,12 @@ class Ball {
     callback:EventListener
     intervalId:number
     constructor(){
-        this.callback = (e:KeyboardEvent) => this.keyWasPressed(e)
-        window.addEventListener("keydown", callback)
+        this.callback = (e:Event) => this.keyWasPressed(e)
+        window.addEventListener("keydown", this.callback)
         this.intervalId = setInterval(() => this.doSomething(), 300 )
+    }
+    private keyWasPressed(e:Event){
+        console.log("you pressed a key")
     }
     public removeMe() {
         window.removeEventListener("keydown", this.callback)
