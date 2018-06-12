@@ -74,7 +74,7 @@ class Test {
 Om een interval te verwijderen moet je de id van de interval opslaan.
 ```
 class Test {
-    private intervalId
+    private intervalId:number
     constructor(){
         this.intervalId = setInterval(() => this.doSomething(), 300 )
     }
