@@ -25,6 +25,8 @@ Installeer de Typescript definities via
 ```
 npm install @types/howler
 ```
+Het is ook mogelijk om [het definitie bestand los te downloaden](https://github.com/HR-CMGT/Typescript/blob/master/definitions/howler.d.ts) en in je map te zetten, als je verder geen node modules gebruikt.
+
 Plaats je geluiden in een `sounds` folder. In je game maak je sound objecten aan met:
 
 ```
