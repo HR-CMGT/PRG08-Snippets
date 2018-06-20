@@ -17,9 +17,9 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Week 2 Classes en Instances](https://github.com/HR-CMGT/CMTTHE04-Week2-oefening1)
 - [Week 3 Encapsulation, Game Loop, Collision detection](https://github.com/HR-CMGT/CMTTHE04-Week3-oefening1)
 - [Week 4 Composition](https://github.com/HR-CMGT/CMTTHE04-Week4-oefening1)
-- [Week 5 Inheritance]()
-- [Week 6 Game programming]()
-- [Week 7 Herhaling]()
+- [Week 5 Inheritance](https://github.com/HR-CMGT/CMTTHE04-Week5-oefening1)
+- [Week 6 Objecten verwijderen](https://github.com/HR-CMGT/CMTTHE04-Week6-oefening0), [Oefening composition](https://github.com/HR-CMGT/CMTTHE04-Week4-lesvoorbeeld) en [Oefening advanced](https://github.com/HR-CMGT/CMTTHE04-Game-Bas)
+- [Week 7 Herhaling](https://github.com/HR-CMGT/CMTTHE04-Week7-oefening1)
 - [Week 8 Oefententamen]()
 - [Voorbeeld inleverdocument inleveropdracht](inleverdocument4.md)
 
@@ -28,9 +28,9 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Week 2 Singleton](https://github.com/HR-CMGT/PRG08-Week2-oefening1)
 - [Week 3 Strategy](https://github.com/HR-CMGT/PRG08-Week3-oefening1)
 - [Week 4 Polymorphism](https://github.com/HR-CMGT/PRG08-Week4-oefening1)
-- [Week 5 Observer]()
-- [Week 6 Game programming]()
-- [Week 7 Game programming]()
+- [Week 5 Observer Pattern](https://github.com/HR-CMGT/PRG08-Week5-oefening0) en [oefening](https://github.com/HR-CMGT/PRG08-Week5-oefening1)
+- Week 6
+- [Week 7 Oefening Modules, Webpack, Greensock Animation, Switching screens](https://github.com/HR-CMGT/PRG08-Week7-oefening1)
 - [Week 8 Afronden inleveropdracht]()
 - [Voorbeeld inleverdocument inleveropdracht](inleverdocument8.md)
 
@@ -57,11 +57,13 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 
 - [Socket.io Multiplayer](https://socket.io)
 - [Lance Multiplayer Server](http://lance.gg)
+- [SAT.JS : collision detection for complex shapes](https://github.com/jriecken/sat-js)
 - [QuadTree : large scale collision detection](https://github.com/timohausmann/quadtree-js)
 - [Particle Engine](https://vincentgarreau.com/particles.js/)
 - [RPG Conversation Tree](https://github.com/google/bottery)
 - [Touch Gestures Library](https://hammerjs.github.io)
 - [Matter 2D physics](http://brm.io/matter-js/)
+- [Planck 2D physics](http://piqnt.com/planck.js/Car)
 - [SVG Vector drawing](http://svgjs.com)
 - [AI / Deep Learning](https://deeplearnjs.org)
 - [GamePad API](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)
@@ -69,17 +71,20 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Multithreading in Javascript](https://keithwhor.github.io/multithread.js/)
 - [Dependency Injection](https://www.npmjs.com/package/container-ioc)
 - [Data laden met Fetch](snippets/fetch.md)
-- [Boardgame.io - build a boardgame in Javascript](http://boardgame.io/#/)
+- [Boardgame.io](http://boardgame.io/#/) - build a boardgame in Javascript
 
 ## Graphics
 
 - [Open Game Art](https://opengameart.org/)
+- [Kenny.nl](http://kenney.nl/)
 - [Spriters Resource](https://www.spriters-resource.com/)
 - [Retro Game Zone](https://retrogamezone.co.uk/)
+- [Assets Forge](http://assetforge.io/) - maak 2D sprites op basis van building blocks
 
 ## Audio
 
-- [Howler Audio](https://howlerjs.com)
+- [Voorbeeld audio tag en Howler](snippets/audio.md)
+- [Howler Documentation](https://howlerjs.com)
 - [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)	
 - [Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)
 - [Synthesizer API](https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode)

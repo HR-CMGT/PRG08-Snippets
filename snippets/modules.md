@@ -1,6 +1,10 @@
 # Modules
 
-Door classes of namespaces in de global scope te definiëren loop je het risico dat je code overschreven of aangeroepen wordt terwijl dat niet de bedoeling is. Door modules te gebruiken maak je een scope die niet van buitenaf te benaderen is:
+Door classes of namespaces in de global scope te definiëren loop je het risico dat je code overschreven of aangeroepen wordt terwijl dat niet de bedoeling is. Door modules te gebruiken maak je een scope die niet van buitenaf te benaderen is.
+
+Externe code van `npmjs.com` installeren ook modules: `npm install...`. Deze modules komen terecht in de `node_modules` folder.
+
+Via webpack of een andere module loader kan je je modules inladen in de browser.
 
 **car.ts**
 
@@ -23,11 +27,21 @@ export default class Game {
 
 Een bijkomend voordeel van modules is dat code die nergens wordt geïmporteerd, ook niet meegecompileerd wordt. 
 
+### Naam van de class
+
+Bij `import` bepaal je de naam van een default class, dus bij `export` kan je die weglaten, maar dat is wel minder leesbaar.
+
+```
+export default class {
+}
+import Car from './filename'
+```
+
 # Modules laden
 
 ## Native modules
 
-Door je `.ts` files naar losse `.js` files te compileren, kan je ze rechtstreeks als module inladen in de browser
+In de nieuwste browsers kan je modules los inladen als .js file. Je moet dan nog wel je `.ts` files naar losse `.js` files omzetten.
 
 ```html
 <script type="module" src="js/car.js"></script>
@@ -40,6 +54,8 @@ Met webpack kan je typescript modules bundelen naar een `bundle.js` file.
 ```html
 <script src="js/bundle.js"></script>
 ```
+In `package.json` komen de externe modules terecht die je
+In 
 
 ```
 npm install webpack --save-dev
@@ -71,6 +87,9 @@ module.exports = {
     }
 };
 ```
+ - [Korte oefening met webpack en modules](https://github.com/HR-CMGT/PRG08-Week7-Webpack)
+ - [Uitgebreide oefening](https://github.com/HR-CMGT/PRG08-Week7-oefening1)
+
 ## Parcel
 
 [Parcel](https://parceljs.org/getting_started.html) gebruikt je `package.json` als settings file. Parcel genereert je hele docs folder, inclusief HTML, images en CSS.
@@ -111,10 +130,33 @@ package.json
 }
 ```
 
+## Dynamic modules
+
+Met een **dynamic import** wordt je module pas geladen op het moment dat de gebruiker deze nodig heeft. Je moet dan wachten tot de module geladen is voordat je er iets mee kan doen, daarvoor gebruik je `async await`.
+
+**Static import**
+```
+import widget from "./widget"
+
+function renderWidget() {
+    widget.doSomething()
+}
+```
+
+**Dynamic import**
+```
+async function renderWidget() {
+    const widget = await import("./widget")
+    widget.doSomething()
+}
+```
+
 ## Links
 
+- [Oefening](https://github.com/HR-CMGT/PRG08-Week7-oefening1)
 - [Typescript modules](https://www.typescriptlang.org/docs/handbook/modules.html)
 - [Parcel](https://parceljs.org/getting_started.html)
 - [Parcel tutorial](https://alligator.io/tooling/parcel/)
 - [Webpack](https://webpack.js.org)
 - [Webpack en Typescript](https://webpack.js.org/guides/typescript/)
+- [Dynamic imports deel 1](https://blog.mariusschulz.com/2018/01/14/typescript-2-4-dynamic-import-expressions) en [deel 2](https://blog.mariusschulz.com/2018/01/14/code-splitting-with-import-typescript-and-webpack)

@@ -30,7 +30,7 @@ class Game {
      let c2 = new Car()
      
      let hit = this.checkCollision(c1.getRectangle(), c2.getRectangle())
-     console.log("cars hit is " + hit)
+     console.log("car 1 hits car 2 ? " + hit)
   }
   
   checkCollision(a: ClientRect, b: ClientRect) {
@@ -38,6 +38,42 @@ class Game {
           b.left <= a.right &&
           a.top <= b.bottom &&
           b.top <= a.bottom)
+   }
+}
+```
+
+### Niet door een muur heen rijden
+
+In bovenstaand voorbeeld krijgen we een log bericht nadat er een botsing is. Soms wil je echter dat een auto niet kan botsen, bijvoorbeeld als er een muur in beeld is waar je niet doorheen kan. 
+
+In dat geval moet je eerst checken of de **toekomstige positie** een botsing gaat veroorzaken. Als dat zo is, dan beweeg je niet:
+
+```
+Game {
+   update() {
+       let wallRect = wall.getRectangle()
+       let carRect = car.getFutureRectangle()
+
+       if(this.checkCollision(wallRect, carRect){
+          console.log("deze beweging mag niet, want de auto zou dan in de muur rijden")
+       } else {
+          car.update()
+       }
+   }
+}
+```
+
+In Car geven we een rectangle terug waarin we de speed al hebben meegerekend. Daardoor kan de Game checken of de auto wel of niet zijn update functie mag doen.
+```
+Car {
+   speed = 4
+   getFurureRectangle(){
+      let rect = this.div.getBoundingClientRect()
+      rect.x += this.speed
+      return rect
+   }
+   update{){
+      this.x += speed
    }
 }
 ```
