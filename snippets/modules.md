@@ -8,14 +8,14 @@ Via webpack of een andere module loader kan je je modules inladen in de browser.
 
 **car.ts**
 
-```
+```typescript
 export default class Car {
 
 }
 ```
 
 **game.ts**
-```
+```typescript
 import Car from "./car"
 
 export default class Game {
@@ -43,7 +43,7 @@ import Car from './filename'
 
 In de nieuwste browsers kan je modules los inladen als .js file. Je moet dan nog wel je `.ts` files naar losse `.js` files omzetten.
 
-```
+```html
 <script type="module" src="js/car.js"></script>
 <script type="module" src="js/game.js"></script>
 ```
@@ -51,7 +51,7 @@ In de nieuwste browsers kan je modules los inladen als .js file. Je moet dan nog
 ## Webpack
 
 Met webpack kan je typescript modules bundelen naar een `bundle.js` file.
-```
+```html
 <script src="js/bundle.js"></script>
 ```
 In `package.json` komen de externe modules terecht die je
@@ -66,7 +66,7 @@ webpack --watch
 
 **webpack.config.js**
 
-```
+```javascript
 module.exports = {
     entry: "./dev/main.ts",
     devtool: 'inline-source-map',
@@ -95,13 +95,13 @@ module.exports = {
 [Parcel](https://parceljs.org/getting_started.html) gebruikt je `package.json` als settings file. Parcel genereert je hele docs folder, inclusief HTML, images en CSS.
 Dat betekent dat al je werkbestanden in de DEV folder staan. In HTML kan je typescript laden. Parcel snapt dat dit javascript moet worden:
 
-```
+```html
 <script src='./ts/index.ts'></script>
 ```
 
 Via `import` kan je afbeeldingen en css meecompileren
 
-```
+```js
 import '../style/style.css'
 ``` 
 
@@ -112,7 +112,7 @@ npm install -g parcel-bundler typescript
 npm run watch
 ```
 package.json
-```
+```json
 {
   "name": "testparcel",
   "version": "1.0.0",

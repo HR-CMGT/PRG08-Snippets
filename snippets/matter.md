@@ -5,7 +5,7 @@ Met Matter.js kan je physics toevoegen aan je game. Om Matter (of een andere lib
 Maak een map genaamd 'typings' of 'definitions' in je project en plaats daar de `matter.d.ts` file in. Je kan ook via `npm install --save @types/matter-js` de typings installeren.
 
 Je HTML file moet naast je eigen .js file ook de minified matter.js file inladen.
-```
+```html
 <script src="js/matter.min.js"></script>
 <script src='js/mygame.js'></script>
 ```
@@ -13,7 +13,7 @@ Je HTML file moet naast je eigen .js file ook de minified matter.js file inladen
 ## Code voorbeeld
 
 Je moet eenmalig de physics world initialiseren. Vervolgens kan je daar physics objecten in plaatsen. Matter heeft een ingebouwde render functie om direct te kunnen zien of het werkt. 
-```
+```typescript
 class Game {
     
     private engine : Matter.Engine;

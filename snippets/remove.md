@@ -8,13 +8,13 @@ Om een gameobject uit de game te verwijderen moet je letten op:
 
 ### DOM element verwijderen
 
-```
+```typescript
 this.div.remove()
 ```
 
 ### verwijzing verwijderen uit game.ts
 
-```
+```typescript
 let balls = [new Ball(), new Ball(), new Ball()]
 let b = balls[0]
 
@@ -28,8 +28,7 @@ Als je een gameobject uit een array verwijdert, dan verandert de structuur van j
 
 Je kan dit probleem oplossen door *van achter naar voren* door je game objecten heen te loopen, en/of de loop te stoppen met `break` als je een item verwijderd hebt.
 
-
-```
+```typescript
 update() {
     for(let i = this.objects.length; i>=0; i--){
     
@@ -42,15 +41,15 @@ update() {
     
             // stop de loop
             break;
-	}
-    }	
+	      }
+    }
 }
 ```
 
 ## Listeners verwijderen
 
 Om een listener te verwijderen moet je een referentie opslaan.
-```
+```typescript
 class Test {
     private callback:EventListener
 
@@ -72,7 +71,7 @@ class Test {
 ## Interval verwijderen
 
 Om een interval te verwijderen moet je de id van de interval opslaan.
-```
+```typescript
 class Test {
     private intervalId:number
     constructor(){
@@ -90,7 +89,7 @@ class Test {
 De ball class heeft een `removeMe()` method waarmee de ball zijn eigen listeners en intervals uit zet.
 Daarna kan je het DOM element verwijderen en de verwijzing naar de ball uit game.ts verwijderen.
 
-```
+```typescript
 class Ball {
     callback:EventListener
     intervalId:number

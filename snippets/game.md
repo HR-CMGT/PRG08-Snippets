@@ -2,7 +2,7 @@
 
 In de Game class starten we de game loop. Deze roept 60x per seconde de update functies van de game objecten aan. Let op dat je geen requestAnimationFrame in je andere classes nodig hebt!
 
-```
+```typescript
 class Game {
 
     car:Car
@@ -30,7 +30,7 @@ class Car {
 
 Als je van meerdere game objecten de update functie wil aanroepen kan je een array maken
 
-```
+```typescript
 class Game {
 
     cars:Car[]
@@ -51,7 +51,7 @@ class Game {
 
 Door Inheritance te gebruiken kan je verschillende soorten objecten in de array zetten, in plaats van alleen cars:
 
-```
+```typescript
 class Game {
 
     objects:GameObject[]

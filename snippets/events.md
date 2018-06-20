@@ -4,7 +4,7 @@ Events stellen je in staat om het **loose coupling** principe van OOP toe te pas
 
 In dit voorbeeld luistert de game via window of er een crash plaats vindt. De car stuurt een crash event via window. Er is geen directe link tussen game en car.
 
-```
+```typescript
 class Car { 
     constructor() {
         window.dispatchEvent(new Event('crash'))
@@ -29,7 +29,7 @@ class Game {
 
 In de listener moet je aangeven dat het event dat binnenkomt een custom event is.
 
-```
+```typescript
 class Car {
     public name = "toyota"
     constructor() {
@@ -54,7 +54,7 @@ class Game {
 
 We gebruiken nu **window** als "pipeline" om events doorheen te sturen. Je kan ook een event sturen vanaf een DIV element. Op die manier hoef je geen detail data mee te sturen om te weten waar het event vandaan komt.
 
-```
+```typescript
 class Car {
     public div: HTMLElement
     public name = "toyota"
@@ -92,7 +92,7 @@ new Game()
 
 In Chrome en Firefox is het ook mogelijk om de car instance een event emitter te maken, in plaats van de DIV van de car:
 
-```
+```typescript
 class Car extends EventTarget {
     this.dispatchEvent(new Event('crash'))
 }

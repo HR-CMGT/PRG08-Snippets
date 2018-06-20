@@ -6,7 +6,7 @@ We kunnen classes gebruiken als container voor de state van de game. De game upd
 
 De Game class heeft een property `state`, daarin kunnen we de `Playing` of de `GameOver` state opslaan. Game heeft ook een fucntie waarmee we wisselen van State. Let op dat deze functie meteen de DOM leeg gooit, zodat er geen DOM elementen van de vorige state meer in de document.body aanwezig zijn.
 
-```
+```typescript
 class Game {
    state:State
    constructor() {
@@ -24,7 +24,7 @@ class Game {
 **interface**
 
 De verschillende States implementeren een interface zodat je in Game het `State` type kan gebruiken.
-```
+```typescript
 interface State {
     update():void
 }
@@ -35,7 +35,7 @@ interface State {
 De playing class maakt de game elementen zoals een Car. De Car maakt een DOM element.
 In dit voorbeeld roepen we de `switchState()` functie van game aan, zodra `car.crashed()` true terug geeft.
 
-```
+```typescript
 class Playing implements State {
    car:Car
    game:Game
@@ -56,7 +56,7 @@ class Playing implements State {
 **GameOver**
 
 Dit is de GameOver state die door Playing aan Game wordt doorgegeven.
-```
+```typescript
 class GameOver implements State {
    game:Game
    constructor(g:Game) {

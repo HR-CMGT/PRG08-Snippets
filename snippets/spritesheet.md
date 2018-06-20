@@ -9,7 +9,7 @@ De gehele afbeelding gebruiken we als background van een kleine DIV waarin slech
 
 CSS
 
-```
+```css
 player {
   border:2px solid red;
   display:block;
@@ -22,7 +22,7 @@ player {
 
 Typescript
 
-```
+```typescript
 class Player {
     frames = 3
     frame = 0

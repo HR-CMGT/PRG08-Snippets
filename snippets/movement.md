@@ -3,7 +3,7 @@
 ## Listeners
 
 [Gebruik de **fat arrow** notatie](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) voor Event Listeners.
-```
+```typescript
 window.addEventListener("keydown", (e:KeyboardEvent) => this.move(e))
 ```
 
@@ -13,7 +13,7 @@ Gebruik je de **keydown** en **keyup** events van **window** om de snelheid van 
 
 Keydown geeft het karakter een snelheid in de richting van de toets. Keyup zet die snelheid op 0. [In plaats van het toetsenbord kan je een game controller gebruiken](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)
 
-```
+```typescript
 class Fish {
     leftSpeed : number = 0
     rightSpeed : number = 0

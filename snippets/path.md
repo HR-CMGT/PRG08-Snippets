@@ -3,12 +3,12 @@
 In dit voorbeeld bewegen we een element langs een SVG pad. Dit werkt doordat een SVG pad een X,Y positie kan teruggeven voor elk punt langs zijn eigen lengte.
 
 **lengte van een pad**
-```
+```typescript
 let pathlength = svgpath.getTotalLength()
 ```
 
 **x,y coördinaat op de helft van het pad**
-```
+```typescript
 let x = svgpath.getPointAtLength(0.5 * pathLength).x
 let y = svgpath.getPointAtLength(0.5 * pathLength).y
 ```
@@ -19,7 +19,7 @@ In onderstaande code vind je een SVG path dat wordt gestyled met CSS. In de type
 het bewegen langs het pad met `requestAnimationFrame`
 
 ### HTML
-```
+```html
 <div class="outerWrapper" id="outerWrapper">
   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
     width="800px" height="300px" viewBox="0 0 800 300" enable-background="new 0 0 800 300" xml:space="preserve">
@@ -32,7 +32,7 @@ het bewegen langs het pad met `requestAnimationFrame`
 ```
 
 ### CSS
-```
+```css
 .outerWrapper {
 	width: 800px;
 	height: 300px;
@@ -58,7 +58,7 @@ het bewegen langs het pad met `requestAnimationFrame`
 ```
 
 ### Typescript
-```
+```typescript
 class Game {
     /*	position 0 = start, position 1 = end */
     position: number = 0
