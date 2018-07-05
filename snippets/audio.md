@@ -40,3 +40,5 @@ Op het moment dat je een geluid wil spelen doe je
 mysound.play()
 ```
 [Howler docs](https://github.com/goldfire/howler.js#quick-start)
+
+//
