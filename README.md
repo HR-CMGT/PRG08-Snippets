@@ -21,18 +21,18 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Week 6 Objecten verwijderen](https://github.com/HR-CMGT/CMTTHE04-Week6-oefening0), [Oefening composition](https://github.com/HR-CMGT/CMTTHE04-Week4-lesvoorbeeld) en [Oefening advanced](https://github.com/HR-CMGT/CMTTHE04-Game-Bas)
 - [Week 7 Herhaling](https://github.com/HR-CMGT/CMTTHE04-Week7-oefening1)
 - [Week 8 Oefententamen]()
-- [Voorbeeld inleverdocument inleveropdracht](inleverdocument4.md)
+- [Voorbeeld inleverdocument peer review](inleverdocument4.md)
 
 ### PRG01-8 Jaar 2
 - [Week 1 Herhaling OOP](https://github.com/HR-CMGT/PRG08-Week1-oefening1)
 - [Week 2 Singleton](https://github.com/HR-CMGT/PRG08-Week2-oefening1)
 - [Week 3 Strategy](https://github.com/HR-CMGT/PRG08-Week3-oefening1)
 - [Week 4 Polymorphism](https://github.com/HR-CMGT/PRG08-Week4-oefening1)
-- [Week 5 Observer Pattern](https://github.com/HR-CMGT/PRG08-Week5-oefening0) en [oefening](https://github.com/HR-CMGT/PRG08-Week5-oefening1)
+- [Week 5 Observer](https://github.com/HR-CMGT/PRG08-Week5-oefening0) en [oefening](https://github.com/HR-CMGT/PRG08-Week5-oefening1)
 - Week 6
-- [Week 7 Oefening Modules, Webpack, Greensock Animation, Switching screens](https://github.com/HR-CMGT/PRG08-Week7-oefening1)
-- [Week 8 Afronden inleveropdracht]()
-- [Voorbeeld inleverdocument inleveropdracht](inleverdocument8.md)
+- [Week 7 Oefening](https://github.com/HR-CMGT/PRG08-Week7-oefening1)
+- Week 8 Herhaling
+- [Voorbeeld inleverdocument praktijktentamen](inleverdocument8.md)
 
 ## Game programming in Typescript
 
