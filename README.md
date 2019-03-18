@@ -72,7 +72,8 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Dependency Injection](https://www.npmjs.com/package/container-ioc)
 - [Data laden met Fetch](snippets/fetch.md)
 - [Boardgame.io](http://boardgame.io/#/) - build a boardgame in Javascript
-- [Phaser 3 Typescript examples](https://github.com/digitsensitive/phaser3-typescript) en [Tutorial](https://medium.com/@digit.sensitivee/learn-to-create-a-html5-game-in-5-minutes-604118f5d0ab)
+- [Phaser 3 Typescript](https://github.com/digitsensitive/phaser3-typescript)
+- [Build Flappy Bird in 5 minutes with Phaser and Typescript](https://medium.com/@digit.sensitivee/learn-to-create-a-html5-game-in-5-minutes-604118f5d0ab) en [Source code](https://github.com/digitsensitive/phaser3-flappy-bird)
 
 ## Graphics
 
