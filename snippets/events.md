@@ -2,14 +2,9 @@
 
 Events stellen je in staat om het **loose coupling** principe van OOP toe te passen op objecten in je code. Een object hoeft zelf niet te weten wat zijn context is, in plaats daarvan stuurt hij een event zodra er iets gebeurt. 
 
-In dit voorbeeld luistert de game via window of er een crash plaats vindt. De car stuurt een crash event via window. Er is geen directe link tussen game en car.
+In dit voorbeeld luistert de game of er een crash plaats vindt. De car stuurt een crash event. Omdat de events via `window` gaan is er is geen directe link nodig tussen game en car.
 
 ```typescript
-class Car { 
-    constructor() {
-        window.dispatchEvent(new Event('crash'))
-    }
-}
 
 class Game {
     constructor() {
@@ -21,6 +16,12 @@ class Game {
         let a = new Car()
     }
 }
+
+class Car { 
+    constructor() {
+        window.dispatchEvent(new Event('crash'))
+    }
+}
 ``` 
 
 ## Event target meegeven
@@ -30,14 +31,6 @@ class Game {
 In de listener moet je aangeven dat het event dat binnenkomt een custom event is.
 
 ```typescript
-class Car {
-    public name = "toyota"
-    constructor() {
-        let crashEvent = new CustomEvent('crash', { detail: this })
-        window.dispatchEvent(crashEvent)
-    }
-}
-
 class Game {
     constructor() {
 
@@ -48,11 +41,18 @@ class Game {
         let a = new Car()
     }
 }
+class Car {
+    public name = "toyota"
+    constructor() {
+        let crashEvent = new CustomEvent('crash', { detail: this })
+        window.dispatchEvent(crashEvent)
+    }
+}
 ```
 
-## DIV element als target
+## Event Listener on elements
 
-We gebruiken nu **window** als "pipeline" om events doorheen te sturen. Je kan ook een event sturen vanaf een DIV element. Op die manier hoef je geen detail data mee te sturen om te weten waar het event vandaan komt.
+Events kunnen verstuurd worden vanaf zogeheten `Event Emitters`, bijvoorbeeld een DIV element. Nu kan je vanaf de game luisteren naar events van een specifiek object, in plaats van alle events van alle objecten. 
 
 ```typescript
 class Car {
@@ -90,7 +90,7 @@ new Game()
 
 ## Custom EventTarget
 
-In Chrome en Firefox is het ook mogelijk om de car instance een event emitter te maken, in plaats van de DIV van de car:
+In Chrome en Firefox is het ook mogelijk om de car instance een event emitter te maken, door je eigen class ook een `EventEmitter` te maken. Nu kan je ook via `event.target` kijken welke Car het event gestuurd heeft.
 
 ```typescript
 class Car extends EventTarget {
@@ -98,7 +98,8 @@ class Car extends EventTarget {
 }
 
 let c = new Car()
-c.addEventListener("crash", ()=>console.log("crash"))
+c.addEventListener("crash", (e)=>console.log(e.target + " has crashed"))
 ```
+
 
 [Browser compatibiliy](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget)
