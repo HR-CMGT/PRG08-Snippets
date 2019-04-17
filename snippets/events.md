@@ -32,7 +32,7 @@ class Car {
 
 ## Event target meegeven
 
-Als je wil weten welke car instance gecrashed is, dan kan je dat meesturen door eerst een custom event aan te maken. Een custom event heeft een detail property waar je data aan mee kan geven.
+Als je wil weten welke car instance gecrashed is, dan kan je dat meesturen door in plaats van `new Event()` een `new CustomEvent()` aan te maken. Een custom event heeft een detail property waar je data aan mee kan geven.
 
 In de listener moet je aangeven dat het event dat binnenkomt een custom event is.
 
