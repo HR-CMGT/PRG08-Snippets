@@ -1,8 +1,12 @@
 # Custom Events
 
-Events stellen je in staat om het **loose coupling** principe van OOP toe te passen op objecten in je code. Een object hoeft zelf niet te weten wat zijn context is, in plaats daarvan stuurt hij een event zodra er iets gebeurt. 
+Events stellen je in staat om het **loose coupling** principe van OOP toe te passen op objecten in je code. Dit betekent dat objecten geen directe link met elkaar hebben, maar dat ze toch op elkaar kunnen reageren.
 
-In dit voorbeeld luistert de game of er een crash plaats vindt. De car stuurt een crash event. Omdat de events via `window` gaan is er is geen directe link nodig tussen game en car.
+Omdat er geen directe link is, voorkom je errors op het moment dat een van de objecten verwijderd wordt uit de game.
+
+In dit voorbeeld luistert de game of er ergens in het spel een crash plaats vindt. Voor de game maakt het niet uit waar die events vandaan komen. 
+
+De car stuurt een crash event, maar weet niet wie daar naar luistert (in dit geval is dat de game). 
 
 ```typescript
 
