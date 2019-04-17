@@ -4,9 +4,7 @@ Events stellen je in staat om het **loose coupling** principe van OOP toe te pas
 
 Omdat er geen directe link is, voorkom je errors op het moment dat een van de objecten verwijderd wordt uit de game.
 
-In dit voorbeeld luistert de game of er ergens in het spel een crash plaats vindt. Voor de game maakt het niet uit waar die events vandaan komen. 
-
-De car stuurt een crash event, maar weet niet wie daar naar luistert (in dit geval is dat de game). 
+In dit voorbeeld luistert de game of er ergens in het spel een crash plaats vindt. Het maakt niet uit waar die events vandaan komen. 
 
 ```typescript
 
@@ -20,6 +18,10 @@ class Game {
         let a = new Car()
     }
 }
+```
+De car stuurt een crash event. De car hoeft niet te weten wie er naar die events luistert.
+
+```typescript
 
 class Car { 
     constructor() {
