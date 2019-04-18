@@ -12,7 +12,11 @@ Dit document bevat informatie voor de vakken CMTTHE01-4 en PRG01-8.
 
 Op N@Tschool vind je de modulewijzer en een quickstart guide.
 
-### CMTTHE01-4 Jaar 1
+## Jaar 1 CLE 4
+
+- [Workshop Phaser 3 met Typescript](https://github.com/HR-CMGT/CLE4-workshop-games)
+
+## Jaar 1 CMTTHE01-4
 - [Week 1 Objects](https://github.com/HR-CMGT/CMTTHE04-Week1-oefening1)
 - [Week 2 Classes en Instances](https://github.com/HR-CMGT/CMTTHE04-Week2-oefening1)
 - [Week 3 Encapsulation, Game Loop, Collision detection](https://github.com/HR-CMGT/CMTTHE04-Week3-oefening1)
@@ -23,7 +27,7 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Week 8 Oefententamen]()
 - [Voorbeeld inleverdocument peer review](inleverdocument4.md)
 
-### PRG01-8 Jaar 2
+## Jaar 2 PRG01-8
 - [Week 1 Herhaling OOP](https://github.com/HR-CMGT/PRG08-Week1-oefening1)
 - [Week 2 Singleton](https://github.com/HR-CMGT/PRG08-Week2-oefening1)
 - [Week 3 Strategy](https://github.com/HR-CMGT/PRG08-Week3-oefening1)
@@ -52,6 +56,8 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Matter Physics Basics](snippets/matter.md)
 - [Debugging in VS Code](snippets/debug.md)
 - [State Manager](snippets/state.md)
+
+
 
 ## Libraries en API's
 
