@@ -100,12 +100,12 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 ## Canvas/WebGL
 
 - [Canvas en Spritesheets](snippets/canvas.md)
-- [Pixi Canvas Basics](snippets/pixi.md)
-- [Canvas 2D manager](http://www.pixijs.com)
-- [Isometric graphics engine](http://jdan.github.io/isomer/)
-- [Canvas 3D animatie](https://threejs.org)
+- [Pixi Canvas Basics](snippets/pixi.md) en [Library](http://www.pixijs.com)
+- [Phaser 3 Typescript](https://github.com/digitsensitive/phaser3-typescript) en [example games](https://github.com/digitsensitive/phaser3-typescript/tree/master/src/games)
+- [Isomer for Isometric games](http://jdan.github.io/isomer/)
+- [3D animatie](https://threejs.org) en [3D scene editor](https://threejs.org/editor/)
 - [AR for ThreeJS](https://github.com/jeromeetienne/AR.js)
-- [Canvas 2D animatie](http://createjs.com)
+- [CreateJS 2D](http://createjs.com)
 
 ## Type definitions
 
