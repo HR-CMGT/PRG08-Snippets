@@ -22,10 +22,9 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Week 3 Encapsulation, Game Loop, Collision detection](https://github.com/HR-CMGT/CMTTHE04-Week3-oefening1)
 - [Week 4 Composition](https://github.com/HR-CMGT/CMTTHE04-Week4-oefening1)
 - [Week 5 Inheritance](https://github.com/HR-CMGT/CMTTHE04-Week5-oefening1)
-- [Week 6 Objecten verwijderen](https://github.com/HR-CMGT/CMTTHE04-Week6-oefening0), [Oefening composition](https://github.com/HR-CMGT/CMTTHE04-Week4-lesvoorbeeld) en [Oefening advanced](https://github.com/HR-CMGT/CMTTHE04-Game-Bas)
-- [Week 7 Herhaling](https://github.com/HR-CMGT/CMTTHE04-Week7-oefening1)
-- [Week 8 Oefententamen]()
-- [Voorbeeld inleverdocument peer review](inleverdocument4.md)
+- [Week 6 OOP werkcollege](https://github.com/HR-CMGT/CMTTHE04-Week6-oefening0), [Oefening 1](https://github.com/HR-CMGT/CMTTHE04-Week4-lesvoorbeeld), [Oefening 2](https://github.com/HR-CMGT/CMTTHE04-Game-Bas), [Oefening 3](https://github.com/HR-CMGT/CMTTHE04-Week7-oefening1)
+- Week 7 Github - Pull Request
+- Week 8 Oefententamen
 
 ## Jaar 2 PRG01-8
 - [Week 1 Herhaling OOP](https://github.com/HR-CMGT/PRG08-Week1-oefening1)
@@ -33,10 +32,9 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Week 3 Strategy](https://github.com/HR-CMGT/PRG08-Week3-oefening1)
 - [Week 4 Polymorphism](https://github.com/HR-CMGT/PRG08-Week4-oefening1)
 - [Week 5 Observer](https://github.com/HR-CMGT/PRG08-Week5-oefening0) en [oefening](https://github.com/HR-CMGT/PRG08-Week5-oefening1)
-- Week 6
-- [Week 7 Oefening](https://github.com/HR-CMGT/PRG08-Week7-oefening1)
-- Week 8 Herhaling
-- [Voorbeeld inleverdocument praktijktentamen](inleverdocument8.md)
+- Week 6 Zelfstudie, [Oefening](https://github.com/HR-CMGT/PRG08-Week7-oefening1)
+- Week 7 Peer Review
+- Week 8 Voorbereiding Praktijktentamen, [Voorbeeld inleverdocument](inleverdocument8.md)
 
 ## Game programming in Typescript
 
@@ -56,8 +54,6 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Matter Physics Basics](snippets/matter.md)
 - [Debugging in VS Code](snippets/debug.md)
 - [State Manager](snippets/state.md)
-
-
 
 ## Libraries en API's
 

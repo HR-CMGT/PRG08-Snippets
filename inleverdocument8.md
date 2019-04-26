@@ -1,47 +1,37 @@
-# Inleverdocument PRG01-8
+# Inleverdocument PRG01-8 2018-2019
 
-Dit is een opzet voor het inleverdocument. De exacte instructies vind je in de Modulewijzer.
+Dit is een voorbeeld van het inleverdocument van het praktijktentamen. Meer info vind je in de cursushandleiding.
 
-## Inleiding
+## OOP Fundamentals
 
-Toelichting van je spelconcept
-
-## Speelbare game
-
-Link naar de online speelbare game
-
-## Installatie
-
-Instructies voor het clonen, editen en runnen van de game via deze repository.
-
-## Klassendiagram
-
-Het klassendiagram van je game.
-
-## Pull request
-
-Link naar de pull request die je in week 4 hebt gedaan. De link gaat naar een PR in een fork van het project van een medestudent.
-
-## Peer review
-
-Link naar de peer review die je in week 6 hebt gedaan. De link gaat naar een issue in het project van een medestudent.
+Beschrijf waar en waarom je code gebruik maakt van Inheritance, Composition en Encapsulation.
 
 ## Singleton
 
-Beschrijf waar en waarom je de singleton hebt toegepast.
+Beschrijf welk programmeerprobleem je oplost met de Singleton en waarom het patroon zich goed leent voor dit probleem.
 
 ## Polymorfisme
 
-Beschrijf van minimaal 2 plekken uit jouw code waar en waarom er gebruik is gemaakt van polymorfisme.
+Beschrijf waar en waarom polymorfisme gebruikt wordt in jouw project. Dit moet code zijn die niet onderdeel is van de Strategy of Observer patronen uit dit tentamen.
 
 ## Strategy
 
-Beschrijf waar en waarom je het strategy pattern hebt toegepast.
+Beschrijf welk programmeerprobleem je oplost met de Strategy en waarom het patroon zich goed leent voor dit probleem.
 
 ## Observer
 
-Beschrijf waar en waarom je het observer pattern hebt toegepast.
+Beschrijf welk programmeerprobleem je oplost met de Observer en waarom het patroon zich goed leent voor dit probleem.
 
-## Gameplay componenten
+## Finished product
 
-Beschrijf per component waar en waarom je het hebt toegepast
+Beschrijf welke componenten uit de onderstaande "finished product" lijst voorkomen in jouw project. Je krijgt 1 punt per component tot een maximum van 2 punten.
+
+### Finished product components
+
+- De game heeft een startscherm en een eindscherm met een scoreweergave.
+- Je score komt in een lijst met namen en scores. De lijst wordt bewaard als de browser is afgesloten. • De game bevat local of online multiplayer.
+- De game werkt op mobiele schermen met touch controls.
+- De game gebruikt alternatieve input zoals de camera, microfoon, gyroscoop, locatiebepaling.
+- De game heeft levels met een oplopende moeilijkheidsgraad.
+- Geluid en muziek is een integraal onderdeel van de game.
+- De game werkt met Canvas in plaats van DOM elementen.
