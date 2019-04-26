@@ -1,4 +1,4 @@
-# Data ophalen met Fetch
+# JSON en Fetch in Typescript
 
 **Fetch** is een native browser method om data van een API te laden
 
@@ -16,6 +16,24 @@ class Game {
 }
 ```
 
+Variant met `async await`
+
+```typescript
+class Game {
+  
+    constructor(){
+        this.loadJSON("https://swapi.co/api/people/1/")
+    }
+  
+    async loadJSON(url:string) {
+        let response = await fetch(url)
+        let json = await response.json()
+        console.log(json)
+    }
+}
+
+```
+
 Om Fetch te gebruiken moet je deze **lib** opties toevoegen aan de compiler options in je `tsconfig.json` file:
 
 ```json
@@ -29,9 +47,9 @@ Om Fetch te gebruiken moet je deze **lib** opties toevoegen aan de compiler opti
 }
 ```
 
-## JSON in Typescript
+## Types voor JSON data
 
-Typescript kan voor je checken welke inhoud je JSON data heeft. In deze JSON zouden we willen weten dat het over een Actor gaat, en dat die Actor een name, height en een aantal films heeft:
+Om te voorkomen dat je data het type `any` heeft kunnen we aangeven dat het over een Actor gaat, en dat die Actor een name, height en een aantal films heeft:
 
 **JSON**
 ```json
@@ -59,7 +77,7 @@ interface Movie {
 }
 ```
 
-**dataloaded**
+**callback**
 
 Nu kan je in `dataloaded` aangeven dat deze JSON van het type Actor is. 
 ```typescript
@@ -67,4 +85,9 @@ dataLoaded(res:Actor) {
     console.log(res.name)
     console.log(res.films[0].title)
 }
+```
+
+En in de `async` variant kan je nu zeggen:
+```typescript
+let json:Actor = await response.json()
 ```

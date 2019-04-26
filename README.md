@@ -10,7 +10,7 @@ Dit document bevat informatie voor de vakken CMTTHE01-4 en PRG01-8.
 
 # Curriculum
 
-Op N@Tschool vind je de modulewijzer en een quickstart guide.
+Op N@Tschool vind je de cursushandleiding en een quickstart guide.
 
 ## Jaar 1 CLE 4
 
@@ -57,6 +57,7 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 
 ## Libraries en API's
 
+- [JSON en Fetch in Typescript](snippets/fetch.md)
 - [Socket.io Multiplayer](https://socket.io)
 - [Lance Multiplayer Server](http://lance.gg)
 - [SAT.JS : collision detection for complex shapes](https://github.com/jriecken/sat-js)
@@ -72,7 +73,6 @@ Op N@Tschool vind je de modulewijzer en een quickstart guide.
 - [Greensock Tweening](https://greensock.com)
 - [Multithreading in Javascript](https://keithwhor.github.io/multithread.js/)
 - [Dependency Injection](https://www.npmjs.com/package/container-ioc)
-- [Data laden met Fetch](snippets/fetch.md)
 - [Boardgame.io](http://boardgame.io/#/) - build a boardgame in Javascript
 - [Phaser 3 Typescript](https://github.com/digitsensitive/phaser3-typescript)
 - [Build Flappy Bird in 5 minutes with Phaser and Typescript](https://medium.com/@digit.sensitivee/learn-to-create-a-html5-game-in-5-minutes-604118f5d0ab) en [Source code](https://github.com/digitsensitive/phaser3-flappy-bird)
