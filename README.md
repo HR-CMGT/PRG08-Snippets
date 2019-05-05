@@ -14,7 +14,7 @@ Op N@Tschool vind je de cursushandleiding en een quickstart guide.
 
 ## Jaar 1 CLE 4
 
-- [Workshop Phaser 3 met Typescript](https://github.com/HR-CMGT/CLE4-workshop-games)
+- [Workshop Phaser 3 met Typescript](https://github.com/HR-CMGT/CLE4-phaser-workshop)
 
 ## Jaar 1 CMTTHE01-4
 - [Week 1 Objects](https://github.com/HR-CMGT/CMTTHE04-Week1-oefening1)
