@@ -54,6 +54,7 @@ Op N@Tschool vind je de cursushandleiding en een quickstart guide.
 - [Matter Physics Basics](snippets/matter.md)
 - [Debugging in VS Code](snippets/debug.md)
 - [State Manager](snippets/state.md)
+- [Connecting a controller](https://github.com/HR-CMGT/arcade-game) and [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)
 
 ## Libraries en API's
 
@@ -69,7 +70,6 @@ Op N@Tschool vind je de cursushandleiding en een quickstart guide.
 - [Planck 2D physics](http://piqnt.com/planck.js/Car)
 - [SVG Vector drawing](http://svgjs.com)
 - [AI / Deep Learning](https://deeplearnjs.org)
-- [GamePad API](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)
 - [Greensock Tweening](https://greensock.com)
 - [Multithreading in Javascript](https://keithwhor.github.io/multithread.js/)
 - [Dependency Injection](https://www.npmjs.com/package/container-ioc)
