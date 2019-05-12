@@ -108,3 +108,8 @@ Op N@Tschool vind je de cursushandleiding en een quickstart guide.
 Om javascript libraries te gebruiken in een typescript project heb je Type Definitions nodig. Dit zijn `.d.ts` files. Er staan een aantal voorbeelden in [deze repository](https://github.com/HR-CMGT/Typescript/tree/master/definitions). Je kan type definitions ook via `npm` downloaden:
 
 `npm install @types/libraryname`
+
+## Documentation
+
+- [Official documentation](https://www.typescriptlang.org/docs/home.html)
+- [The definitive Typescript guide](https://www.sitepen.com/blog/update-the-definitive-typescript-guide/)
