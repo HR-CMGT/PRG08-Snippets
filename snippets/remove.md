@@ -126,3 +126,6 @@ class Game {
 	}
 }
 ```
+## Web components
+
+Met [Web Components](webcomponents.md) is het makkelijker om een game element en zijn bijbehorende DOM element uit een game te verwijderen
