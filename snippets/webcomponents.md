@@ -2,6 +2,8 @@
 
 By using web components, we can create game objects that are also DOM objects. This makes it much easier to add and remove elements to a DOM Game. 
 
+[Jump to finished example code](#completeexample)
+
 ### What are Web Components?
 
 A web component is a HTML element that allows us to add our own code. This example creates an HTML element that has a `drive()` method. The element also adds itself to the DOM!
@@ -137,7 +139,7 @@ To compile typescript with custom components, set the compile target to `es6` in
 }
 ```
 
-# Complete example
+# <a id="completeexample"></a>Complete Example #
 
 CAR.TS
 ```typescript
