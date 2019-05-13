@@ -39,6 +39,7 @@ Op N@Tschool vind je de cursushandleiding en een quickstart guide.
 ## Game programming in Typescript
 
 - [Game Loop met GameObjects](snippets/game.md)
+- [Web Components](snippets/webcomponents.md)
 - [Een GameObject verwijderen](snippets/remove.md)
 - [Character movement](snippets/movement.md)
 - [Collision detection](snippets/collision.md)
@@ -47,7 +48,6 @@ Op N@Tschool vind je de cursushandleiding en een quickstart guide.
 - [Moving along a path](snippets/path.md)
 - [Vector](snippets/vector.md)
 - [Events](snippets/events.md)
-- [Using Web Components to build a game](https://github.com/KokoDoko/game-custom-elements)
 - [Drag and drop](snippets/drag.md)
 - [Namespaces](snippets/namespace.md)
 - [Modules](snippets/modules.md)
