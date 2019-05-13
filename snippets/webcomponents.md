@@ -1,4 +1,4 @@
-## Custom Elements
+## Web Components
 
 By using web components, we can create game objects that are also DOM objects. This makes it much easier to add and remove elements to a DOM Game. 
 
