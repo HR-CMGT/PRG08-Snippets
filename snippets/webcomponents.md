@@ -205,4 +205,22 @@ car-component {
     background-color:lightblue;
 }
 ```
-
+TSCONFIG.JSON
+```json
+{
+    "compilerOptions": {
+        "strict": true,
+        "target": "es6",
+        "removeComments": true,
+        "noUnusedLocals": true,
+        "strictPropertyInitialization": false,
+        "noImplicitAny": true,
+        "noUnusedParameters": true,
+        "sourceMap": true,
+        "outFile": "docs/js/main.js"
+    },
+    "include": [
+        "dev/**/*"
+    ]
+}
+```
