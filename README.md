@@ -29,7 +29,7 @@ Op N@Tschool vind je de cursushandleiding en een quickstart guide.
 ## Jaar 2 PRG01-8
 - [Week 1 Herhaling OOP](https://github.com/HR-CMGT/PRG08-Week1-oefening1)
 - [Week 2 Singleton](https://github.com/HR-CMGT/PRG08-Week2-oefening1)
-- [Week 3 Strategy](https://github.com/HR-CMGT/PRG08-Week3-oefening1) [Lesopdracht](https://github.com/HR-CMGT/PRG08-basketball-strategy)
+- [Week 3 Strategy](https://github.com/HR-CMGT/PRG08-Week3-oefening1). Lesopdracht: [Basketball Strategy](https://github.com/HR-CMGT/PRG08-basketball-strategy)
 - [Week 4 Polymorphism](https://github.com/HR-CMGT/PRG08-Week4-oefening1)
 - [Week 5 Observer](https://github.com/HR-CMGT/PRG08-Week5-oefening0) en [oefening](https://github.com/HR-CMGT/PRG08-Week5-oefening1)
 - Week 6 Zelfstudie, [Oefening](https://github.com/HR-CMGT/PRG08-Week7-oefening1)
