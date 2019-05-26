@@ -30,7 +30,7 @@ Op N@Tschool vind je de cursushandleiding en een quickstart guide.
 - [Week 1 Herhaling OOP](https://github.com/HR-CMGT/PRG08-Week1-oefening1)
 - [Week 2 Singleton](https://github.com/HR-CMGT/PRG08-Week2-oefening1)
 - [Week 3 Strategy](https://github.com/HR-CMGT/PRG08-basketball-strategy) en [Extra oefening: Tamagotchi](https://github.com/HR-CMGT/PRG08-Week3-oefening1)
-- [Week 4 Polymorphism](https://github.com/HR-CMGT/PRG08-Week4-oefening1)
+- [Week 4 Polymorphism](https://github.com/HR-CMGT/PRG08-Week4-oefening1) en [Extra oefening: Close Call](https://github.com/HR-CMGT/PRG08-close-call)
 - [Week 5 Observer](https://github.com/HR-CMGT/PRG08-Week5-oefening0) en [oefening](https://github.com/HR-CMGT/PRG08-Week5-oefening1)
 - Week 6 Zelfstudie, [Oefening](https://github.com/HR-CMGT/PRG08-Week7-oefening1)
 - Week 7 Peer Review
