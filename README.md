@@ -49,6 +49,7 @@ Op N@Tschool vind je de cursushandleiding en een quickstart guide.
 - [Vector](snippets/vector.md)
 - [Events](snippets/events.md)
 - [Drag and drop](snippets/drag.md)
+- [Touch events](snippets/touch.md)
 - [Namespaces](snippets/namespace.md)
 - [Modules](snippets/modules.md)
 - [Matter Physics Basics](snippets/matter.md)
