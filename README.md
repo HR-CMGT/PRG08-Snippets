@@ -115,7 +115,8 @@ Om javascript libraries te gebruiken in een typescript project heb je Type Defin
 
 - [Official documentation](https://www.typescriptlang.org/docs/home.html)
 - [The definitive Typescript guide](https://www.sitepen.com/blog/update-the-definitive-typescript-guide/)
-Phaser 3
+
+###Phaser 3
 - [Official API documentatie](https://photonstorm.github.io/phaser3-docs/)
 - [Easy documentation with code examples](https://rexrainbow.github.io/phaser3-rex-notes/docs/site/index.html)
 - [Code voorbeelden (labs.github.io)](http://labs.phaser.io/)
