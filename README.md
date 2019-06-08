@@ -20,10 +20,13 @@ Op N@Tschool vind je de cursushandleiding en een quickstart guide.
 - [Week 1 Objects](https://github.com/HR-CMGT/CMTTHE04-Week1-oefening1)
 - [Week 2 Classes en Instances](https://github.com/HR-CMGT/CMTTHE04-Week2-oefening1)
 - [Week 3 Encapsulation, Game Loop, Collision detection](https://github.com/HR-CMGT/CMTTHE04-Week3-oefening1)
-- [Week 4 Composition - Oefening 1 - chicken on a raft](https://github.com/HR-CMGT/CMTTHE04-Week4-oefening1). Advanced: [Oefening 2 - adding screens](https://github.com/HR-CMGT/CMTTHE04-Week4-oefening2)
+- [Week 4 Composition - Oefening 1 - chicken on a raft](https://github.com/HR-CMGT/CMTTHE04-Week4-oefening1)
 - [Week 5 Inheritance](https://github.com/HR-CMGT/CMTTHE04-Week5-oefening1)
-- [Week 6 OOP werkcollege](https://github.com/HR-CMGT/CMTTHE04-Week6-oefening0), [Oefening 1](https://github.com/HR-CMGT/CMTTHE04-Week4-lesvoorbeeld), [Oefening 2](https://github.com/HR-CMGT/CMTTHE04-Game-Bas), [Oefening 3](https://github.com/HR-CMGT/CMTTHE04-Week7-oefening1)
-- Week 7 Github - Pull Request
+- Week 6 OOP werkcollege
+  - [Oefening 1 : Objecten verwijderen](https://github.com/HR-CMGT/CMTTHE04-Week6-oefening1)
+  - [Oefening 2 : Flappy Crossroads - Inheritance en Composition](https://github.com/HR-CMGT/CMTTHE04-Week6-oefening2)
+  - [Oefening 3 : Schermen toevoegen - Inheritance en Composition](https://github.com/HR-CMGT/CMTTHE04-Week6-oefening3)
+- Week 7 Github
 - Week 8 Oefententamen
 
 ## Jaar 2 PRG01-8
