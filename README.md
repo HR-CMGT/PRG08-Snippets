@@ -23,7 +23,7 @@ Op N@Tschool vind je de cursushandleiding en een quickstart guide.
 - [Week 4 Composition - Oefening 1 - chicken on a raft](https://github.com/HR-CMGT/CMTTHE04-Week4-oefening1)
 - [Week 5 Inheritance](https://github.com/HR-CMGT/CMTTHE04-Week5-oefening1)
 - Week 6 OOP werkcollege
-  - Voorbeeld 1 : [Overerving met input elmenten](https://github.com/HR-CMGT/OOP-inheritance-with-input-elements)
+  - Voorbeeld 1 : [Overerving met input elmenten](https://github.com/HR-CMGT/OOP-inheritance-with-input-elements) (of met [live validatie](https://github.com/HR-CMGT/OOP-inheritance-clientside-validation))
   - Oefening 1 : [Objecten verwijderen](https://github.com/HR-CMGT/CMTTHE04-Week6-oefening1)
   - Oefening 2 : [Flappy Crossroads - Inheritance en Composition](https://github.com/HR-CMGT/CMTTHE04-Week6-oefening2)
   - Oefening 3 : [Schermen toevoegen - Inheritance en Composition](https://github.com/HR-CMGT/CMTTHE04-Week6-oefening3)
