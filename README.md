@@ -90,6 +90,7 @@ Op N@Tschool vind je de cursushandleiding en een quickstart guide.
 - [Spriters Resource](https://www.spriters-resource.com/)
 - [Retro Game Zone](https://retrogamezone.co.uk/)
 - [Assets Forge](http://assetforge.io/) - maak 2D sprites op basis van building blocks
+- [Making Voxel art](https://ephtracy.github.io/)
 
 ## Audio
 
@@ -108,7 +109,6 @@ Op N@Tschool vind je de cursushandleiding en een quickstart guide.
 - [3D animatie](https://threejs.org) en [3D scene editor](https://threejs.org/editor/)
 - [AR for ThreeJS](https://github.com/jeromeetienne/AR.js)
 - [CreateJS 2D](http://createjs.com)
-- [Making Voxel art](https://ephtracy.github.io/)
 
 ## Type definitions
 
