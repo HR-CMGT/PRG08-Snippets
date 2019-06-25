@@ -108,6 +108,7 @@ Op N@Tschool vind je de cursushandleiding en een quickstart guide.
 - [3D animatie](https://threejs.org) en [3D scene editor](https://threejs.org/editor/)
 - [AR for ThreeJS](https://github.com/jeromeetienne/AR.js)
 - [CreateJS 2D](http://createjs.com)
+- [Making Voxel art](https://ephtracy.github.io/)
 
 ## Type definitions
 
