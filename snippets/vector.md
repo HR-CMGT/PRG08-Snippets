@@ -140,3 +140,5 @@ class Rectangle {
 
 }
 ```
+
+[Code voorbeeld voor Vector Movement](https://github.com/KokoDoko/VectorTanks)
