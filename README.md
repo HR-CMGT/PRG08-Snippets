@@ -40,6 +40,10 @@ Op N@Tschool vind je de cursushandleiding en een quickstart guide.
 - Week 7 [Afmaken en bespreken oefening](https://github.com/HR-CMGT/PRG08-Week7-oefening1)
 - Week 8 Voorbereiding Praktijktentamen, [Voorbeeld inleverdocument](inleverdocument8.md)
 
+## Typescript workshop 7 January 2019
+
+- [Working with types](snippets/types.md)
+
 ## Game programming in Typescript
 
 - [Game Loop met GameObjects](snippets/game.md)
