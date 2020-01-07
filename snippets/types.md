@@ -17,7 +17,7 @@ const data:Array<number | string> = ["Henk", 3]        // the data array can con
 
 ## Combining types 
 
-Use & and | to combine types. Teacher and Student are both Persons. Use intellisense to get super cool code completion.
+Use `&` and `|` to combine types. Teacher and Student are both Persons. Use intellisense to get super cool code completion.
 
 ```typescript
 type Person = { name:string, surname:string, age:number}
@@ -49,14 +49,12 @@ function showDetails(p:Teacher | Student) {
 
 ## Generic types
 
-Types such as `Array<number>` or `Array<string` allow you to determine the `type` of Array. You can create your own generic types with `<>`, for example: `Box<x>` is a `Box` of type `x`.
-
-In this example we create a Box that can have different `types` of content. The type of the content can be determined when you create a variable of type Box.
+You can create generic types with `<...>` after a type, for example: `Box<x>` is a `Box` of type `x`. `x` can be `number`, `string` or any other type. This can be determined when you create a Box variable:
 
 ```typescript
 type Box<x> = {brand:string, content:x}
 
-const box1: Box<number> = {brand:"Amazon", content:4}
+const box1: Box<number> = { brand: "Amazon", content:4 }
 const box2: Box<string> = { brand: "Amazon", content: "Hello" }
 const box3: Box<string | number> = { brand: "Amazon", content: "Hello" }
 ```
