@@ -106,6 +106,7 @@ Op N@Tschool vind je de cursushandleiding en een quickstart guide.
 ## Canvas/WebGL
 
 - [Canvas en Spritesheets](snippets/canvas.md)
+- [P5.js Creative Coding Library](https://p5js.org)
 - [Pixi Canvas Basics](snippets/pixi.md) en [Library](http://www.pixijs.com)
 - [Phaser 3 Typescript](https://github.com/digitsensitive/phaser3-typescript) en [example games](https://github.com/digitsensitive/phaser3-typescript/tree/master/src/games)
 - [Isomer for Isometric games](http://jdan.github.io/isomer/)
