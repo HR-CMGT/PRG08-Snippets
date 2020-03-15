@@ -12,10 +12,6 @@ Dit document bevat informatie voor de vakken CMTTHE01-4 en PRG01-8.
 
 Op N@Tschool vind je de cursushandleiding en een quickstart guide.
 
-## Jaar 1 CLE 4
-
-- [Workshop Phaser 3 met Typescript](https://github.com/HR-CMGT/CLE4-phaser-workshop)
-
 ## Jaar 1 CMTTHE01-4
 - [Week 1 Objects](https://github.com/HR-CMGT/CMTTHE04-Week1-oefening1)
 - [Week 2 Classes en Instances](https://github.com/HR-CMGT/CMTTHE04-Week2-oefening1)
@@ -40,9 +36,12 @@ Op N@Tschool vind je de cursushandleiding en een quickstart guide.
 - Week 7 [Afmaken en bespreken oefening](https://github.com/HR-CMGT/PRG08-Week7-oefening1)
 - Week 8 Voorbereiding Praktijktentamen, [Voorbeeld inleverdocument](inleverdocument8.md)
 
-## Typescript workshop 7 January 2019
+## Example code
 
-- [Working with types](snippets/types.md)
+- [Workshop Phaser 3 met Typescript](https://github.com/HR-CMGT/CLE4-phaser-workshop)
+- [P5JS Typescript Example](https://github.com/HR-CMGT/CLE4-P5-workshop/tree/master/p5-typescript)
+- [Typescript workshop Giuseppe Maggiore 7/1/2019](snippets/types.md)
+- [Robot Royale - Online Multiplayer Game with Typescript and Socket.io](https://github.com/HR-CMGT/robot-royale)
 
 ## Game programming in Typescript
 
