@@ -129,3 +129,5 @@ Om javascript libraries te gebruiken in een typescript project heb je Type Defin
 - [Official API documentatie](https://photonstorm.github.io/phaser3-docs/)
 - [Easy documentation with code examples](https://rexrainbow.github.io/phaser3-rex-notes/docs/site/index.html)
 - [Code voorbeelden (labs.github.io)](http://labs.phaser.io/)
+- [Making an infinite jumper game with Phaser](https://ourcade.co/books/infinite-jumper-phaser3/)
+- [Phaser Editor](https://phasereditor2d.com)
