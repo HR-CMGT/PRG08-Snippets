@@ -10,7 +10,7 @@ Dit document bevat informatie voor de vakken CMTTHE01-4 en PRG01-8.
 
 # Curriculum
 
-Op N@Tschool vind je de cursushandleiding en een quickstart guide.
+Op [Cumlaude](https://lms.hr.nl) vind je de cursushandleiding en een quickstart guide.
 
 ## Jaar 1 CMTTHE01-4
 - [Week 1 Objects](https://github.com/HR-CMGT/CMTTHE04-Week1-oefening1)
@@ -27,14 +27,8 @@ Op N@Tschool vind je de cursushandleiding en een quickstart guide.
 - Week 8 Oefententamen
 
 ## Jaar 2 PRG01-8
-- [Week 1 Herhaling OOP](https://github.com/HR-CMGT/PRG08-Week1-oefening1)
-- [Week 2 Singleton](https://github.com/HR-CMGT/PRG08-Week2-oefening1)
-- [Week 3 Strategy](https://github.com/HR-CMGT/PRG08-basketball-strategy) en [Extra oefening: Tamagotchi](https://github.com/HR-CMGT/PRG08-Week3-oefening1)
-- [Week 4 Polymorphism](https://github.com/HR-CMGT/PRG08-Week4-oefening1) en [Extra oefening: Close Call](https://github.com/HR-CMGT/PRG08-close-call)
-- [Week 5 Observer basics](https://github.com/HR-CMGT/PRG08-week5-observer-basics) en [oefening met Observer en Strategy](https://github.com/HR-CMGT/PRG08-Week5-oefening1)
-- Week 6 Zelfstudie [Start met Oefening](https://github.com/HR-CMGT/PRG08-Week7-oefening1)
-- Week 7 [Afmaken en bespreken oefening](https://github.com/HR-CMGT/PRG08-Week7-oefening1)
-- Week 8 Voorbereiding Praktijktentamen, [Voorbeeld inleverdocument](inleverdocument8.md)
+- Week 1 Herhaling OOP [The Bomb Clicker](https://github.com/HR-CMGT/PRG08-Week1-oefening1)
+- Week 2 Polymorphism [Close Call](https://github.com/HR-CMGT/PRG08-close-call)
 
 ## Example code
 
