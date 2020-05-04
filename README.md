@@ -27,6 +27,9 @@ Op [Cumlaude](https://lms.hr.nl) vind je de cursushandleiding en een quickstart 
 - Week 8 Oefententamen
 
 ## Jaar 2 PRG01-8
+
+[Voorbeeldcode bij de theorievideo's](https://github.com/HR-CMGT/PRG08-code-bij-theorie)
+
 - Week 1 Herhaling OOP [The Bomb Clicker](https://github.com/HR-CMGT/PRG08-Week1-oefening1)
 - Week 2 Polymorphism [Close Call](https://github.com/HR-CMGT/PRG08-close-call)
 
