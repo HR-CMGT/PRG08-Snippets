@@ -8,6 +8,12 @@ Dit document bevat informatie voor de vakken CMTTHE01-4 en PRG01-8.
 - Installeer [Visual Studio Code](https://code.visualstudio.com)
 - Download en test het [Typescript startproject](https://github.com/HR-CMGT/Typescript-startproject)
 
+### Let op voor Windows gebruikers
+Run PowerShell as Administrator (rechtermuisklik op PowerShell) en voor het volgende commando uit
+```
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+```
+
 # Curriculum
 
 Op [Cumlaude](https://lms.hr.nl) vind je de cursushandleiding en een quickstart guide.
