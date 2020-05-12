@@ -19,6 +19,9 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 Op [Cumlaude](https://lms.hr.nl) vind je de cursushandleiding en een quickstart guide.
 
 ## Jaar 1 CMTTHE01-4
+
+[Antwoorden op de opdrachten](https://github.com/HR-CMGT/CMTTHE04-antwoorden)
+
 - [Week 1 Objects](https://github.com/HR-CMGT/CMTTHE04-Week1-oefening1)
 - [Week 2 Classes en Instances](https://github.com/HR-CMGT/CMTTHE04-Week2-oefening1)
 - [Week 3 Encapsulation, Game Loop, Collision detection](https://github.com/HR-CMGT/CMTTHE04-Week3-oefening1)
