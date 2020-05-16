@@ -41,6 +41,7 @@ Op [Cumlaude](https://lms.hr.nl) vind je de cursushandleiding en een quickstart 
 
 - Week 1 Herhaling OOP [The Bomb Clicker](https://github.com/HR-CMGT/PRG08-Week1-oefening1) (Hier de [Uitwerking)](https://github.com/HR-CMGT/PRG08-code-bij-theorie/tree/master/week2/Bomb-Clicker)
 - Week 2 Polymorphism [Close Call](https://github.com/HR-CMGT/PRG08-close-call) 
+- Week 3 Strategy [Basketball Strategy](https://github.com/HR-CMGT/PRG08-basketball-strategy)
 
 ## Example code
 
