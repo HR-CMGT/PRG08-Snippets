@@ -20,7 +20,7 @@ Op [Cumlaude](https://lms.hr.nl) vind je de cursushandleiding en een quickstart 
 
 ## Jaar 1 CMTTHE01-4
 
-[Antwoorden op de opdrachten](https://github.com/HR-CMGT/CMTTHE04-antwoorden)
+[Antwoorden op de opdrachten en codevoorbeelden uit de les](https://github.com/HR-CMGT/CMTTHE04-antwoorden)
 
 - [Week 1 Objects](https://github.com/HR-CMGT/CMTTHE04-Week1-oefening1)
 - [Week 2 Classes en Instances](https://github.com/HR-CMGT/CMTTHE04-Week2-oefening1)
