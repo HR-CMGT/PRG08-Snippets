@@ -37,9 +37,9 @@ Op [Cumlaude](https://lms.hr.nl) vind je de cursushandleiding en een quickstart 
 
 ## Jaar 2 PRG01-8
 
-[Voorbeeldcode bij de theorievideo's](https://github.com/HR-CMGT/PRG08-code-bij-theorie)
+[Voorbeeldcode bij de theorievideo's en uitwerkingen opdrachten](https://github.com/HR-CMGT/PRG08-code-bij-theorie)
 
-- Week 1 Herhaling OOP [The Bomb Clicker](https://github.com/HR-CMGT/PRG08-Week1-oefening1) (Hier de [Uitwerking)](https://github.com/HR-CMGT/PRG08-code-bij-theorie/tree/master/week2/Bomb-Clicker)
+- Week 1 Herhaling OOP [The Bomb Clicker](https://github.com/HR-CMGT/PRG08-Week1-oefening1)
 - Week 2 Polymorphism [Close Call](https://github.com/HR-CMGT/PRG08-close-call) 
 - Week 3 Strategy [Basketball Strategy](https://github.com/HR-CMGT/PRG08-basketball-strategy)
 - Week 4 Herhaling Strategy en Abstracte class [Jibby](https://github.com/HR-CMGT/PRG08-Jibby)
