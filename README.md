@@ -43,6 +43,7 @@ Op [Cumlaude](https://lms.hr.nl) vind je de cursushandleiding en een quickstart 
 - Week 2 Polymorphism [Close Call](https://github.com/HR-CMGT/PRG08-close-call) 
 - Week 3 Strategy [Basketball Strategy](https://github.com/HR-CMGT/PRG08-basketball-strategy)
 - Week 4 Herhaling Strategy en Abstracte class [Jibby](https://github.com/HR-CMGT/PRG08-Jibby)
+- Week 5 Singleton [Angry Captain](https://github.com/HR-CMGT/PRG08-Angry-Captain)
 
 ## Example code
 
