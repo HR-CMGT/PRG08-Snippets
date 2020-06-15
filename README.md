@@ -44,6 +44,7 @@ Op [Cumlaude](https://lms.hr.nl) vind je de cursushandleiding en een quickstart 
 - Week 3 Strategy [Basketball Strategy](https://github.com/HR-CMGT/PRG08-basketball-strategy)
 - Week 4 Herhaling Strategy en Abstracte class [Jibby](https://github.com/HR-CMGT/PRG08-Jibby)
 - Week 5 Singleton [Angry Captain](https://github.com/HR-CMGT/PRG08-Angry-Captain)
+- Week 6 Observer [Notify the Captain](https://github.com/HR-CMGT/PRG08-Notify-the-Captain)
 
 ## Example code
 
