@@ -31,7 +31,7 @@ Op [Cumlaude](https://lms.hr.nl) vind je de cursushandleiding en een quickstart 
   - Voorbeeld 1 : [Overerving met input elmenten](https://github.com/HR-CMGT/OOP-inheritance-with-input-elements) (of met [live validatie](https://github.com/HR-CMGT/OOP-inheritance-clientside-validation))
   - Oefening 1 : [Objecten verwijderen](https://github.com/HR-CMGT/CMTTHE04-Week6-oefening1)
 - Week 7 Klassendiagram voor oefentoets [Flappy Crossroads](https://github.com/HR-CMGT/CMTTHE04-Week6-oefening2)
-- Week 8 Oefentoets maken en besprken
+- Week 8 Oefentoets maken en bespreken
 
 ## Jaar 2 PRG01-8
 
