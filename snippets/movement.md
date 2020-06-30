@@ -15,8 +15,10 @@ Keydown geeft het karakter een snelheid in de richting van de toets. Keyup zet d
 
 ```typescript
 class Fish {
-    xspeed : number = 0
-    yspeed : number = 0
+    private xspeed : number = 0
+    private yspeed : number = 0
+    private x : number = 0
+    private y : number = 0
 
     constructor(){
         window.addEventListener("keydown", (e:KeyboardEvent) => this.onKeyDown(e))
