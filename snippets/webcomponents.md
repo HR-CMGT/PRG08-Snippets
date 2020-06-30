@@ -91,10 +91,10 @@ Note that if you keep references to the car in your `Game` class, you need to re
 ```
 this.cars = [new Car(), new Car(), new Car()]
 
-// we will remove car 0 from the game
-let index = 0
-this.cars[index].remove()        // remove element from DOM
-this.cars.splice(index, 1)       // remove reference
+// we will remove car 1 from the game
+let removedCar = this.cars[1]
+removedCar.remove()                                     // remove element from DOM
+this.cars = this.cars.filter(c => c!==removedCar)       // remove reference from cars array
 ```
 
 ### Style
@@ -179,10 +179,10 @@ class Game {
     constructor() {
         this.cars = [new Car(), new Car(), new Car(), new Car()]
 
-        // remove car 0 from dom AND from array
-        let index = 0
-        this.cars[index].remove()    // remove from DOM
-        this.cars.splice(index, 1)   // remove from array
+        // remove car from dom AND from array
+        let removedCar = this.cars[1]
+	removedCar.remove()                                     // remove element from DOM
+	this.cars = this.cars.filter(c => c!==removedCar)       // remove reference from cars array
 
         this.update()
     }
