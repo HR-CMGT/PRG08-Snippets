@@ -16,8 +16,11 @@ this.div.remove()
 
 ```typescript
 let balls = [new Ball(), new Ball(), new Ball()]
-let b = balls[0]
+let removedBall = balls[0]
 
+balls = balls.filter(ball => ball !== removedBall)
+
+// In ES5 kan je met splice de array aanpassen:
 let i = array.indexOf(b)
 balls.splice(i, 1)
 ```
