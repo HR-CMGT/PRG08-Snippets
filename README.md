@@ -47,7 +47,7 @@ Op [Cumlaude](https://lms.hr.nl) vind je de cursushandleiding en een quickstart 
 
 ## Typescript handbook
 
-- [https://www.typescriptlang.org/v2/docs/handbook/typescript-in-5-minutes.html](Typescript in 5 minutes)
+- [Typescript in 5 minutes](https://www.typescriptlang.org/v2/docs/handbook/typescript-in-5-minutes.html)
 
 ## Example code
 
