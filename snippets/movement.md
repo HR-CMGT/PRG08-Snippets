@@ -15,46 +15,54 @@ Keydown geeft het karakter een snelheid in de richting van de toets. Keyup zet d
 
 ```typescript
 class Fish {
-    leftSpeed : number = 0
-    rightSpeed : number = 0
-    downSpeed : number = 0
-    upSpeed : number = 0
+    xspeed : number = 0
+    yspeed : number = 0
 
     constructor(){
         window.addEventListener("keydown", (e:KeyboardEvent) => this.onKeyDown(e))
         window.addEventListener("keyup", (e:KeyboardEvent) => this.onKeyUp(e))
     }
-    onKeyDown(event:KeyboardEvent):void {
-        switch(event.keyCode){
-        case 65:
-            this.upSpeed = 5
-            break
-        case 68:
-            this.downSpeed = 5
-            break
-        case 87:
-            this.leftSpeed = 5
-            break
-        case 83:
-            this.rightSpeed = 5
-            break
-        }
+    
+    public update(){
+        this.x += this.xspeed
+        this.y += this.yspeed
     }
     
-    onKeyUp(event:KeyboardEvent):void {
-        switch(event.keyCode){
-        case 65:
-            this.upSpeed = 0
-            break
-        case 68:
-            this.downSpeed = 0
-            break
-        case 87:
-            this.leftSpeed = 0
-            break
-        case 83:
-            this.rightSpeed = 0
-            break
+    private onKeyDown(e: KeyboardEvent): void {
+        switch (e.key.toUpperCase()) {
+            case "A":
+            case "ARROWLEFT" :
+                this.xspeed = -5
+                break
+            case "D":
+            case "ARROWRIGHT":
+                this.xspeed = 5
+                break
+            case "W":
+            case "ARROWUP" :
+                this.yspeed = -5
+                break
+            case "S":
+            case "ARROWDOWN":
+                this.yspeed = 5
+                break
+        }
+    }
+
+    private onKeyUp(e: KeyboardEvent): void {
+        switch (e.key.toUpperCase()) {
+            case "A":
+            case "D":
+            case "ARROWLEFT" :
+            case "ARROWRIGHT":
+                this.xspeed = 0
+                break
+            case "W":
+            case "S":
+            case "ARROWUP":
+            case "ARROWDOWN":
+                this.yspeed = 0
+                break
         }
     }
 }
