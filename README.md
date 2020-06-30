@@ -45,6 +45,10 @@ Op [Cumlaude](https://lms.hr.nl) vind je de cursushandleiding en een quickstart 
 - Les 6 Observer [Notify the Captain](https://github.com/HR-CMGT/PRG08-Notify-the-Captain)
 - Les 7 Oefentoets
 
+## Typescript handbook
+
+- [https://www.typescriptlang.org/v2/docs/handbook/typescript-in-5-minutes.html](Typescript in 5 minutes)
+
 ## Example code
 
 - [Workshop Phaser 3 met Typescript](https://github.com/HR-CMGT/CLE4-phaser-workshop)
