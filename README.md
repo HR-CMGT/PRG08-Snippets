@@ -33,28 +33,9 @@ Op [Cumlaude](https://lms.hr.nl) vind je de cursushandleiding en een quickstart 
 - Week 7 Klassendiagram voor oefentoets [Flappy Crossroads](https://github.com/HR-CMGT/CMTTHE04-Week6-oefening2)
 - Week 8 Oefentoets maken en bespreken
 
-## Jaar 2 PRG01-8
-
-[Voorbeeldcode bij de theorievideo's en uitwerkingen opdrachten](https://github.com/HR-CMGT/PRG08-code-bij-theorie)
-
-- Les 1 Herhaling OOP [The Bomb Clicker](https://github.com/HR-CMGT/PRG08-Week1-oefening1)
-- Les 2 Polymorphism [Close Call](https://github.com/HR-CMGT/PRG08-close-call) 
-- Les 3 Strategy [Basketball Strategy](https://github.com/HR-CMGT/PRG08-basketball-strategy)
-- Les 4 Herhaling Strategy en Abstracte class [Jibby](https://github.com/HR-CMGT/PRG08-Jibby)
-- Les 5 Singleton [Angry Captain](https://github.com/HR-CMGT/PRG08-Angry-Captain)
-- Les 6 Observer [Notify the Captain](https://github.com/HR-CMGT/PRG08-Notify-the-Captain)
-- Les 7 Oefentoets
-
 ## Typescript handbook
 
 - [Typescript in 5 minutes](https://www.typescriptlang.org/v2/docs/handbook/typescript-in-5-minutes.html)
-
-## Example code
-
-- [Workshop Phaser 3 met Typescript](https://github.com/HR-CMGT/CLE4-phaser-workshop)
-- [P5JS Typescript Example](https://github.com/HR-CMGT/CLE4-P5-workshop/tree/master/p5-typescript)
-- [Typescript workshop Giuseppe Maggiore 7/1/2019](snippets/types.md)
-- [Robot Royale - Online Multiplayer Game with Typescript and Socket.io](https://github.com/HR-CMGT/robot-royale)
 
 ## Game programming in Typescript
 
@@ -76,6 +57,13 @@ Op [Cumlaude](https://lms.hr.nl) vind je de cursushandleiding en een quickstart 
 - [Debugging in VS Code](snippets/debug.md)
 - [State Manager](snippets/state.md)
 - [Connecting a controller](https://github.com/HR-CMGT/arcade-game) and [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)
+
+## Previous workshops
+
+- [Workshop Phaser 3 met Typescript](https://github.com/HR-CMGT/CLE4-phaser-workshop)
+- [P5JS Typescript Example](https://github.com/HR-CMGT/CLE4-P5-workshop/tree/master/p5-typescript)
+- [Typescript workshop Giuseppe Maggiore 7/1/2019](snippets/types.md)
+- [Robot Royale - Online Multiplayer Game with Typescript and Socket.io](https://github.com/HR-CMGT/robot-royale)
 
 ## Libraries en API's
 
