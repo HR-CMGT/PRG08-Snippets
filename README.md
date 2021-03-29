@@ -1,43 +1,66 @@
 # Typescript
 
-Dit document bevat informatie voor de vakken CMTTHE01-4 en PRG01-8. 
+Informatie voor het vak CMTTHE01-4, Game programming en Typescript.
 
-## Werkomgeving
+- Curriculum
+- Werkomgeving
+- Reading list
+
+<br>
+<br>
+<br>
+
+# Curriculum
+
+Op [Cumlaude CMTTHE01-4](https://lms.hr.nl) vind je de cursushandleiding
+
+- Week 1 - Objects. Project kiezen en aanmelden in github classroom.
+- Week 2 - Classes en Instances
+- Week 3 - Encapsulation, Game Loop, Collision detection
+- Week 4 - Composition
+- Week 5 - Inheritance
+- Week 6 - ⚠️ **DEADLINE** klassendiagram, OOP werkcollege
+- Week 7 - OOP Herhaling
+- Week 8 - Oefentoets maken en bespreken
+- Week 9 - ⚠️ **DEADLINE** Opdracht inleveren
+
+---
+
+<br>
+<br>
+<br>
+
+# Werkomgeving
 
 - Installeer [NodeJS](https://nodejs.org/en/) en [Typescript](https://www.typescriptlang.org)
 - Installeer [Visual Studio Code](https://code.visualstudio.com)
 - Download en test het [Typescript startproject](https://github.com/HR-CMGT/Typescript-startproject)
 
-### Let op voor Windows gebruikers
-Run PowerShell as Administrator (rechtermuisklik op PowerShell) en voor het volgende commando uit
-```
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
-```
+## Quickstart
 
-# Curriculum
+In het [quickstart document](./PRG01-4_quickstart.pdf) vind je alles om te beginnen:
 
-Op [Cumlaude](https://lms.hr.nl) vind je de cursushandleiding en een quickstart guide.
+- Localhost aan zetten
+- Een `dev` en een `dist` map aanmaken
+- Typescript compileren
+- Git gebruiken vauit VS Code
+- Project live zetten op github pages
+- Typescript samenvatting
+- Klassendiagram samenvatting
 
-## Jaar 1 CMTTHE01-4
+<Br>
 
-[Antwoorden op de opdrachten en codevoorbeelden uit de les](https://github.com/HR-CMGT/CMTTHE04-antwoorden)
+> ⚠️ VS Code voor Windows gebruikers: *Run PowerShell as Administrator* (rechtermuisklik op PowerShell) en voor het volgende commando uit `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned`
 
-- [Week 1 Objects](https://github.com/HR-CMGT/CMTTHE04-Week1-oefening1)
-- [Week 2 Classes en Instances](https://github.com/HR-CMGT/CMTTHE04-Week2-oefening1)
-- [Week 3 Encapsulation, Game Loop, Collision detection](https://github.com/HR-CMGT/CMTTHE04-Week3-oefening1)
-- [Week 4 Composition - Oefening 1 - chicken on a raft](https://github.com/HR-CMGT/CMTTHE04-Week4-oefening1)
-- [Week 5 Inheritance](https://github.com/HR-CMGT/CMTTHE04-Week5-oefening1)
-- Week 6 OOP werkcollege
-  - Voorbeeld 1 : [Overerving met input elmenten](https://github.com/HR-CMGT/OOP-inheritance-with-input-elements) (of met [live validatie](https://github.com/HR-CMGT/OOP-inheritance-clientside-validation))
-  - Oefening 1 : [Objecten verwijderen](https://github.com/HR-CMGT/CMTTHE04-Week6-oefening1)
-- Week 7 Klassendiagram voor oefentoets [Flappy Crossroads](https://github.com/HR-CMGT/CMTTHE04-Week6-oefening2)
-- Week 8 Oefentoets maken en bespreken
+---
 
-## Typescript handbook
+<br>
+<br>
+<br>
 
-- [Typescript in 5 minutes](https://www.typescriptlang.org/v2/docs/handbook/typescript-in-5-minutes.html)
+# Reading List
 
-## Game programming in Typescript
+## Game programming
 
 - [Game Loop met GameObjects](snippets/game.md)
 - [Web Components](snippets/webcomponents.md)
@@ -58,10 +81,10 @@ Op [Cumlaude](https://lms.hr.nl) vind je de cursushandleiding en een quickstart 
 - [State Manager](snippets/state.md)
 - [Connecting a controller](https://github.com/HR-CMGT/arcade-game) and [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)
 
-## Previous workshops
+## Workshops
 
-- [Workshop Phaser 3 met Typescript](https://github.com/HR-CMGT/CLE4-phaser-workshop)
-- [P5JS Typescript Example](https://github.com/HR-CMGT/CLE4-P5-workshop/tree/master/p5-typescript)
+- [🔥 Workshop Phaser 3 met Typescript](https://github.com/HR-CMGT/CLE4-phaser-workshop)
+- [🔥 Workshop P5 with Typescript](https://github.com/HR-CMGT/CLE4-P5-workshop/tree/master/p5-typescript)
 - [Typescript workshop Giuseppe Maggiore 7/1/2019](snippets/types.md)
 - [Robot Royale - Online Multiplayer Game with Typescript and Socket.io](https://github.com/HR-CMGT/robot-royale)
 
@@ -115,20 +138,14 @@ Op [Cumlaude](https://lms.hr.nl) vind je de cursushandleiding en een quickstart 
 - [AR for ThreeJS](https://github.com/jeromeetienne/AR.js)
 - [CreateJS 2D](http://createjs.com)
 
+## Documentation
+
+- [Typescript in 5 minutes](https://www.typescriptlang.org/v2/docs/handbook/typescript-in-5-minutes.html)
+- [Official documentation](https://www.typescriptlang.org/docs/home.html)
+- [The definitive Typescript guide](https://www.sitepen.com/blog/update-the-definitive-typescript-guide/)
+
 ## Type definitions
 
 Om javascript libraries te gebruiken in een typescript project heb je Type Definitions nodig. Dit zijn `.d.ts` files. Er staan een aantal voorbeelden in [deze repository](https://github.com/HR-CMGT/Typescript/tree/master/definitions). Je kan type definitions ook via `npm` downloaden:
 
 `npm install @types/libraryname`
-
-## Documentation
-
-- [Official documentation](https://www.typescriptlang.org/docs/home.html)
-- [The definitive Typescript guide](https://www.sitepen.com/blog/update-the-definitive-typescript-guide/)
-
-### Phaser 3
-- [Official API documentatie](https://photonstorm.github.io/phaser3-docs/)
-- [Easy documentation with code examples](https://rexrainbow.github.io/phaser3-rex-notes/docs/site/index.html)
-- [Code voorbeelden (labs.github.io)](http://labs.phaser.io/)
-- [Making an infinite jumper game with Phaser](https://ourcade.co/books/infinite-jumper-phaser3/)
-- [Phaser Editor](https://phasereditor2d.com)
