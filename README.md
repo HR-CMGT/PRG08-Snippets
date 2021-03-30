@@ -2,15 +2,15 @@
 
 Informatie voor het vak CMTTHE01-4, Game programming en Typescript.
 
-- Curriculum
-- Werkomgeving
-- Reading list
+- <a href="curry">Curriculum</a>
+- <a href="work">Werkomgeving</a>
+- <a href="list">Reading list</a>
 
 <br>
 <br>
 <br>
 
-# Curriculum
+# <a name="curry"></a> Curriculum
 
 Op [Cumlaude CMTTHE01-4](https://lms.hr.nl) vind je de cursushandleiding
 
@@ -20,8 +20,8 @@ Op [Cumlaude CMTTHE01-4](https://lms.hr.nl) vind je de cursushandleiding
 - Week 4 - Composition
 - Week 5 - Inheritance
 - Week 6 - ⚠️ **DEADLINE** klassendiagram, OOP werkcollege
-- Week 7 - OOP Herhaling
-- Week 8 - Oefentoets maken en bespreken
+- Week 7 - Game techniques
+- Week 8 - Game techniques
 - Week 9 - ⚠️ **DEADLINE** Opdracht inleveren
 
 ---
@@ -30,7 +30,7 @@ Op [Cumlaude CMTTHE01-4](https://lms.hr.nl) vind je de cursushandleiding
 <br>
 <br>
 
-# Werkomgeving
+# <a name="work"></a>Werkomgeving
 
 - Installeer [NodeJS](https://nodejs.org/en/) en [Typescript](https://www.typescriptlang.org)
 - Installeer [Visual Studio Code](https://code.visualstudio.com)
@@ -58,7 +58,7 @@ In het [quickstart document](./PRG01-4_quickstart.pdf) vind je alles om te begin
 <br>
 <br>
 
-# Reading List
+# <a name="list"></a>Reading List
 
 ## Game programming
 
