@@ -1,17 +1,20 @@
 # Character movement
 
-## Listeners
+## Event Listeners
 
-[Gebruik de **fat arrow** notatie](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) voor Event Listeners.
+[Gebruik de **arrow** notatie](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) voor Event Listeners.
 ```typescript
 window.addEventListener("keydown", (e:KeyboardEvent) => this.move(e))
 ```
 
+<br>
+<br>
+
 ## Character movement
 
-Gebruik je de **keydown** en **keyup** events van **window** om de snelheid van het karakter aan te passen. 
+⚠️ Je kan niet rechtstreeks on **keydown** en **keyup** het karakter verplaatsen. Dat zorgt namelijk voor een schokkerige beweging, omdat die events niet gelijkmatig binnen komen.
 
-Keydown geeft het karakter een snelheid in de richting van de toets. Keyup zet die snelheid op 0. [In plaats van het toetsenbord kan je een game controller gebruiken](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)
+We gebruiken de events om de snelheid van het karakter met een variabele aan te passen.
 
 ```typescript
 class Fish {
@@ -70,3 +73,9 @@ class Fish {
 }
 ```
 
+<br>
+
+# Links
+
+- [MDN Keyboard Event](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key)
+- [In plaats van het toetsenbord kan je een game controller gebruiken](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)

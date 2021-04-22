@@ -5,7 +5,8 @@ Informatie voor het vak CMTTHE01-4, Game programming en Typescript.
 - <a href="#curry">Curriculum</a>
 - <a href="#work">Werkomgeving</a> en [startproject](https://github.com/HR-CMGT/Typescript-startproject)
 - <a href="#games">Game development basics</a>
-- <a href="#list">Game development</a>
+- <a href="#advanced">Game development advanced</a>
+- <a href="#list">Reading list</a>
 
 <br>
 <br>
@@ -25,9 +26,7 @@ Op [Cumlaude CMTTHE01-4](https://lms.hr.nl) vind je de cursushandleiding
 - Week 8 - Game techniques
 - Week 9 - ⚠️ **DEADLINE** Opdracht inleveren
 
----
 
-<br>
 <br>
 <br>
 
@@ -35,69 +34,57 @@ Op [Cumlaude CMTTHE01-4](https://lms.hr.nl) vind je de cursushandleiding
 
 - Installeer [NodeJS](https://nodejs.org/en/) en [Typescript](https://www.typescriptlang.org)
 - Installeer [Visual Studio Code](https://code.visualstudio.com)
-- Download en test het [Typescript startproject](https://github.com/HR-CMGT/Typescript-startproject)
+- Download het [Typescript startproject](https://github.com/HR-CMGT/Typescript-startproject) en open het in localhost.
+- Lees het [quickstart document](./PRG01-4_quickstart.pdf)
 
-## Quickstart
 
-In het [quickstart document](./PRG01-4_quickstart.pdf) vind je alles om te beginnen:
-
-- Localhost aan zetten
-- Een `dev` en een `dist` map aanmaken
-- Typescript compileren
-- Git gebruiken vauit VS Code
-- Project live zetten op github pages
-- Typescript samenvatting
-- Klassendiagram samenvatting
-
-<Br>
-
-> ⚠️ VS Code voor Windows gebruikers: *Run PowerShell as Administrator* (rechtermuisklik op PowerShell) en voor het volgende commando uit `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned`
-
----
-
-<br>
 <br>
 <br>
 
 # <a name="games"></a> Game development basics
 
 - [HTML en CSS basics](snippets/html.md)
-- [Game Loops](snippets/game.md)
+- [Game Loop](snippets/game.md)
 - [Besturing](snippets/movement.md)
 - [Collision detection](snippets/collision.md)
 - [Timer](snippets/timer.md)
-- [Object Pool](snippets/remove.md)
+- [Object Pool](snippets/pool.md)
 
----
 
 <br>
 <br>
-<br>
 
-# <a name="list"></a> Game development
+# <a name="advanced"></a> Game development advanced
 
 - [Scrolling background](snippets/scrolling.md)
+- [EventListeners en Intervals verwijderen](snippets/remove.md)
 - [Spritesheet](snippets/spritesheet.md)
-- [Web Components](snippets/webcomponents.md)
+- [Touch events](snippets/touch.md)
 - [Modules](snippets/modules.md)
+- [Custom Events](snippets/events.md)
 - [Moving along a path](snippets/path.md)
 - [Vector](snippets/vector.md)
-- [Events](snippets/events.md)
 - [Drag and drop](snippets/drag.md)
-- [Touch events](snippets/touch.md)
+- [Web Components](snippets/webcomponents.md)
 - [Matter Physics Basics](snippets/matter.md)
 - [Debugging in VS Code](snippets/debug.md)
 - [State Manager](snippets/state.md)
 - [Connecting a controller](https://github.com/HR-CMGT/arcade-game) and [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)
 
-## Workshops
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-- [🔥 Workshop Phaser 3 met Typescript](https://github.com/HR-CMGT/CLE4-phaser-workshop)
-- [🔥 Workshop P5 with Typescript](https://github.com/HR-CMGT/CLE4-P5-workshop/tree/master/p5-typescript)
-- [Typescript workshop Giuseppe Maggiore 7/1/2019](snippets/types.md)
-- [Robot Royale - Online Multiplayer Game with Typescript and Socket.io](https://github.com/HR-CMGT/robot-royale)
+---
 
-## Libraries en API's
+# <a name="list"></a> Reading list
+
+## Tutorials en API's
 
 - [JSON en Fetch in Typescript](snippets/fetch.md)
 - [Socket.io Multiplayer](https://socket.io)
@@ -118,6 +105,13 @@ In het [quickstart document](./PRG01-4_quickstart.pdf) vind je alles om te begin
 - [Phaser 3 Typescript workshop](https://github.com/HR-CMGT/CLE4-phaser-workshop)
 - [Phaser 3 Typescript Game Examples](https://github.com/digitsensitive/phaser3-typescript)
 - [Build Flappy Bird in 5 minutes with Phaser and Typescript](https://medium.com/@digit.sensitivee/learn-to-create-a-html5-game-in-5-minutes-604118f5d0ab) en [Source code](https://github.com/digitsensitive/phaser3-flappy-bird)
+
+## Workshops
+
+- [🔥 Workshop Phaser 3 met Typescript](https://github.com/HR-CMGT/CLE4-phaser-workshop)
+- [🔥 Workshop P5 with Typescript](https://github.com/HR-CMGT/CLE4-P5-workshop/tree/master/p5-typescript)
+- [Typescript workshop Giuseppe Maggiore 7/1/2019](snippets/types.md)
+- [Robot Royale - Online Multiplayer Game with Typescript and Socket.io](https://github.com/HR-CMGT/robot-royale)
 
 ## Graphics
 
@@ -152,6 +146,8 @@ In het [quickstart document](./PRG01-4_quickstart.pdf) vind je alles om te begin
 - [Typescript in 5 minutes](https://www.typescriptlang.org/v2/docs/handbook/typescript-in-5-minutes.html)
 - [Official documentation](https://www.typescriptlang.org/docs/home.html)
 - [The definitive Typescript guide](https://www.sitepen.com/blog/update-the-definitive-typescript-guide/)
+
+
 
 ## Type definitions
 

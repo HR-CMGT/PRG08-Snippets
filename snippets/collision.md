@@ -1,3 +1,10 @@
+# Collision detection
+
+We kunnen met een eenvoudige formule checken of twee rechthoekige vormen elkaar raken.
+
+<br>
+<br>
+
 ## Positie en afmeting van een DOM element
 
 Je kan van een DOM element de [positie en afmeting opvragen](https://developer.mozilla.org/en/docs/Web/API/Element/getBoundingClientRect) via een **rectangle**: `let rectangle : ClientRect = div.getBoundingClientRect()`. 
@@ -18,6 +25,10 @@ class Car {
     }
 }
 ```
+
+<Br>
+<br>
+<br>
 
 ## Rectangle Collision
 
@@ -41,31 +52,31 @@ class Game {
    }
 }
 ```
+<br>
+<br>
 
-### Niet door een muur heen rijden
+## Niet door de muur rijden
 
-In bovenstaand voorbeeld krijgen we een log bericht nadat er een botsing is. Soms wil je echter dat een auto niet kan botsen, bijvoorbeeld als er een muur in beeld is waar je niet doorheen kan. 
+Als je niet door een muur wil kunnen bewegen, moet je checken of de **toekomstige positie** een botsing gaat veroorzaken. Als dat zo is, dan beweeg je niet.
 
-In dat geval moet je eerst checken of de **toekomstige positie** een botsing gaat veroorzaken. Als dat zo is, dan beweeg je niet:
-
-```
-Game {
+```typescript
+class Game {
    update() {
        let wallRect = wall.getRectangle()
        let carRect = car.getFutureRectangle()
 
-       if(this.checkCollision(wallRect, carRect){
-          console.log("deze beweging mag niet, want de auto zou dan in de muur rijden")
+       if (this.checkCollision(wallRect, carRect)) {
+           console.log("Je kan niet door de muur")
        } else {
-          car.update()
+           car.update()
        }
    }
 }
 ```
 
-In Car geven we een rectangle terug waarin we de speed al hebben meegerekend. Daardoor kan de Game checken of de auto wel of niet zijn update functie mag doen.
-```
-Car {
+In Car geven we een rectangle terug waarin we de **speed al hebben meegerekend**. Daardoor kan de Game checken of de auto wel of niet zijn update functie mag doen.
+```typescript
+class Car {
    speed = 4
    getFurureRectangle(){
       let rect = this.div.getBoundingClientRect()
@@ -77,6 +88,29 @@ Car {
    }
 }
 ```
+<br>
+<br>
+<br>
+
+## Hit Area 
+
+Als je **hit area** kleiner is dan de DIV van je game element, dan kan je ook een kleinere rectangle teruggeven:
+```typescript
+class Car {
+   getRectangle(){
+      let rect = this.div.getBoundingClientRect()
+      rect.x += 10
+      rect.y += 10
+      rect.width -= 10
+      rect.height -= 10
+      return rect
+   }
+}
+```
+
+<br>
+<br>
+<br>
 
 ## Circle collision
 
@@ -93,40 +127,16 @@ if (distance < circle1.radius + circle2.radius) {
     console.log("collision!")
 }
 ```
-
-## Vector 
-
 De [vector class](vector.md) maakt het uitrekenen van afstanden tussen punten eenvoudiger.
 
-## Zelf coördinaten bijhouden
+<br>
+<br>
+<br>
 
-Als je niet werkt met DOM elementen, of de collision box is niet hetzelfde als de afmeting van het DOM element, dan moet je zelf de waarden bijhouden. Je kan dit het beste doen met overerving:
 
-```typescript
-class GameObject {
-    publix x:number
-    public y:number
-    public width:number
-    public height:number
-}
 
-class Car extends GameObject {
+# Links
 
-}
-```
-
-## Grote hoeveelheid collisions
-
-Als je honderden of meer objecten hebt die allemaal kunnen botsen, dan wordt het inefficient om met een loop door alle gameobjects te gaan. Een QuadTree checkt alleen de elementen die daadwerkelijk bij elkaar in de buurt zijn
-
-- [QuadTree : large scale collision detection](https://github.com/timohausmann/quadtree-js)
-
-## Advanced collisions
-
-Als je complexe vormen of roterende vormen met elkaar wil laten botsen, dan kan je werken met een physics engine. Matter JS berekent de posities en collisions van complexe vormen die een snelheid hebben. Je kan het resultaat zelf rendereren in de DOM of in een Canvas
-
-- [Matter Physics Basics](snippets/matter.md)
-
-## Links
-
-- [2D collision](https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection)
+- [MDN Docs collision](https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection)
+- [QuadTree : voor collisions tussen honderden objecten](https://github.com/timohausmann/quadtree-js)
+- [Physics : voor botsing tussen complexe vormen (polygonen)](snippets/matter.md)

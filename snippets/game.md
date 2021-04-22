@@ -1,85 +1,63 @@
 # Game Loop
 
-In de Game class starten we de game loop. Deze roept 60x per seconde de update functies van de game objecten aan. Let op dat je geen requestAnimationFrame in je andere classes nodig hebt!
+In de Game class starten we de game loop. Deze roept 60x per seconde de update functies van je game objecten aan. 
+
+⚠️ Let op dat je geen requestAnimationFrame in je andere classes nodig hebt!
 
 ```typescript
+import { Car } from "./car.js"
+
 class Game {
 
-    car:Car
+    ford:Car
+    kia:Car
 
     constructor() {
-        this.car = new Car()
+        this.ford = new Car()
+        this.kia = new Car()
         this.gameLoop()
     }
 
     gameLoop(){
-        this.car.update()
+        this.ford.update()
+        this.kia.update()
         requestAnimationFrame(() => this.gameLoop())
     }
 }
+```
 
-class Car {
-    private x = 10
+```typescript
+export class Car {
+    x = 10
     update(){
         this.x ++
     }
 }
 ```
 
-## Game Objecten in Array
+<Br>
+<Br>
 
-Als je van meerdere game objecten de update functie wil aanroepen kan je een array maken
+## Game Pause
+
+Het is eenvoudig om je game te pauzeren: stop met het aanroepen van de game loop! Let wel op dat je bij een `unpause` ook weer de gameLoop opstart.
 
 ```typescript
+import { Car } from "./car.js"
+
 class Game {
 
-    cars:Car[]
+    paused:boolean
 
     constructor() {
-        this.cars = [new Car(), new Car(), new Car()]
+        this.paused = false
         this.gameLoop()
     }
 
     gameLoop(){
-        for(let c of this.cars){
-            c.update()
+        if ( !this.paused ) {
+            requestAnimationFrame(() => this.gameLoop())
         }
     }
-}
-```
-## Inheritance
-
-Door Inheritance te gebruiken kan je verschillende soorten objecten in de array zetten, in plaats van alleen cars:
-
-```typescript
-class Game {
-
-    objects:GameObject[]
-
-    constructor() {
-        this.objects = [new Car(), new Boat()]
-        this.gameLoop()
-    }
-
-    gameLoop(){
-        for(let o of this.objects){
-            o.update()
-        }
-    }
-}
-
-class GameObject {
-    private x = 10
-    update(){
-        this.x ++
-    }
-}
-
-class Car extends GameObject {
-
-}
-
-class Boat extends GameObject {
-
 }
 ```
