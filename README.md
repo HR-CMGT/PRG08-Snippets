@@ -2,9 +2,9 @@
 
 Informatie voor het vak CMTTHE01-4, Game programming en Typescript.
 
-- <a href="curry">Curriculum</a>
-- <a href="work">Werkomgeving</a>
-- <a href="list">Reading list</a>
+- <a href="#curry">Curriculum</a>
+- <a href="#work">Werkomgeving</a> en [startproject](https://github.com/HR-CMGT/Typescript-startproject)
+- <a href="#list">Reading list</a>
 
 <br>
 <br>
