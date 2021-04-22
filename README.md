@@ -4,8 +4,8 @@ Informatie voor het vak CMTTHE01-4, Game programming en Typescript.
 
 - <a href="#curry">Curriculum</a>
 - <a href="#work">Werkomgeving</a> en [startproject](https://github.com/HR-CMGT/Typescript-startproject)
-- <a href="#games">Game programming basics</a>
-- <a href="#list">Reading list</a>
+- <a href="#games">Game development basics</a>
+- <a href="#list">Game development</a>
 
 <br>
 <br>
@@ -59,14 +59,14 @@ In het [quickstart document](./PRG01-4_quickstart.pdf) vind je alles om te begin
 <br>
 <br>
 
-# <a name="games"></a> Game programming basics
+# <a name="games"></a> Game development basics
 
 - [HTML en CSS basics](snippets/html.md)
 - [Game Loops](snippets/game.md)
 - [Besturing](snippets/movement.md)
 - [Collision detection](snippets/collision.md)
 - [Timer](snippets/timer.md)
-- [GameObject verwijderen](snippets/remove.md)
+- [Object Pool](snippets/remove.md)
 
 ---
 
@@ -74,9 +74,7 @@ In het [quickstart document](./PRG01-4_quickstart.pdf) vind je alles om te begin
 <br>
 <br>
 
-# <a name="list"></a>Reading List
-
-## Game programming
+# <a name="list"></a> Game development
 
 - [Scrolling background](snippets/scrolling.md)
 - [Spritesheet](snippets/spritesheet.md)
