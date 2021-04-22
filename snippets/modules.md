@@ -34,10 +34,11 @@ De code van `car` wordt dus ook pas ingeladen op het moment dat je game een `car
 <br>
 <br>
 
-## Parcel
+## Web development met Parcel
 
-[Parcel](https://parceljs.org/getting_started.html) gebruikt je `package.json` als settings file. Parcel genereert je hele docs folder, inclusief HTML, images en CSS.
-Dat betekent dat al je werkbestanden in de DEV folder staan. In HTML kan je typescript laden. Parcel snapt dat dit javascript moet worden:
+[Parcel](https://parceljs.org/getting_started.html) is een bundle tool die modules samenvoegt naar 1 bestand, en hierbije meteen typescript naar javascript omzet. Ook genereert parcel je hele html en css deployment map. Je hebt Parcel nodig als je modules wil installeren via `npm install`. 
+
+In je HTML kan je nu typescript laden. Parcel snapt dat dit javascript moet worden:
 
 ```html
 <script src='./ts/index.ts'></script>
