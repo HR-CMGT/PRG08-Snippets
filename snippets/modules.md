@@ -1,94 +1,38 @@
 # Modules
 
-Door classes of namespaces in de global scope te definiëren loop je het risico dat je code overschreven of aangeroepen wordt terwijl dat niet de bedoeling is. Door modules te gebruiken maak je een scope die niet van buitenaf te benaderen is.
+Modules zorgen ervoor dat je code niet bereikbaar is van buitenaf. Ook zorgt het ervoor dat alleen code in je project terecht komt die je ook echt gebruikt.
+In de nieuwste browsers kan je modules los inladen als .js file. 
 
-Externe code van `npmjs.com` installeren ook modules: `npm install...`. Deze modules komen terecht in de `node_modules` folder.
-
-Via webpack of een andere module loader kan je je modules inladen in de browser.
-
-**car.ts**
-
-```typescript
-export default class Car {
-
-}
+```html
+<script type="module" src="js/game.js"></script>
 ```
+Nu kan je vanuit game.js je overige code inladen met het `import` keyword:
 
 **game.ts**
 ```typescript
-import Car from "./car"
+import { Car } from "./car.js"
 
-export default class Game {
+class Game {
    constructor(){
       let c = new Car()
    }
 }
 ```
+**car.ts**
 
-Een bijkomend voordeel van modules is dat code die nergens wordt geïmporteerd, ook niet meegecompileerd wordt. 
+```typescript
+export class Car {
 
-### Naam van de class
-
-Bij `import` bepaal je de naam van een default class, dus bij `export` kan je die weglaten, maar dat is wel minder leesbaar.
-
-```
-export default class {
 }
-import Car from './filename'
 ```
+Let op dat je een `.js` file importeert, omdat dit live uitgevoerd wordt, nadat je code van typescript is omgezet naar javascript.
+De code van `car` wordt dus ook pas ingeladen op het moment dat je game een `car` nodig heeft!
 
-# Modules laden
+---
 
-## Native modules
-
-In de nieuwste browsers kan je modules los inladen als .js file. Je moet dan nog wel je `.ts` files naar losse `.js` files omzetten.
-
-```html
-<script type="module" src="js/car.js"></script>
-<script type="module" src="js/game.js"></script>
-```
-
-## Webpack
-
-Met webpack kan je typescript modules bundelen naar een `bundle.js` file.
-```html
-<script src="js/bundle.js"></script>
-```
-In `package.json` komen de externe modules terecht die je
-In 
-
-```
-npm install webpack --save-dev
-npm install typescript ts-loader --save-dev
-
-webpack --watch
-```
-
-**webpack.config.js**
-
-```javascript
-module.exports = {
-    entry: "./dev/main.ts",
-    devtool: 'inline-source-map',
-    module: {
-        rules: [
-            {
-                test: /\.tsx?$/,
-                use: 'ts-loader',
-                exclude: /node_modules/,
-            }
-        ]
-    },
-    resolve: {
-        extensions: [".tsx", ".ts", ".js"]
-    },
-    output: {
-        filename: 'docs/js/bundle.js'
-    }
-};
-```
- - [Korte oefening met webpack en modules](https://github.com/HR-CMGT/PRG08-Week7-Webpack)
- - [Uitgebreide oefening](https://github.com/HR-CMGT/PRG08-Week7-oefening1)
+<br>
+<br>
+<br>
 
 ## Parcel
 
@@ -130,33 +74,8 @@ package.json
 }
 ```
 
-## Dynamic modules
-
-Met een **dynamic import** wordt je module pas geladen op het moment dat de gebruiker deze nodig heeft. Je moet dan wachten tot de module geladen is voordat je er iets mee kan doen, daarvoor gebruik je `async await`.
-
-**Static import**
-```
-import widget from "./widget"
-
-function renderWidget() {
-    widget.doSomething()
-}
-```
-
-**Dynamic import**
-```
-async function renderWidget() {
-    const widget = await import("./widget")
-    widget.doSomething()
-}
-```
-
 ## Links
 
-- [Oefening](https://github.com/HR-CMGT/PRG08-Week7-oefening1)
 - [Typescript modules](https://www.typescriptlang.org/docs/handbook/modules.html)
 - [Parcel](https://parceljs.org/getting_started.html)
 - [Parcel tutorial](https://alligator.io/tooling/parcel/)
-- [Webpack](https://webpack.js.org)
-- [Webpack en Typescript](https://webpack.js.org/guides/typescript/)
-- [Dynamic imports deel 1](https://blog.mariusschulz.com/2018/01/14/typescript-2-4-dynamic-import-expressions) en [deel 2](https://blog.mariusschulz.com/2018/01/14/code-splitting-with-import-typescript-and-webpack)
