@@ -4,6 +4,7 @@ Informatie voor het vak CMTTHE01-4, Game programming en Typescript.
 
 - <a href="#curry">Curriculum</a>
 - <a href="#work">Werkomgeving</a> en [startproject](https://github.com/HR-CMGT/Typescript-startproject)
+- <a href="#games">Game programming basics</a>
 - <a href="#list">Reading list</a>
 
 <br>
@@ -58,24 +59,34 @@ In het [quickstart document](./PRG01-4_quickstart.pdf) vind je alles om te begin
 <br>
 <br>
 
+# <a name="games"></a> Game programming basics
+
+- [HTML en CSS basics](snippets/html.md)
+- [Game Loops](snippets/game.md)
+- [Besturing](snippets/movement.md)
+- [Collision detection](snippets/collision.md)
+- [Timer](snippets/timer.md)
+- [GameObject verwijderen](snippets/remove.md)
+
+---
+
+<br>
+<br>
+<br>
+
 # <a name="list"></a>Reading List
 
 ## Game programming
 
-- [Game Loop met GameObjects](snippets/game.md)
-- [Web Components](snippets/webcomponents.md)
-- [Een GameObject verwijderen](snippets/remove.md)
-- [Character movement](snippets/movement.md)
-- [Collision detection](snippets/collision.md)
 - [Scrolling background](snippets/scrolling.md)
 - [Spritesheet](snippets/spritesheet.md)
+- [Web Components](snippets/webcomponents.md)
+- [Modules](snippets/modules.md)
 - [Moving along a path](snippets/path.md)
 - [Vector](snippets/vector.md)
 - [Events](snippets/events.md)
 - [Drag and drop](snippets/drag.md)
 - [Touch events](snippets/touch.md)
-- [Namespaces](snippets/namespace.md)
-- [Modules](snippets/modules.md)
 - [Matter Physics Basics](snippets/matter.md)
 - [Debugging in VS Code](snippets/debug.md)
 - [State Manager](snippets/state.md)
