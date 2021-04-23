@@ -101,8 +101,8 @@ class Car {
       let rect = this.div.getBoundingClientRect()
       rect.x += 10
       rect.y += 10
-      rect.width -= 10
-      rect.height -= 10
+      rect.width -= 20
+      rect.height -= 20
       return rect
    }
 }

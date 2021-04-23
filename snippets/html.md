@@ -22,6 +22,16 @@ robot, player, powerup {
 <br>
 <br>
 
+## Semantische elementen toevoegen met typescript
+
+```typescript
+this.element = document.createElement("car")
+document.body.appendChild(this.element)
+```
+
+<Br>
+<br>
+
 ## Afbeeldingen
 
 In plaats van `<img>` tags te gebruiken is het praktischer om een element een achtergrond afbeelding te geven. Het is belangrijk om de hoogte en breedte ook mee te geven.

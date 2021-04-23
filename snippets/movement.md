@@ -2,7 +2,8 @@
 
 ## Event Listeners
 
-[Gebruik de **arrow** notatie](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) voor Event Listeners.
+Gebruik het [Keyboard Event](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key) om cursor keys / WASD keys uit te lezen. [Gebruik de **arrow** notatie](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) om de juiste scope te behouden in je class.
+
 ```typescript
 window.addEventListener("keydown", (e:KeyboardEvent) => this.move(e))
 ```
@@ -10,11 +11,9 @@ window.addEventListener("keydown", (e:KeyboardEvent) => this.move(e))
 <br>
 <br>
 
-## Character movement
+## Cursor keys
 
-⚠️ Je kan niet rechtstreeks on **keydown** en **keyup** het karakter verplaatsen. Dat zorgt namelijk voor een schokkerige beweging, omdat die events niet gelijkmatig binnen komen.
-
-We gebruiken de events om de snelheid van het karakter met een variabele aan te passen.
+⚠️ Je kan niet rechtstreeks met **keydown** en **keyup** events een karakter verplaatsen, want dat zorgt voor een schokkerige beweging! Keyboard events komen namelijk niet gelijkmatig binnen. We gebruiken de events daarom alleen om een snelheid variabele aan te passen.
 
 ```typescript
 class Fish {
@@ -72,10 +71,26 @@ class Fish {
     }
 }
 ```
+---
 
 <br>
+<Br>
+<br>
 
-# Links
+# Andere typen besturing
 
-- [MDN Keyboard Event](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key)
-- [In plaats van het toetsenbord kan je een game controller gebruiken](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)
+## Mobile
+
+Je telefoon heeft een touchscreen, waarop je met meerdere vingers tegelijk een game kan besturen. Ook zijn er gestures mogelijk. Je zou ook de gyroscope of camera als besturing kunnen gebruiken!
+- [Lees meer over touch events](https://github.com/HR-CMGT/Typescript/blob/master/snippets/touch.md)
+- [Gyroscope en andere inputs](https://whatwebcando.today)
+
+## Game controller
+
+Je browser ondersteunt besturing met een Playstation / XBox controller!
+- [MDN Controller API](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)
+
+## Drag and drop
+
+Niet in alle games bestuur je een karakter. Bv, in een puzzel game moet de speler blokjes verplaatsen in het scherm. Dit kan je doen met `drag and drop`.
+- [Voorbeeldcode drag and drop](https://github.com/HR-CMGT/Typescript/blob/master/snippets/drag.md)
