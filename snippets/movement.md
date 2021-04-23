@@ -73,9 +73,21 @@ class Fish {
 }
 ```
 
+# Andere typen besturing
+
+## Mobile
+
+Je telefoon heeft een touchscreen, waarop je met meerdere vingers tegelijk een game kan besturen. Ook zijn er gestures mogelijk. Je zou ook de gyroscope of camera als besturing kunnen gebruiken!
+- [Lees meer over touch events](https://github.com/HR-CMGT/Typescript/blob/master/snippets/touch.md)
+- [Gyroscope en andere inputs](https://whatwebcando.today)
+
+## Game controller
+
+Je browser ondersteunt besturing met een Playstation / XBox controller!
+- [MDN Controller API](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)
+
 <br>
 
 # Links
 
 - [MDN Keyboard Event](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key)
-- [In plaats van het toetsenbord kan je een game controller gebruiken](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)
