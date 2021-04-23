@@ -2,7 +2,8 @@
 
 ## Event Listeners
 
-[Gebruik de **arrow** notatie](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) voor Event Listeners.
+Gebruik het [Keyboard Event](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key) om cursor keys / WASD keys uit te lezen. [Gebruik de **arrow** notatie](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) om de juiste scope te behouden in je class.
+
 ```typescript
 window.addEventListener("keydown", (e:KeyboardEvent) => this.move(e))
 ```
@@ -10,11 +11,9 @@ window.addEventListener("keydown", (e:KeyboardEvent) => this.move(e))
 <br>
 <br>
 
-## Character movement
+## Cursor keys
 
-⚠️ Je kan niet rechtstreeks on **keydown** en **keyup** het karakter verplaatsen. Dat zorgt namelijk voor een schokkerige beweging, omdat die events niet gelijkmatig binnen komen.
-
-We gebruiken de events om de snelheid van het karakter met een variabele aan te passen.
+⚠️ Je kan niet rechtstreeks met **keydown** en **keyup** events een karakter verplaatsen, want dat zorgt voor een schokkerige beweging! Keyboard events komen namelijk niet gelijkmatig binnen. We gebruiken de events daarom alleen om een snelheid variabele aan te passen.
 
 ```typescript
 class Fish {
@@ -91,9 +90,4 @@ Je telefoon heeft een touchscreen, waarop je met meerdere vingers tegelijk een g
 Je browser ondersteunt besturing met een Playstation / XBox controller!
 - [MDN Controller API](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)
 
-<br>
-<br>
 
-# Links
-
-- [MDN Keyboard Event](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key)
