@@ -57,14 +57,15 @@ Op [Cumlaude CMTTHE01-4](https://lms.hr.nl) vind je de cursushandleiding
 # <a name="advanced"></a> Game development advanced
 
 - [Scrolling background](snippets/scrolling.md)
+- [Startscherm en eindscherm](screens/screen.md)
 - [EventListeners en Intervals verwijderen](snippets/remove.md)
 - [Spritesheet](snippets/spritesheet.md)
 - [Touch events](snippets/touch.md)
-- [Modules](snippets/modules.md)
 - [Custom Events](snippets/events.md)
 - [Moving along a path](snippets/path.md)
 - [Vector](snippets/vector.md)
 - [Drag and drop](snippets/drag.md)
+- [Modules](snippets/modules.md)
 - [Web Components](snippets/webcomponents.md)
 - [Matter Physics Basics](snippets/matter.md)
 - [Debugging in VS Code](snippets/debug.md)

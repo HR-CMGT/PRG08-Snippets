@@ -41,7 +41,7 @@ class Game {
      let c2 = new Car()
      
      let hit = this.checkCollision(c1.getRectangle(), c2.getRectangle())
-     console.log("car 1 hits car 2 ? " + hit)
+     console.log(`car 1 hits car 2 : ${hit}`)
   }
   
   checkCollision(a: ClientRect, b: ClientRect) {
@@ -92,9 +92,9 @@ class Car {
 <br>
 <br>
 
-## Hit Area 
+## Hit Box 
 
-Als je **hit area** kleiner is dan de DIV van je game element, dan kan je ook een kleinere rectangle teruggeven:
+Als je **hit box** kleiner is dan de DIV van je game element, dan kan je ook een kleinere rectangle teruggeven:
 ```typescript
 class Car {
    getRectangle(){
@@ -128,6 +128,14 @@ if (distance < circle1.radius + circle2.radius) {
 }
 ```
 De [vector class](vector.md) maakt het uitrekenen van afstanden tussen punten eenvoudiger.
+
+<br>
+<br>
+<br>
+
+## Collision met meerdere elementen
+
+Bekijk de [Object Pool](./pool.md) tutorial voor collision checks met meerdere elementen.
 
 <br>
 <br>

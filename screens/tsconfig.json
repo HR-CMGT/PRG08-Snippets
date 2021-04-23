@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strictPropertyInitialization": false,
+        "target": "es6",
+        "removeComments": true,
+        "sourceMap": true,
+        "module":"ES6",
+        "outDir": "./docs/js"
+    },
+    "include": [
+        "dev/**/*"
+    ]
+}
