@@ -90,4 +90,7 @@ Je telefoon heeft een touchscreen, waarop je met meerdere vingers tegelijk een g
 Je browser ondersteunt besturing met een Playstation / XBox controller!
 - [MDN Controller API](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)
 
+## Drag and drop
 
+Niet in alle games bestuur je een karakter. Bv, in een puzzel game moet de speler blokjes verplaatsen in het scherm. Dit kan je doen met `drag and drop`.
+- [Voorbeeldcode drag and drop](https://github.com/HR-CMGT/Typescript/blob/master/snippets/drag.md)
