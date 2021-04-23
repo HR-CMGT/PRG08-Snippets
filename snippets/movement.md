@@ -72,6 +72,11 @@ class Fish {
     }
 }
 ```
+---
+
+<br>
+<Br>
+<br>
 
 # Andere typen besturing
 
@@ -86,6 +91,7 @@ Je telefoon heeft een touchscreen, waarop je met meerdere vingers tegelijk een g
 Je browser ondersteunt besturing met een Playstation / XBox controller!
 - [MDN Controller API](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)
 
+<br>
 <br>
 
 # Links
