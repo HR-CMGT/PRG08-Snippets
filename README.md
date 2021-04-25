@@ -16,7 +16,7 @@ Informatie voor het vak CMTTHE01-4, Game programming en Typescript.
 
 Op [Cumlaude CMTTHE01-4](https://lms.hr.nl) vind je de cursushandleiding
 
-- Week 1 - Objects. Project kiezen en aanmelden in github classroom.
+- [Week 1](https://github.com/HR-CMGT/CMTTHE04-Week1-oefening1) - Objects. Project kiezen en aanmelden in github classroom.
 - Week 2 - Classes en Instances
 - Week 3 - Encapsulation, Game Loop, Collision detection
 - Week 4 - Composition
