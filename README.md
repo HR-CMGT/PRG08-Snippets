@@ -32,11 +32,9 @@ Op [Cumlaude CMTTHE01-4](https://lms.hr.nl) vind je de cursushandleiding
 
 # <a name="work"></a>Werkomgeving
 
-- Installeer [NodeJS](https://nodejs.org/en/) en [Typescript](https://www.typescriptlang.org)
-- Installeer [Visual Studio Code](https://code.visualstudio.com)
-- Download het [Typescript startproject](https://github.com/HR-CMGT/Typescript-startproject) en open het in localhost.
-- Lees het [quickstart document](./PRG01-4_quickstart.pdf)
-
+- Installeer [NodeJS](https://nodejs.org/en/), [Typescript](https://www.typescriptlang.org) en [Visual Studio Code](https://code.visualstudio.com)
+- Installeer de [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) plugin voor Visual Studio Code.
+- Je kan testen of alles werkt met het [Typescript startproject](https://github.com/HR-CMGT/Typescript-startproject), en je kan meer info vinden in het [quickstart document](./PRG01-4_quickstart.pdf)
 
 <br>
 <br>
