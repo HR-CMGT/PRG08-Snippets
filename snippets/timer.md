@@ -21,7 +21,7 @@ import { Enemy } from "./enemy.js"
 class Game {
 
     spawnCounter:number = 0
-    enemies:Enemy[]
+    enemies:Enemy[] = []
 
     constructor() {
         this.gameLoop()
