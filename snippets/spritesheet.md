@@ -5,8 +5,6 @@ Deze demo bevat een spritesheet van [Link](http://img09.deviantart.net/80ee/i/20
 
 De gehele afbeelding gebruiken we als background van een kleine DIV waarin slechts 1 afbeelding tegelijk zichtbaar is. Door de positie van de achtergrondafbeelding te verschuiven met `backgroundPosition` kunnen we steeds een andere link laten zien.
 
-[Voorbeeld op CodePen](https://codepen.io/eerk/pen/ERYoZp?editors=0111)
-
 CSS
 
 ```css
@@ -51,4 +49,5 @@ class Player {
 
 ## Links
 
-- [CodePen demo](https://codepen.io/eerk/pen/qBrNJNL?editors=0010)
+- [CodePen demo Fish](https://codepen.io/eerk/pen/qBrNJNL?editors=0010)
+- [CodePen demo Link](https://codepen.io/eerk/pen/ERYoZp?editors=0111)
