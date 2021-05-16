@@ -47,7 +47,17 @@ class Player {
 }
 ```
 
+<br>
+<br>
+
 ## Links
 
 - [CodePen demo Fish](https://codepen.io/eerk/pen/qBrNJNL?editors=0010)
 - [CodePen demo Link](https://codepen.io/eerk/pen/ERYoZp?editors=0111)
+
+<br>
+<br>
+
+## Spritesheet
+
+![link](./link-spritesheet.png)
