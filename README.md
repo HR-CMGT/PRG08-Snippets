@@ -5,6 +5,7 @@ Informatie voor het vak CMTTHE01-4, Game programming en Typescript.
 - <a href="#curry">Curriculum</a>
 - <a href="#work">Werkomgeving</a> en [startproject](https://github.com/HR-CMGT/Typescript-startproject)
 - <a href="#games">Game development basics</a>
+- <a href="#speed">Speed courses</a>
 - <a href="#advanced">Game development advanced</a>
 - <a href="#list">Reading list</a>
 
@@ -36,7 +37,7 @@ Op [Cumlaude CMTTHE01-4](https://lms.hr.nl) vind je de cursushandleiding
 - Installeer de [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) plugin voor Visual Studio Code.
 - Je kan testen of alles werkt met het [Typescript startproject](https://github.com/HR-CMGT/Typescript-startproject), en je kan meer info vinden in het [quickstart document](./PRG01-4_quickstart.pdf)
 
-### Let op voor Windows gebruikers
+### ⚠️ Let op voor Windows gebruikers
 Run PowerShell as Administrator (rechtermuisklik op PowerShell) en voor het volgende commando uit
 ```
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
@@ -54,6 +55,13 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 - [Timer](snippets/timer.md)
 - [Object Pool](snippets/pool.md)
 
+<br>
+<br>
+
+# <a name="speed"></a> Speed courses
+
+- [Game loop](https://github.com/HR-CMGT/CLE-speedcourses/tree/master/gameloop)
+- [Sprites](https://github.com/HR-CMGT/CLE-speedcourses/tree/master/sprites)
 
 <br>
 <br>
