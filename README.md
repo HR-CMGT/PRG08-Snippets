@@ -36,6 +36,12 @@ Op [Cumlaude CMTTHE01-4](https://lms.hr.nl) vind je de cursushandleiding
 - Installeer de [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) plugin voor Visual Studio Code.
 - Je kan testen of alles werkt met het [Typescript startproject](https://github.com/HR-CMGT/Typescript-startproject), en je kan meer info vinden in het [quickstart document](./PRG01-4_quickstart.pdf)
 
+### Let op voor Windows gebruikers
+Run PowerShell as Administrator (rechtermuisklik op PowerShell) en voor het volgende commando uit
+```
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+```
+
 <br>
 <br>
 
