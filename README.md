@@ -4,8 +4,8 @@ Informatie voor het vak CMTTHE01-4, Game programming en Typescript.
 
 - <a href="#curry">Curriculum</a>
 - <a href="#work">Werkomgeving</a> en [startproject](https://github.com/HR-CMGT/Typescript-startproject)
-- <a href="#games">Game development basics</a>
 - <a href="#speed">Speed courses</a>
+- <a href="#games">Game development basics</a>
 - <a href="#advanced">Game development advanced</a>
 - <a href="#list">Reading list</a>
 
@@ -46,6 +46,14 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 <br>
 <br>
 
+# <a name="speed"></a> Speed courses
+
+- [Game loop](https://github.com/HR-CMGT/CLE-speedcourses/tree/master/gameloop)
+- [Sprites](https://github.com/HR-CMGT/CLE-speedcourses/tree/master/sprites)
+
+<br>
+<br>
+
 # <a name="games"></a> Game development basics
 
 - [HTML en CSS basics](snippets/html.md)
@@ -54,14 +62,6 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 - [Collision detection](snippets/collision.md)
 - [Timer](snippets/timer.md)
 - [Object Pool](snippets/pool.md)
-
-<br>
-<br>
-
-# <a name="speed"></a> Speed courses
-
-- [Game loop](https://github.com/HR-CMGT/CLE-speedcourses/tree/master/gameloop)
-- [Sprites](https://github.com/HR-CMGT/CLE-speedcourses/tree/master/sprites)
 
 <br>
 <br>
