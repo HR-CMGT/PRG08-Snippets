@@ -5,9 +5,9 @@ Een touch listener toevoegen werkt hetzelde als click, mouse listeners. Als je d
 ```typescript
 let div = document.getElementById("div")
 
-div.addEventListener("touchstart", (e) => this.onTouchStart(e as TouchEvent))
-div.addEventListener("touchend", (e) => this.onTouchEnd(e as TouchEvent))
-div.addEventListener("touchmove", (e) => this.onTouchMove(e as TouchEvent))
+div.addEventListener("touchstart", (e:TouchEvent) => this.onTouchStart(e))
+div.addEventListener("touchend", (e:TouchEvent) => this.onTouchEnd(e))
+div.addEventListener("touchmove", (e:TouchEvent) => this.onTouchMove(e))
 ```
 
 Een touch handler krijgt nu een `TouchEvent` binnen. Hierin zit een array van touches, omdat je met meerdere vingers tegelijk het scherm kan aanraken.
