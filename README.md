@@ -117,6 +117,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 - [Boardgame.io](http://boardgame.io/#/) - build a boardgame in Javascript
 - [Phaser 3 Typescript workshop](https://github.com/HR-CMGT/CLE4-phaser-workshop)
 - [Phaser 3 Typescript Game Examples](https://github.com/digitsensitive/phaser3-typescript)
+- [Phaser Tutorials Flavio Copes](https://flaviocopes.com/tags/phaser/)
 - [Build Flappy Bird in 5 minutes with Phaser and Typescript](https://medium.com/@digit.sensitivee/learn-to-create-a-html5-game-in-5-minutes-604118f5d0ab) en [Source code](https://github.com/digitsensitive/phaser3-flappy-bird)
 
 ## Workshops
