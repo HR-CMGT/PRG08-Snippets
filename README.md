@@ -119,6 +119,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 - [Phaser 3 Typescript Game Examples](https://github.com/digitsensitive/phaser3-typescript)
 - [Phaser Tutorials Flavio Copes](https://flaviocopes.com/tags/phaser/)
 - [Build Flappy Bird in 5 minutes with Phaser and Typescript](https://medium.com/@digit.sensitivee/learn-to-create-a-html5-game-in-5-minutes-604118f5d0ab) en [Source code](https://github.com/digitsensitive/phaser3-flappy-bird)
+- [Course on Object Oriented Programming in Javascript](https://codewithmosh.com/p/object-oriented-programming-in-javascript)
 
 ## Workshops
 
