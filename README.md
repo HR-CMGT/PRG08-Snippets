@@ -43,6 +43,10 @@ Run PowerShell as Administrator (rechtermuisklik op PowerShell) en voor het volg
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 ```
 
+## Klassendiagram
+
+Je kan met [Lucid Charts](http://lucid.app/) een klassendiagram tekenen voor je game.
+
 <br>
 <br>
 
