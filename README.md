@@ -86,6 +86,7 @@ Je kan met [Lucid Charts](http://lucid.app/) een klassendiagram tekenen voor je 
 - [Modules](snippets/modules.md)
 - [Web Components](snippets/webcomponents.md)
 - [Matter Physics](https://github.com/KokoDoko/physics-typescript)
+- [3D with ThreeJS](snippets/3d.md)
 - [Debugging in VS Code](snippets/debug.md)
 - [State Manager](snippets/state.md)
 - [Connecting a controller](https://github.com/HR-CMGT/arcade-game) and [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)
