@@ -45,7 +45,9 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 
 ## Klassendiagram
 
-Je kan met [Lucid Charts](http://lucid.app/) een klassendiagram tekenen voor je game.
+Je kan met [Lucid Charts](http://lucid.app/) een klassendiagram tekenen voor je game. Hier zie je een voorbeeld van een class diagram met *composition, encapsulation en inheritance*
+
+![diagram](./snippets/classdiagram.png)
 
 <br>
 <br>
