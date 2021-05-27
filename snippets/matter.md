@@ -49,6 +49,10 @@ class Game {
 
 Door de coordinaten van de physics objecten uit te lezen kan je je eigen graphics gaan gebruiken. Zie voor een uitgebreide uitleg daarvan het Coding Train filmpje op Youtube.
 
+## Tutorial
+
+[Hier vind je een uitgebreid voorbeeld van MatterJS en Typescript](https://github.com/KokoDoko/physics-typescript)
+
 ## Links
 
 - [Matter JS](http://brm.io/matter-js/)
