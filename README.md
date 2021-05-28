@@ -21,7 +21,7 @@ Op [Cumlaude CMTTHE01-4](https://lms.hr.nl) vind je de cursushandleiding
 - [Week 2](https://github.com/HR-CMGT/CMTTHE04-Week2-oefening1) - Classes en Instances
 - [Week 3](https://github.com/HR-CMGT/CMTTHE04-Week3-oefening1) - Encapsulation, Game Loop, Collision detection
 - [Week 4](https://github.com/HR-CMGT/CMTTHE04-2021-Week4-oefening1) - Composition
-- Week 5 - Inheritance
+- [Week 5](https://github.com/HR-CMGT/CMTTHE04-Week5-oefening1) - Inheritance
 - Week 6 - ⚠️ **DEADLINE** klassendiagram, OOP werkcollege
 - Week 7 - Game techniques
 - Week 8 - Game techniques
