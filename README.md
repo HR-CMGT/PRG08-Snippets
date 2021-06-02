@@ -131,6 +131,7 @@ Je kan met [Lucid Charts](http://lucid.app/) een klassendiagram tekenen voor je 
 - [Phaser Tutorials Flavio Copes](https://flaviocopes.com/tags/phaser/)
 - [Build Flappy Bird in 5 minutes with Phaser and Typescript](https://medium.com/@digit.sensitivee/learn-to-create-a-html5-game-in-5-minutes-604118f5d0ab) en [Source code](https://github.com/digitsensitive/phaser3-flappy-bird)
 - [Course on Object Oriented Programming in Javascript](https://codewithmosh.com/p/object-oriented-programming-in-javascript)
+- [Pluralsight Object Oriented Programming with ES6 modules](https://app.pluralsight.com/library/courses/javascript-es6-object-oriented-programming/table-of-contents)
 - [OOP Patterns in Typescript : Singleton, Observer, Decorator, Composite, Factory](https://blog.bitsrc.io/design-patterns-in-typescript-e9f84de40449) 
 
 ## Workshops
