@@ -34,4 +34,5 @@ Je kan nu breakpoints zetten in VS Code en de status van variabelen bijhouden, t
 
 ## Links
 
+- [Youtube Tutorial](https://www.youtube.com/watch?v=4v_Fhq2E1Oo)
 - [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
