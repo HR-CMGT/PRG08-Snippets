@@ -56,6 +56,7 @@ Je kan met [Lucid Charts](http://lucid.app/) een klassendiagram tekenen voor je 
 
 - [Game loop](https://github.com/HR-CMGT/CLE-speedcourses/tree/master/gameloop)
 - [Sprites](https://github.com/HR-CMGT/CLE-speedcourses/tree/master/sprites)
+- [Communicatie tussen Classes](https://github.com/HR-CMGT/CLE-speedcourses/tree/master/custom-events)
 
 <br>
 <br>
