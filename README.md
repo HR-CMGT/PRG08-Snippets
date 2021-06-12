@@ -21,8 +21,8 @@ Op [Cumlaude CMTTHE01-4](https://lms.hr.nl) vind je de cursushandleiding
 - [Week 2](https://github.com/HR-CMGT/CMTTHE04-Week2-oefening1) - Classes en Instances
 - [Week 3](https://github.com/HR-CMGT/CMTTHE04-Week3-oefening1) - Encapsulation, Game Loop, Collision detection
 - [Week 4](https://github.com/HR-CMGT/CMTTHE04-2021-Week4-oefening1) - Composition
-- Week 5 - Inheritance
-- Week 6 - ⚠️ **DEADLINE** klassendiagram, OOP werkcollege
+- [Week 5](https://github.com/HR-CMGT/CMTTHE04-Week5-oefening1) - Inheritance
+- [Week 6](https://github.com/HR-CMGT/CMTTHE04-2021-Week6) - ⚠️ **DEADLINE** klassendiagram, OOP werkcollege
 - Week 7 - Game techniques
 - Week 8 - Game techniques
 - Week 9 - ⚠️ **DEADLINE** Opdracht inleveren
@@ -56,6 +56,7 @@ Je kan met [Lucid Charts](http://lucid.app/) een klassendiagram tekenen voor je 
 
 - [Game loop](https://github.com/HR-CMGT/CLE-speedcourses/tree/master/gameloop)
 - [Sprites](https://github.com/HR-CMGT/CLE-speedcourses/tree/master/sprites)
+- [Communicatie tussen Classes](https://github.com/HR-CMGT/CLE-speedcourses/tree/master/custom-events)
 
 <br>
 <br>
@@ -85,10 +86,14 @@ Je kan met [Lucid Charts](http://lucid.app/) een klassendiagram tekenen voor je 
 - [Drag and drop](snippets/drag.md)
 - [Modules](snippets/modules.md)
 - [Web Components](snippets/webcomponents.md)
-- [Matter Physics Basics](snippets/matter.md)
 - [Debugging in VS Code](snippets/debug.md)
 - [State Manager](snippets/state.md)
 - [Connecting a controller](https://github.com/HR-CMGT/arcade-game) and [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)
+
+### Voorbeeld typescript projecten
+
+- [🔥 Matter Physics](https://github.com/KokoDoko/physics-typescript)
+- [🔥 3D with ThreeJS](https://github.com/KokoDoko/threejs-typescript)
 
 <br>
 <br>
@@ -106,6 +111,7 @@ Je kan met [Lucid Charts](http://lucid.app/) een klassendiagram tekenen voor je 
 ## Tutorials en API's
 
 - [JSON en Fetch in Typescript](snippets/fetch.md)
+- [Physics Tutorial met MatterJS en Typescript](https://github.com/KokoDoko/physics-typescript)
 - [Socket.io Multiplayer](https://socket.io)
 - [Lance Multiplayer Server](http://lance.gg)
 - [SAT.JS : collision detection for complex shapes](https://github.com/jriecken/sat-js)
@@ -126,6 +132,8 @@ Je kan met [Lucid Charts](http://lucid.app/) een klassendiagram tekenen voor je 
 - [Phaser Tutorials Flavio Copes](https://flaviocopes.com/tags/phaser/)
 - [Build Flappy Bird in 5 minutes with Phaser and Typescript](https://medium.com/@digit.sensitivee/learn-to-create-a-html5-game-in-5-minutes-604118f5d0ab) en [Source code](https://github.com/digitsensitive/phaser3-flappy-bird)
 - [Course on Object Oriented Programming in Javascript](https://codewithmosh.com/p/object-oriented-programming-in-javascript)
+- [Pluralsight Object Oriented Programming with ES6 modules](https://app.pluralsight.com/library/courses/javascript-es6-object-oriented-programming/table-of-contents)
+- [OOP Patterns in Typescript : Singleton, Observer, Decorator, Composite, Factory](https://blog.bitsrc.io/design-patterns-in-typescript-e9f84de40449) 
 
 ## Workshops
 
