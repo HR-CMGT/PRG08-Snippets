@@ -75,4 +75,8 @@ In `switchState()` in `Game.ts` maken we de hele document.body leeg, maar het is
 
 Let ook op dat als je `window.addEventListener` of `setTimeout` *in* een state hebt staan, dat je die verwijdert voordat je wisselt van state. Dit kan je doen met `removeEventListener` en `clearTimeout`.
 
+<br>
+
+- [Zie ook het Screens voorbeeld onder Speed Courses](https://github.com/hr-cmgt/cle-speedcourses)
+
 
