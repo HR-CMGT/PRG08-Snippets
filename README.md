@@ -156,7 +156,7 @@ Je kan met [Lucid Charts](http://lucid.app/) een klassendiagram tekenen voor je 
 - [Voorbeeld audio tag en Howler](snippets/audio.md)
 - [Howler Documentation](https://howlerjs.com)
 - [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)	
-- [Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)
+- [Browser Speech voorbeeld](https://github.com/HR-CMGT/PRG08-2020-2021/blob/main/snippets/speech.md) en [documentatie](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)
 - [Synthesizer API](https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode)
 
 ## Canvas/WebGL
