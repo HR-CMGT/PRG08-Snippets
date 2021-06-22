@@ -61,3 +61,14 @@ class Game {
     }
 }
 ```
+Je kan een button toevoegen die wisselt tussen pause en play:
+```
+btn.addEventListener("click", ()=>togglePause())
+
+togglePause(){
+    this.paused = !this.paused
+    if(!this.paused){
+        this.gameLoop() // restart the gameloop
+    }
+}
+```
