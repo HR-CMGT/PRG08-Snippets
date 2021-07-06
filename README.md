@@ -111,30 +111,19 @@ Je kan met [Lucid Charts](http://lucid.app/) een klassendiagram tekenen voor je 
 
 ## Tutorials en API's
 
+- [Maak achtergrondmuziek in Google Song Maker](https://musiclab.chromeexperiments.com/Song-Maker/)
 - [JSON en Fetch in Typescript](snippets/fetch.md)
-- [Physics Tutorial met MatterJS en Typescript](https://github.com/KokoDoko/physics-typescript)
-- [Socket.io Multiplayer](https://socket.io)
-- [Lance Multiplayer Server](http://lance.gg)
-- [SAT.JS : collision detection for complex shapes](https://github.com/jriecken/sat-js)
-- [QuadTree : large scale collision detection](https://github.com/timohausmann/quadtree-js)
 - [Particle Engine](https://vincentgarreau.com/particles.js/)
 - [RPG Conversation Tree](https://github.com/google/bottery)
 - [Touch Gestures Library](https://hammerjs.github.io)
-- [Matter 2D physics](http://brm.io/matter-js/)
-- [Planck 2D physics](http://piqnt.com/planck.js/Car)
 - [SVG Vector drawing](http://svgjs.com)
-- [AI / Deep Learning](https://deeplearnjs.org)
 - [Greensock Tweening](https://greensock.com)
 - [Multithreading in Javascript](https://keithwhor.github.io/multithread.js/)
-- [Dependency Injection](https://www.npmjs.com/package/container-ioc)
 - [Boardgame.io](http://boardgame.io/#/) - build a boardgame in Javascript
-- [Phaser 3 Typescript workshop](https://github.com/HR-CMGT/CLE4-phaser-workshop)
-- [Phaser 3 Typescript Game Examples](https://github.com/digitsensitive/phaser3-typescript)
-- [Phaser Tutorials Flavio Copes](https://flaviocopes.com/tags/phaser/)
-- [Build Flappy Bird in 5 minutes with Phaser and Typescript](https://medium.com/@digit.sensitivee/learn-to-create-a-html5-game-in-5-minutes-604118f5d0ab) en [Source code](https://github.com/digitsensitive/phaser3-flappy-bird)
 - [Course on Object Oriented Programming in Javascript](https://codewithmosh.com/p/object-oriented-programming-in-javascript)
 - [Pluralsight Object Oriented Programming with ES6 modules](https://app.pluralsight.com/library/courses/javascript-es6-object-oriented-programming/table-of-contents)
 - [OOP Patterns in Typescript : Singleton, Observer, Decorator, Composite, Factory](https://blog.bitsrc.io/design-patterns-in-typescript-e9f84de40449) 
+
 
 ## Workshops
 
@@ -151,6 +140,19 @@ Je kan met [Lucid Charts](http://lucid.app/) een klassendiagram tekenen voor je 
 - [Retro Game Zone](https://retrogamezone.co.uk/)
 - [Assets Forge](http://assetforge.io/) - maak 2D sprites op basis van building blocks
 - [Making Voxel art](https://ephtracy.github.io/)
+
+## Physics en collision
+
+- [Matter 2D physics](http://brm.io/matter-js/)
+- [Planck 2D physics](http://piqnt.com/planck.js/Car)
+- [Physics Tutorial met MatterJS en Typescript](https://github.com/KokoDoko/physics-typescript)
+- [SAT.JS : collision detection for complex shapes](https://github.com/jriecken/sat-js)
+- [QuadTree : large scale collision detection](https://github.com/timohausmann/quadtree-js)
+
+## Multiplayer
+
+- [Socket.io Multiplayer](https://socket.io)
+- [Lance Multiplayer Server](http://lance.gg)
 
 ## Audio
 
@@ -171,13 +173,18 @@ Je kan met [Lucid Charts](http://lucid.app/) een klassendiagram tekenen voor je 
 - [AR for ThreeJS](https://github.com/jeromeetienne/AR.js)
 - [CreateJS 2D](http://createjs.com)
 
+## Phaser game engine
+
+- [Phaser 3 Typescript workshop](https://github.com/HR-CMGT/CLE4-phaser-workshop)
+- [Phaser 3 Typescript Game Examples](https://github.com/digitsensitive/phaser3-typescript)
+- [Phaser Tutorials Flavio Copes](https://flaviocopes.com/tags/phaser/)
+- [Build Flappy Bird in 5 minutes with Phaser and Typescript](https://medium.com/@digit.sensitivee/learn-to-create-a-html5-game-in-5-minutes-604118f5d0ab) en [Source code](https://github.com/digitsensitive/phaser3-flappy-bird)
+
 ## Documentation
 
 - [Typescript in 5 minutes](https://www.typescriptlang.org/v2/docs/handbook/typescript-in-5-minutes.html)
 - [Official documentation](https://www.typescriptlang.org/docs/home.html)
 - [The definitive Typescript guide](https://www.sitepen.com/blog/update-the-definitive-typescript-guide/)
-
-
 
 ## Type definitions
 
